@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: DCCImagesPipeline
+Version: 0.0.1
+Summary: Application to download files from various sources and upload them into JAX's SFTP server
+Author: Tianyu Chen
+Author-email: chent@jax.org

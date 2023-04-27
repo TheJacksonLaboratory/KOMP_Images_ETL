@@ -1,0 +1,2 @@
+[console_scripts]
+download_images = App:main

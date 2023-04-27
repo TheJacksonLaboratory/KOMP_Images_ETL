@@ -1,0 +1,4 @@
+[2023-04-21 15:23:16,899->App.py->main():54]DEBUG: Target path is /Users/chent/Desktop/KOMP_Images/Omeros
+[2023-04-21 15:23:16,902->App.py->main():59]WARNING: File/folder exists
+[2023-04-21 15:23:30,952->App.py->main():54]DEBUG: Target path is /Users/chent/Desktop/KOMP_Images/Omeros
+[2023-04-21 15:23:30,953->App.py->main():59]WARNING: File/folder exists
