@@ -7,7 +7,9 @@ from typing import Any
 import mysql.connector
 import paramiko
 import datetime
+import logging
 
+logger = logging.getLogger(__name__)
 
 class image_upload_status(object):
 

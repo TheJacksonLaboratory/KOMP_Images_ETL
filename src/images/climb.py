@@ -11,7 +11,7 @@ import requests
 import datetime
 import logging
 
-logger = logging.getLogger("Core")
+logger = logging.getLogger(__name__)
 
 class image_upload_status(object):
 

@@ -37,9 +37,6 @@ try:
 except OSError as e:
     print(e)
 
-handler = logging.handlers.RotatingFileHandler(logging_filename, maxBytes=10000000000000, backupCount=10)
-handler.setFormatter(logging.Formatter(FORMAT))
-logger.addHandler(handler)
 
 
 def main():
@@ -146,7 +143,7 @@ def main():
 
         conn = jxl.db_init(server=server, username=username, password=password, database=database)
 
-        '''Remove deplciate records'''
+        '''Remove duplciate records'''
 
         sql = """ SELECT ProcedureStatus, 
                         ProcedureDefinition, 
