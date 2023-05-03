@@ -2,6 +2,7 @@
 import images.omero as omr
 import images.climb as climb
 import images.jaxlims as jxl
+import images.resubmit as rsb
 import utils
 import logging
 import os
@@ -46,184 +47,143 @@ def main():
         (socket.SOL_SOCKET, socket.SO_RCVBUF, 1000000)
     ])
 
-    print("Where do you want to download your images from?\n")
-    downloadSource = input("Enter images source:")
+    if sys.argv[1] == "-u":
 
-    if downloadSource == "Omero":
+        print("Where do you want to download your images from?\n")
+        downloadSource = input("Enter images source:")
 
-        targetPath = os.path.join(utils.get_project_root(), "KOMP_images", "Omeros")
-        logger.debug(f"Target path is {targetPath}")
-        try:
-            os.mkdir(targetPath)
+        if downloadSource == "Omero":
 
-        except FileExistsError as e:
-            logger.warning("File/folder exists")
+            targetPath = os.path.join(utils.get_project_root(), "KOMP_images", "Omeros")
+            logger.debug(f"Target path is {targetPath}")
+            try:
+                os.mkdir(targetPath)
+
+            except FileExistsError as e:
+                logger.warning("File/folder exists")
+
+            server = "rslims.jax.org"
+            username = "dba"
+            password = "rsdba"
+            database = "rslims"
+
+            conn = omr.db_init(server=server, username=username, password=password, database=database)
+            sql = utils.stmt.format("%omeroweb%")
+
+            print("How would you like to select thhe images?")
+            query_filters = {#"DateDue": input("Date:"),
+                            "ProcedureStatus": input("Status:"),
+                                "OrganismID": input("Animal ID:"),
+                                "Output.ExternalID": input("IMPC Code:")}
+
+            """Form the sql queries based on user input"""
+            for key, val in query_filters.items():
+                if not query_filters[key]:
+                    continue
+                if key == "DateDue":
+                    val = val.replace("-", "")
+                    sql = sql + f" AND DateDue >= {val}"
+                else:
+                    filter_clause = f" AND {key} LIKE '%{val}%'"
+                    sql = sql + filter_clause
+
+            sql = sql + ";"
+            #print(sql)
+            print()
+            print("Please enter your username and password to log in")
+            username = input("Username: ")
+            password = getpass("Password: ")
+            omr.download_from_omero(username=username, password=password, download_to=targetPath, conn=conn, sql=sql)
+            conn.close()
+
+        '''Download images in JaxLims'''
+        if downloadSource == "JaxLims":
+            server = "rslims.jax.org"
+            username = "dba"
+            password = "rsdba"
+            database = "rslims"
+
+            conn = jxl.db_init(server=server, username=username, password=password, database=database)
+
+            print("How would you like to select?")
+            query_filters = {"DateDue": input("Date:"),
+                                "OrganismID": input("Animal ID:"),
+                                "ExternalID": input("Parameter Code:")}
+
+
+            '''Remove duplciate records'''
+
+            sql = utils.stmt("%phenotype%")
+            for key, val in query_filters.items():
+                if not query_filters[key]:
+                    continue
+                if key == "DateDue":
+                    val = val.replace("-", "")
+                    sql = sql + f" AND DateDue >= {val}"
+                else:
+                    filter_clause = f" AND {key} LIKE '%{val}%'"
+                    sql = sql + filter_clause
+
+            sql = sql + ";"
+
+            # List stores additional condition on sql query
+            targetPath = os.path.join(utils.get_project_root(), "KOMP_images", "JaxLims")
+            fileLocationMap = jxl.buildFileMap(conn=conn, sql=sql, target=targetPath)
+            # srcPath = "//bht2stor.jax.org/" #If you are on windows
+            srcPath = "/Volumes/"  # If you are on mac/linux
+            jxl.download_from_drive(fileLocationMap, source=srcPath, target=targetPath)
+
+        if downloadSource == "Climb":
+            # If you are on windows
+            # srcPath = "//bht2stor.jax.org/"
+
+            srcPath = "/Volumes/"
+            targetPath = os.path.join(utils.get_project_root(), "KOMP_images", "Climb")
+
+            username = input("Username: ")
+            password = input("Password: ")
+            token = climb.getTokens(username=username, password=password)
+            json_objects = climb.getFileInfo(username=username, password=password, token=token, outputKey=658)
+            fileLocationMap = climb.buildFileMap(json_objects)
+            climb.download_from_drive(fileLocationMap=fileLocationMap, source=srcPath, target=targetPath)
+
+        if downloadSource == "PFS" or "Core":
+
+            # Connect to server of PFS, then extract information of images
+            pass
+
+    elif sys.argv[1] == "-r":
+        print("Please tell me which QC report you want to use")
+        #mediaFilesCsv = input("Media Report: ")
+        #path_to_csv = os.path.join(utils.smbPath, mediaFilesCsv)
+        path_to_csv = "/Volumes/phenotype/DccQcReports/J_QC_2023-04-19/J_failed_media_20230419.csv"
+        logger.debug(f"Path to QC Report is: {path_to_csv}")
 
         server = "rslims.jax.org"
         username = "dba"
         password = "rsdba"
         database = "rslims"
 
-        conn = omr.db_init(server=server, username=username, password=password, database=database)
-        sql = """SELECT ProcedureStatus, 
-                        ProcedureDefinition, 
-                        ProcedureDefinition.ExternalID AS ExternalID, 
-                        _ProcedureInstance_key AS TestCode, 
-                        OutputValue, DateDue,
-                        OrganismID,
-                        DateBirth,
-                        StockNumber
-                    FROM
-                        Organism
-                            INNER JOIN
-                        ProcedureInstanceOrganism USING (_Organism_key)
-                            INNER JOIN
-                        ProcedureInstance USING (_ProcedureInstance_key)
-                            INNER JOIN
-                        OutputInstanceSet USING (_ProcedureInstance_key)
-                            INNER JOIN
-                        Outputinstance USING (_outputInstanceSet_key)
-                            INNER JOIN
-                        Output USING (_Output_key)
-                            INNER JOIN
-                        ProcedureDefinitionVersion USING (_ProcedureDefinitionVersion_key)
-                            INNER JOIN
-                        ProcedureDefinition USING (_ProcedureDefinition_key)
-                            INNER JOIN
-                        Line USING (_Line_key)
-                            INNER JOIN
-                        OrganismStudy USING (_Organism_key)
-                            INNER JOIN
-                        cv_ProcedureStatus USING (_ProcedureStatus_key)
-                    WHERE
-                        Output._DataType_key = 7   -- File type
-                            AND OutputValue LIKE '%omeroweb%' 
-                            AND CHAR_LENGTH(OutputValue) > 0
-                            AND Output.ExternalID IS NOT NULL
-                            AND  DATEDIFF(NOW(),ProcedureInstance.DateModified ) < 28"""
-        
-        print("How would you like to select thhe images?")
-        query_filters = {#"DateDue": input("Date:"),
-                         "ProcedureStatus": input("Status:"),
-                         "OrganismID": input("Animal ID:"),
-                         "Output.ExternalID": input("IMPC Code:")}
+        logger.info("Connecting to db...")
+        conn = mysql.connector.connect(host=server, user=username, password=password, database=database)
+        """
+        1. Clean up the table 
+        2. Read csv files and get organism id and impc code
+        3. pass organism id and impc code to sql query to result
+        4. Use functions in images module to download and upload
+        5. Remove the duplicating records using set
+        """
 
-        """Form the sql queries based on user input"""
-        for key, val in query_filters.items():
-            if not query_filters[key]:
-                continue
-            if key == "DateDue":
-                val = val.replace("-", "")
-                sql = sql + f" AND DateDue >= {val}"
-            else:
-                filter_clause = f" AND {key} LIKE '%{val}%'"
-                sql = sql + filter_clause
+        statements = rsb.process(srcFileName=path_to_csv, conn=conn)
+        #print(statements[1])
+        print(len(statements))
 
-        sql = sql + ";"
-        #print(sql)
-        print()
-        print("Please enter your username and password to log in")
-        username = input("Username: ")
-        password = getpass("Password: ")
-        omr.download_from_omero(username=username, password=password, download_to=targetPath, conn=conn, sql=sql)
-        conn.close()
-
-    '''Download images in JaxLims'''
-    if downloadSource == "JaxLims":
-        #print("Where are the file locations being stored? ")
-        print("How would you like to select?")
-        query_filters = {"DateDue": input("Date:"),
-                         "OrganismID": input("Animal ID:"),
-                         "ExternalID": input("Parameter Code:")}
-
-        server = "rslims.jax.org"
-        username = "dba"
-        password = "rsdba"
-        database = "rslims"
-
-        conn = jxl.db_init(server=server, username=username, password=password, database=database)
-
-        '''Remove duplciate records'''
-
-        sql = """ SELECT ProcedureStatus, 
-                        ProcedureDefinition, 
-                        ProcedureDefinition.ExternalID AS ExternalID, 
-                        _ProcedureInstance_key AS TestCode, 
-                        OutputValue, DateDue,
-                        OrganismID,
-                        DateBirth,
-                        StockNumber
-                    FROM
-                        Organism
-                            INNER JOIN
-                        ProcedureInstanceOrganism USING (_Organism_key)
-                            INNER JOIN
-                        ProcedureInstance USING (_ProcedureInstance_key)
-                            INNER JOIN
-                        OutputInstanceSet USING (_ProcedureInstance_key)
-                            INNER JOIN
-                        Outputinstance USING (_outputInstanceSet_key)
-                            INNER JOIN
-                        Output USING (_Output_key)
-                            INNER JOIN
-                        ProcedureDefinitionVersion USING (_ProcedureDefinitionVersion_key)
-                            INNER JOIN
-                        ProcedureDefinition USING (_ProcedureDefinition_key)
-                            INNER JOIN
-                        Line USING (_Line_key)
-                            INNER JOIN
-                        OrganismStudy USING (_Organism_key)
-                            INNER JOIN
-                        cv_ProcedureStatus USING (_ProcedureStatus_key)
-                    WHERE
-                        Output._DataType_key = 7   -- File type
-                            AND OutputValue LIKE '%phenotype%' 
-                            AND CHAR_LENGTH(OutputValue) > 0
-                            AND Output.ExternalID IS NOT NULL
-                            AND  DATEDIFF(NOW(),ProcedureInstance.DateModified ) < 14 """
-
-       
-        for key, val in query_filters.items():
-            if not query_filters[key]:
-                continue
-            if key == "DateDue":
-                val = val.replace("-", "")
-                sql = sql + f" AND DateDue >= {val}"
-            else:
-                filter_clause = f" AND {key} LIKE '%{val}%'"
-                sql = sql + filter_clause
-
-        sql = sql + ";"
-
-        # List stores additional condition on sql query
-        targetPath = os.path.join(utils.get_project_root(), "KOMP_images", "JaxLims")
-        fileLocationMap = jxl.buildFileMap(conn=conn, sql=sql, target=targetPath)
-        # srcPath = "//bht2stor.jax.org/" #If you are on windows
-        srcPath = "/Volumes/"  # If you are on mac/linux
-        jxl.download_from_drive(fileLocationMap, source=srcPath, target=targetPath)
-
-    if downloadSource == "Climb":
-        # If you are on windows
-        # srcPath = "//bht2stor.jax.org/"
-
-        srcPath = "/Volumes/"
-        targetPath = os.path.join(utils.get_project_root(), "KOMP_images", "Climb")
-
-        username = input("Username: ")
-        password = input("Password: ")
-        token = climb.getTokens(username=username, password=password)
-        json_objects = climb.getFileInfo(username=username, password=password, token=token, outputKey=658)
-        fileLocationMap = climb.buildFileMap(json_objects)
-        climb.download_from_drive(fileLocationMap=fileLocationMap, source=srcPath, target=targetPath)
-
-    if downloadSource == "PFS" or "Core":
-
-        # Connect to server of PFS, then extract information of images
-        pass
-
-    else:
-        raise ValueError("Invalid file source detected!")
-
+        for stmt in statements:
+            targetPath = os.path.join(utils.get_project_root(), "KOMP_images", "JaxLims")
+            fileLocationMap = jxl.buildFileMap(conn=conn, sql=stmt, target=targetPath)
+            print(fileLocationMap)
+            srcPath = "/Volumes/"  # If you are on mac/linux
+            jxl.download_from_drive(fileLocationMap, source=srcPath, target=targetPath)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
