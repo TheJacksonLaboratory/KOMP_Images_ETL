@@ -2,7 +2,6 @@
 import images.omero as omr
 import images.climb as climb
 import images.jaxlims as jxl
-import images.resubmit as rsb
 import utils
 import logging
 import os
@@ -152,39 +151,9 @@ def main():
             # Connect to server of PFS, then extract information of images
             pass
 
-    elif sys.argv[1] == "-r":
-        print("Please tell me which QC report you want to use")
-        #mediaFilesCsv = input("Media Report: ")
-        #path_to_csv = os.path.join(utils.smbPath, mediaFilesCsv)
-        path_to_csv = "/Volumes/phenotype/DccQcReports/J_QC_2023-04-19/J_failed_media_20230419.csv"
-        logger.debug(f"Path to QC Report is: {path_to_csv}")
-
-        server = "rslims.jax.org"
-        username = "dba"
-        password = "rsdba"
-        database = "rslims"
-
-        logger.info("Connecting to db...")
-        conn = mysql.connector.connect(host=server, user=username, password=password, database=database)
-        """
-        1. Clean up the table 
-        2. Read csv files and get organism id and impc code
-        3. pass organism id and impc code to sql query to result
-        4. Use functions in images module to download and upload
-        5. Remove the duplicating records using set
-        """
-
-        statements = rsb.process(srcFileName=path_to_csv, conn=conn)
-        #print(statements[1])
-        print(len(statements))
-
-        for stmt in statements:
-            targetPath = os.path.join(utils.get_project_root(), "KOMP_images", "JaxLims")
-            fileLocationMap = jxl.buildFileMap(conn=conn, sql=stmt, target=targetPath)
-            print(fileLocationMap)
-            srcPath = "/Volumes/"  # If you are on mac/linux
-            jxl.download_from_drive(fileLocationMap, source=srcPath, target=targetPath)
-
+    
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     main()
+
+

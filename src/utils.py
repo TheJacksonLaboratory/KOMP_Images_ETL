@@ -9,7 +9,8 @@ database = "rslims"
 """Disks location"""
 smbPath = "/Volumes/phenotype/DccQcReports/"
 
-"""SQL statement to call"""
+
+"""SQL statement to get file location of an image"""
 stmt = """SELECT ProcedureStatus, 
                             ProcedureDefinition, 
                             ProcedureDefinition.ExternalID AS ExternalID, 

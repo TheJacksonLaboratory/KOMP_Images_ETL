@@ -1,5 +1,6 @@
 import collections
 import os
+import time
 import shutil
 from errno import errorcode
 import mysql.connector
@@ -15,13 +16,14 @@ logger = logging.getLogger(__name__)
 class image_upload_status(object):
 
     def __init__(self, SourceFileName: str, DestinationFileName: str, TaskKey: str,
-                 DateOfUpload: datetime, ImpcCode: str, UploadStatus: str):
+                 DateOfUpload: datetime, ImpcCode: str, UploadStatus: str, Message: str):
         self.SourceFileName = SourceFileName
         self.DestinationFileName = DestinationFileName
         self.TaskKey = TaskKey
         self.DateOfUpload = DateOfUpload
         self.ImpcCode = ImpcCode
         self.UploadStatus = UploadStatus
+        self.Message = Message
 
 
 def update_images_status(imageDict: dict):
@@ -218,6 +220,21 @@ def download_from_omero(username: str,
                     logger.info("Downloading . . .")
                     for chunk in r.iter_content(chunk_size=8192):
                         f.write(chunk)
+
+                    time.sleep(3)
+                    
+                    if fName not in  os.listdir(dest):
+                        #Download failed
+                        file_Status = image_upload_status(SourceFileName=downloadFileUrl,
+                                              DestinationFileName=os.path.join("", key, image),
+                                              TaskKey=" ",
+                                              DateOfUpload=datetime.datetime.now(),
+                                              ImpcCode=" ",
+                                              UploadStatus="Fail",
+                                              Message="Fail to download file")
+            
+                        update_images_status(file_Status.__dict__)
+
                 f.close()
 
         """Push downloaded files to server"""
@@ -243,7 +260,9 @@ def download_from_omero(username: str,
                                               TaskKey=" ",
                                               DateOfUpload=datetime.datetime.now(),
                                               ImpcCode=" ",
-                                              UploadStatus="Success")
+                                              UploadStatus="Success",
+                                              Message="File successfully uploaded to server")
+            
             update_images_status(file_Status.__dict__)
             
         ftp_client.close()

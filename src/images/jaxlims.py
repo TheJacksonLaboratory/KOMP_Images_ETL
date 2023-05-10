@@ -14,16 +14,15 @@ logger = logging.getLogger(__name__)
 class image_upload_status(object):
 
     def __init__(self, SourceFileName: str, DestinationFileName: str, TaskKey: str,
-                 DateOfUpload: datetime, ImpcCode: str, UploadStatus: str):
+                 DateOfUpload: datetime, ImpcCode: str, UploadStatus: str, Message:str):
         self.SourceFileName = SourceFileName
         self.DestinationFileName = DestinationFileName
-        self.TaskKey = TaskKey
         self.DateOfUpload = DateOfUpload
-        self.ImpcCode = ImpcCode
         self.UploadStatus = UploadStatus
+        self.Message = Message
 
 
-def update_images_status(imageDict: dict):
+def update_images_status(imageDict: dict, imagefilekey):
     if not imageDict:
         raise ValueError("Nothing to be inserted")
 
@@ -38,14 +37,15 @@ def update_images_status(imageDict: dict):
     cleanStmt = """ DELETE i FROM komp.imagefileuploadstatus i, komp.imagefileuploadstatus j 
                     WHERE i._ImageFile_key > j._ImageFile_key AND i.SourceFileName = j.SourceFileName; 
                 """
+
     cursor.execute(cleanStmt)
 
-    placeholders = ', '.join(['%s'] * len(imageDict))
-    columns = ', '.join(imageDict.keys())
-
-    sql = "INSERT INTO %s ( %s ) VALUES ( %s );" % ("komp.imagefileuploadstatus", columns, placeholders)
+    logger.debug(f"Insert record data is {imageDict.values()}")
+    sql = "UPDATE KOMP.imagefileuploadstatus SET {} WHERE _ImageFile_key = {};".format(
+        ', '.join("{}='{}'".format(k, v) for k, v in imageDict.items()), imagefilekey)
+    logger.debug(sql)
     print(sql)
-    cursor.execute(sql, list(imageDict.values()))
+    cursor.execute(sql)
     conn.commit()
     conn.close()
 
@@ -101,59 +101,24 @@ def buildFileMap(conn: mysql.connector.connection,
     queryResult = cursor.fetchall()
 
     # Parse the data returned by query
-    fileLocationDict = collections.defaultdict(list)
+    fileLocationMap = collections.defaultdict(list)
     for dict_ in queryResult:
-        procedureDef = dict_["ProcedureDefinition"].replace(" ", "")
-        externalId = dict_["ExternalID"]
-        pathToImage = dict_["OutputValue"].split("\\")
+        temp = dict_["SourceFileName"].replace("\\", "/").split("/")[2:]
+        fileLocation = os.path.join("/Volumes", *temp)
+        fileLocationMap[dict_["ImpcCode"]].append([int(dict_["_ImageFile_key"]), fileLocation])
 
-        dest = target + "/" + externalId
+        dest = target + "/" + dict_["ImpcCode"]
         try:
             os.mkdir(dest)
 
         except FileExistsError as e:
             print(e)
 
-        """
-        Handle different scenario of file path:
-        1) Full path is entered, but there are some minor mistakes such as character, spelling etc
-        2) Only file name is entered, which requires to form the path to the file in the drive 
-        """
-
-        # Case 1)
-        if len(pathToImage) > 1:
-
-            if "Phenotype" in pathToImage:
-                # print(pathToImage)
-                startIndex = pathToImage.index("Phenotype")
-                imageLocation = pathToImage[startIndex:]
-                print(imageLocation)
-                fileLocationDict[externalId].append(os.path.join(*imageLocation).replace("\\", "/"))
-
-            if "phenotype" in pathToImage:
-                # print(pathToImage)
-                startIndex = pathToImage.index("phenotype")
-                imageLocation = pathToImage[startIndex:]
-                print(imageLocation)
-                # imageLocation = os.path.join(*imageLocation).replace("\\", "/")
-                fileLocationDict[externalId].append(os.path.join(*imageLocation).replace("\\", "/"))
-                print(fileLocationDict[externalId][-1])
-
-            else:
-                print(pathToImage)
-        # Case 2)
-        else:
-            imageLocation = os.path.join("phenotype", procedureDef, "KOMP",
-                                         "", dict_["OutputValue"])
-            print(imageLocation)
-            fileLocationDict[externalId].append(imageLocation.replace("\\", "/"))
-
     # print(len(fileLocations))
-    return fileLocationDict
+    return fileLocationMap
 
 
 def download_from_drive(fileLocationDict: defaultdict[list],
-                        source: str,
                         target: str) -> None:
     """
     :param fileLocationDict:Dictionary/hashmap that contains information of images file
@@ -162,13 +127,13 @@ def download_from_drive(fileLocationDict: defaultdict[list],
     :return: None
     """
 
-    if not fileLocationDict or not source \
-            or not target:
+    if not fileLocationDict or not target:
         raise ValueError()
 
     for externalId, locations in fileLocationDict.items():
         for loc in locations:
-            download_from = source + loc
+            download_from = loc[1]
+            imagefilekey = loc[0]
             download_to = target + "/" + externalId
 
             try:
@@ -184,21 +149,21 @@ def download_from_drive(fileLocationDict: defaultdict[list],
                 os.remove(os.path.join(download_to, loc.split("/")[-1]))
                 ftp_client.close()
                 file_Status = image_upload_status(SourceFileName=download_from,
-                                                  DestinationFileName="images/" + externalId + loc.split("/")[-1],
-                                                  TaskKey=" ",
+                                                  DestinationFileName="images/" + externalId + "/" + loc.split("/")[-1],
                                                   DateOfUpload=datetime.datetime.now(),
-                                                  ImpcCode=" ",
-                                                  UploadStatus="Success")
-                update_images_status(file_Status.__dict__)
+                                                  UploadStatus="Success",
+                                                  Message="File successfully uploaded to server")
+                
+                update_images_status(file_Status.__dict__, imagefilekey)
 
             except FileNotFoundError as e:
                 # missingFiles.append(download_images.split("/"[-1]))
                 print(e)
                 """Create object"""
                 file_Status = image_upload_status(SourceFileName=download_from,
-                                                  DestinationFileName=" ",
-                                                  TaskKey=" ",
+                                                  DestinationFileName="images/" + externalId + "/" + loc.split("/")[-1],
                                                   DateOfUpload=datetime.datetime.now(),
-                                                  ImpcCode=" ",
-                                                  UploadStatus="Fail")
-                update_images_status(file_Status.__dict__)
+                                                  UploadStatus="Fail",
+                                                  Message="File not found in the given location")
+                
+                update_images_status(file_Status.__dict__, imagefilekey)
