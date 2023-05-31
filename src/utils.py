@@ -1,16 +1,50 @@
+import logging
+import os
+from datetime import datetime
+from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
+"""Function to get work directory"""
+
+
+def get_project_root() -> Path:
+    return Path(__file__).parent.parent
+
+
+"""Setup logger"""
+
+logger = logging.getLogger(__name__)
+FORMAT = "[%(asctime)s->%(filename)s->%(funcName)s():%(lineno)s]%(levelname)s: %(message)s"
+logging.basicConfig(format=FORMAT, filemode="w", level=logging.DEBUG, force=True)
+logging_dest = os.path.join(get_project_root(), "logs")
+date = datetime.now().strftime("%B-%d-%Y")
+logging_filename = logging_dest + "/" + f'{date}.log'
+handler = RotatingFileHandler(logging_filename, maxBytes=10000000000, backupCount=10)
+handler.setFormatter(logging.Formatter(FORMAT))
+logger.addHandler(handler)
+
+"""Omero/Climb username and password"""
+username = "chent"
+password = "Ql4nc,tzjzsblj."
+
+"""SFTP server credentials"""
+hostname = "bhjlk02lp.jax.org"
+server_username = "jlkinternal"
+server_password = "t1m3st4mp!"
+
 """Database credentials"""
-server = "rslims.jax.org"
-username = "dba"
-password = "rsdba"
-database = "rslims"
+db_server = "rslims.jax.org"
+db_username = "dba"
+db_password = "rsdba"
+db_name = "rslims"
 
 """Disks location"""
 smbPath = "/Volumes/phenotype/DccQcReports/"
 
-
 """SQL statement to get file location of an image"""
+stmt = """SELECT * FROM KOMP.imagefileuploadstatus WHERE DateOfUpload IS NULL AND Message IS NULL;"""
+
+'''
 stmt = """SELECT ProcedureStatus, 
                             ProcedureDefinition, 
                             ProcedureDefinition.ExternalID AS ExternalID, 
@@ -47,9 +81,4 @@ stmt = """SELECT ProcedureStatus,
                                 AND CHAR_LENGTH(OutputValue) > 0
                                 AND Output.ExternalID IS NOT NULL
                                 AND  DATEDIFF(NOW(),ProcedureInstance.DateModified ) < 14"""
-
-
-
-"""Function to get work directory"""
-def get_project_root() -> Path:
-    return Path(__file__).parent.parent
+'''

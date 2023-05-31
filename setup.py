@@ -1,6 +1,6 @@
 from setuptools import setup
 
-setup(name="DCCImagesPipeline",
+setup(name="KOMP_Images_ETL",
       author="chentJAX",
       author_email="chent@jax.org",
       description="Application to download files from various sources(Omero, Climb etc) and upload them into JAX's "

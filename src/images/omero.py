@@ -1,32 +1,27 @@
 import collections
+import datetime
+import logging
 import os
-import time
 import shutil
-from errno import errorcode
+import time
+
 import mysql.connector
 import paramiko
 import requests
 from requests import exceptions
-import datetime
-import logging
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("__main__")
 
 
 class image_upload_status(object):
 
-    def __init__(self, SourceFileName: str, DestinationFileName: str, TaskKey: str,
-                 DateOfUpload: datetime, ImpcCode: str, UploadStatus: str, Message: str):
-        self.SourceFileName = SourceFileName
-        self.DestinationFileName = DestinationFileName
-        self.TaskKey = TaskKey
+    def __init__(self, DateOfUpload: datetime, UploadStatus: str, Message: str):
         self.DateOfUpload = DateOfUpload
-        self.ImpcCode = ImpcCode
         self.UploadStatus = UploadStatus
         self.Message = Message
 
 
-def update_images_status(imageDict: dict):
+def update_images_status(imageDict: dict, imagefilekey):
     if not imageDict:
         raise ValueError("Nothing to be inserted")
 
@@ -49,7 +44,8 @@ def update_images_status(imageDict: dict):
     columns = ', '.join(imageDict.keys())
     logger.debug(f"Columns are {columns}")
 
-    sql = "INSERT INTO %s ( %s ) VALUES ( %s );" % ("komp.imagefileuploadstatus", columns, placeholders)
+    sql = "UPDATE KOMP.imagefileuploadstatus SET {} WHERE _ImageFile_key = {};".format(
+        ', '.join("{}='{}'".format(k, v) for k, v in imageDict.items()), imagefilekey)
     print(sql)
     logger.debug(sql)
     cursor.execute(sql, list(imageDict.values()))
@@ -74,15 +70,7 @@ def db_init(server: str,
         return conn
 
     except mysql.connector.Error as err1:
-        if err1.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-            logger.error("Wrong user name or password passed")
-
-        elif err1.errno == errorcode.ER_BAD_DB_ERROR:
-            logger.error("No such schema")
-
-        else:
-            error = str(err1.__dict__["orig"])
-            logger.error(error)
+        logger.error(err1)
 
     except ConnectionError as err2:
         logger.error(err2)
@@ -98,7 +86,7 @@ def download_from_omero(username: str,
     """
     :param username: Your username of Omero.jax.org
     :param password: Your password of Omero.jax.org
-    :param download_to: Path you want to temporarily store the images
+    :param download_to: Path you want to temporarily store the pictures
     :param conn: Connection to the database
     :param sql: SQL query you want to use
     :return: None
@@ -186,13 +174,13 @@ def download_from_omero(username: str,
 
         except FileExistsError as e:
             logger.error(e)
-            #print(e)
+            # print(e)
 
         for pair in val:
             link, test_code = pair[0], pair[1]
-            print(link)
+            logger.info(link)
             omeroId = link.split("/")[-1].strip()
-            images_url = urls['url:images'] + str(omeroId)
+            images_url = urls['url:pictures'] + str(omeroId)
             logger.debug(images_url)
             print(images_url)
             # get the filename from OMERO GET https://omeroweb.jax.org/api/v0/m/images/nnn - then get the "Name"
@@ -201,12 +189,14 @@ def download_from_omero(username: str,
             j = resp.json()
             name = j["data"]["Name"].strip()
             print(name)
+            logger.debug(f"Name before strip:{name}")
+
             # File name has junk in it. Like " []". Needs a tif extension instead.
             frm, to = name.find("["), name.find("]")
             name = name.replace(name[frm:to + 1], "")
             name = name.strip()
             fName = str(test_code) + name
-            logger.debug(f"Final file name is: {fName}")
+            logger.debug(f"File name is: {fName}")
             # logger.info(f"Download url is {fName}")
 
             downloadFileUrl = base_url.replace("api/v0/", "webgateway/archived_files/download/")
@@ -222,17 +212,13 @@ def download_from_omero(username: str,
                         f.write(chunk)
 
                     time.sleep(3)
-                    
-                    if fName not in  os.listdir(dest):
-                        #Download failed
-                        file_Status = image_upload_status(SourceFileName=downloadFileUrl,
-                                              DestinationFileName=os.path.join("", key, image),
-                                              TaskKey=" ",
-                                              DateOfUpload=datetime.datetime.now(),
-                                              ImpcCode=" ",
-                                              UploadStatus="Fail",
-                                              Message="Fail to download file")
-            
+
+                    if fName not in os.listdir(dest):
+                        # Download failed
+                        file_Status = image_upload_status(DateOfUpload=datetime.datetime.now(),
+                                                          UploadStatus="Fail",
+                                                          Message="Fail to download file")
+
                         update_images_status(file_Status.__dict__)
 
                 f.close()
@@ -246,29 +232,25 @@ def download_from_omero(username: str,
         images = os.listdir(dest)
 
         for image in images:
-            destOnServer = os.path.join("images", key, image)
+            destOnServer = os.path.join("pictures", key, image)
             logger.debug(f"Destination on server is: {destOnServer}")
             logger.debug(f"Uploading {image} to {destOnServer}")
 
             ftp_client.put(os.path.join(dest, image),
                            destOnServer)
-            
+
             """Update the image file status table"""
             logger.info("Updating table now")
-            file_Status = image_upload_status(SourceFileName="https://omeroweb.jax.org/api/v0/m/images/",
-                                              DestinationFileName=os.path.join("", key, image),
-                                              TaskKey=" ",
-                                              DateOfUpload=datetime.datetime.now(),
-                                              ImpcCode=" ",
+            file_Status = image_upload_status(DateOfUpload=datetime.datetime.now(),
                                               UploadStatus="Success",
                                               Message="File successfully uploaded to server")
-            
+
             update_images_status(file_Status.__dict__)
-            
+
         ftp_client.close()
 
         """Remove the directory after uploading"""
-        logger.info("Empty the images directory")
+        logger.info("Empty the pictures directory")
         for filename in os.listdir(dest):
             file_path = os.path.join(dest, filename)
             logger.debug(file_path)

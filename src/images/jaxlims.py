@@ -1,28 +1,26 @@
 import collections
+import datetime
+import logging
 import os
 import shutil
 from collections import defaultdict
-from errno import errorcode
 from typing import Any
+
 import mysql.connector
 import paramiko
-import datetime
-import logging
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("__main__")
+
 
 class image_upload_status(object):
 
-    def __init__(self, SourceFileName: str, DestinationFileName: str, TaskKey: str,
-                 DateOfUpload: datetime, ImpcCode: str, UploadStatus: str, Message:str):
-        self.SourceFileName = SourceFileName
-        self.DestinationFileName = DestinationFileName
+    def __init__(self, DateOfUpload: datetime, UploadStatus: str, Message: str):
         self.DateOfUpload = DateOfUpload
         self.UploadStatus = UploadStatus
         self.Message = Message
 
 
-def update_images_status(imageDict: dict, imagefilekey):
+def update_images_status(imageDict, imagefilekey):
     if not imageDict:
         raise ValueError("Nothing to be inserted")
 
@@ -31,21 +29,21 @@ def update_images_status(imageDict: dict, imagefilekey):
     db_password = "rsdba"
     db_name = "komp"
     conn = db_init(server=db_server, username=db_user, password=db_password, database=db_name)
-    cursor = conn.cursor()
+    cursor1 = conn.cursor()
 
     '''Remove deplciate records'''
     cleanStmt = """ DELETE i FROM komp.imagefileuploadstatus i, komp.imagefileuploadstatus j 
                     WHERE i._ImageFile_key > j._ImageFile_key AND i.SourceFileName = j.SourceFileName; 
                 """
 
-    cursor.execute(cleanStmt)
+    cursor1.execute(cleanStmt)
+    conn.commit()
 
-    logger.debug(f"Insert record data is {imageDict.values()}")
+    cursor2 = conn.cursor()
     sql = "UPDATE KOMP.imagefileuploadstatus SET {} WHERE _ImageFile_key = {};".format(
         ', '.join("{}='{}'".format(k, v) for k, v in imageDict.items()), imagefilekey)
     logger.debug(sql)
-    print(sql)
-    cursor.execute(sql)
+    cursor2.execute(sql)
     conn.commit()
     conn.close()
 
@@ -59,18 +57,10 @@ def db_init(server: str,
         return conn
 
     except mysql.connector.Error as err1:
-        if err1.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-            print("Wrong user name or password passed")
-
-        elif err1.errno == errorcode.ER_BAD_DB_ERROR:
-            print("No such schema")
-
-        else:
-            error = str(err1.__dict__["orig"])
-            print(error)
+        logger.error(err1)
 
     except ConnectionError as err2:
-        print(err2)
+        logger.error(err2)
 
     return None
 
@@ -82,10 +72,11 @@ def buildFileMap(conn: mysql.connector.connection,
 
     :param conn: Connection to database
     :param sql: SQL query you want to execute
-    :param target: Path you want to temporarily store the images
+    :param target: Path you want to temporarily store the pictures
     :return: Dictionary after parsing the query result
     """
     if not conn:
+        logger.error("No coonection")
         raise ConnectionError("Not connect to database")
 
     # fileLocations = []
@@ -96,6 +87,7 @@ def buildFileMap(conn: mysql.connector.connection,
         print(e)
 
     '''Query database'''
+    logger.info("Connecting to db")
     cursor = conn.cursor(buffered=True, dictionary=True)
     cursor.execute(sql)
     queryResult = cursor.fetchall()
@@ -103,11 +95,19 @@ def buildFileMap(conn: mysql.connector.connection,
     # Parse the data returned by query
     fileLocationMap = collections.defaultdict(list)
     for dict_ in queryResult:
-        temp = dict_["SourceFileName"].replace("\\", "/").split("/")[2:]
-        fileLocation = os.path.join("/Volumes", *temp)
-        fileLocationMap[dict_["ImpcCode"]].append([int(dict_["_ImageFile_key"]), fileLocation])
 
-        dest = target + "/" + dict_["ImpcCode"]
+        procedureCode = dict_["DestinationFileName"].split("/")[4]
+        temp = dict_["SourceFileName"].split("\\")[4:]
+        drive_path = "/Volumes/" # If you are on mac/linux
+        fileLocation = os.path.join(drive_path, *temp)
+        #fileLocation = "//" + os.path.join("bht2stor.jax.org\\", *temp).replace("\\", "/") #If you are on windows
+        logger.debug(f"Source file path is {fileLocation}")
+
+        fileLocationMap[procedureCode].append([int(dict_["_ImageFile_key"]), fileLocation])
+
+        dest = target + "/" + procedureCode
+        logger.debug(f"Destination of downloaded file is {dest}")
+
         try:
             os.mkdir(dest)
 
@@ -121,9 +121,9 @@ def buildFileMap(conn: mysql.connector.connection,
 def download_from_drive(fileLocationDict: defaultdict[list],
                         target: str) -> None:
     """
-    :param fileLocationDict:Dictionary/hashmap that contains information of images file
+    :param fileLocationDict:Dictionary/hashmap that contains information of pictures file
     :param source: Base path of the file
-    :param target: Path you want to temporarily store the images
+    :param target: Path you want to temporarily store the pictures
     :return: None
     """
 
@@ -131,39 +131,61 @@ def download_from_drive(fileLocationDict: defaultdict[list],
         raise ValueError()
 
     for externalId, locations in fileLocationDict.items():
+
+        logger.debug("Processing {}".format(externalId))
         for loc in locations:
+            imagefileKey = loc[0]
             download_from = loc[1]
-            imagefilekey = loc[0]
             download_to = target + "/" + externalId
 
             try:
+                logger.info(f"Starting downloading {download_from} to {download_to}")
                 shutil.copy(download_from, download_to)
-
+                logger.info(f"Done downloading file {download_from}")
+                fileName = loc[1].split("/")[-1]
                 """Send downloaded files to the sever"""
-                ssh_client = paramiko.SSHClient()
-                ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-                ssh_client.connect(hostname="bhjlk02lp.jax.org", username="jlkinternal", password="t1m3st4mp!")
-                ftp_client = ssh_client.open_sftp()
-                ftp_client.put(os.path.join(download_to, loc.split("/")[-1]),
-                               "images/" + externalId + "/" + loc.split("/")[-1])
-                os.remove(os.path.join(download_to, loc.split("/")[-1]))
-                ftp_client.close()
-                file_Status = image_upload_status(SourceFileName=download_from,
-                                                  DestinationFileName="images/" + externalId + "/" + loc.split("/")[-1],
-                                                  DateOfUpload=datetime.datetime.now(),
-                                                  UploadStatus="Success",
-                                                  Message="File successfully uploaded to server")
-                
-                update_images_status(file_Status.__dict__, imagefilekey)
+
+                try:
+                    ssh_client = paramiko.SSHClient()
+                    ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+                    ssh_client.connect(hostname="bhjlk02lp.jax.org", username="jlkinternal", password="t1m3st4mp!")
+                    ftp_client = ssh_client.open_sftp()
+                    ftp_client.chdir("/pictures/")
+
+                    try:
+                        logger.info(ftp_client.stat('/pictures/' + externalId + "/" + fileName))
+                        logger.info(f'File exists in directory {externalId}')
+                        file_Status = image_upload_status(DateOfUpload=datetime.datetime.now(),
+                                                          UploadStatus="Success",
+                                                          Message="File already exits on server")
+
+                        update_images_status(file_Status.__dict__, imagefileKey)
+
+                    except IOError:
+                        logger.info(f"Uploading {fileName}")
+                        ftp_client.put(download_to + "/" + fileName,
+                                       "pictures/" + externalId + "/" + fileName)
+
+                        file_Status = image_upload_status(DateOfUpload=datetime.datetime.now(),
+                                                          UploadStatus="Success",
+                                                          Message="File successfully uploaded to server")
+
+                        update_images_status(file_Status.__dict__, imagefileKey)
+
+                    # os.remove(os.path.join(download_to, loc[1].split("/")[-1]))
+                    ftp_client.close()
+
+                except paramiko.SSHException:
+                    logger.error("Connection Error")
 
             except FileNotFoundError as e:
                 # missingFiles.append(download_images.split("/"[-1]))
-                print(e)
+                logger.debug(download_from)
+                logger.error(e)
+
                 """Create object"""
-                file_Status = image_upload_status(SourceFileName=download_from,
-                                                  DestinationFileName="images/" + externalId + "/" + loc.split("/")[-1],
-                                                  DateOfUpload=datetime.datetime.now(),
+                file_Status = image_upload_status(DateOfUpload=datetime.datetime.now(),
                                                   UploadStatus="Fail",
-                                                  Message="File not found in the given location")
-                
-                update_images_status(file_Status.__dict__, imagefilekey)
+                                                  Message="File not found on the disk")
+
+                update_images_status(file_Status.__dict__, imagefilekey=loc[0])

@@ -10,7 +10,6 @@ import os
 from logging.handlers import RotatingFileHandler
 import collections
 
-
 """
 Algorithm
 
@@ -39,10 +38,10 @@ except OSError as e:
 def process(srcFileName: str,
             conn: mysql.connector) -> None:
     """
-    This function is intend to prepare for resubmitting images to DCC.
+    This function is intend to prepare for resubmitting pictures to DCC.
     It contains 3 parts:
-    1). Read and parse the report(.csv file) of the failed images
-    2). Use the information retrieved from the report to constructing sql queries to reset the status of submitted images
+    1). Read and parse the report(.csv file) of the failed pictures
+    2). Use the information retrieved from the report to constructing sql queries to reset the status of submitted pictures
         back to "approved" (i.e. 14)
     3). Use the information retrieved from the report to constructing sql queries to query database for building file map,
         then add these queries to a list.
@@ -59,11 +58,11 @@ def process(srcFileName: str,
     try:
         df = pd.read_csv(srcFileName)
         logger.info("Reading report . . .")
-        #print(df)
+        # print(df)
 
         animalIds = df["animal_name"].tolist()
         impcCodes = df["procedure_key"].tolist()
-        #print(animalIds)
+        # print(animalIds)
 
         procedureInstanceKeys = []
         for impcCode, animalId in zip(impcCodes, animalIds):
@@ -95,7 +94,8 @@ def process(srcFileName: str,
         """Set the status """
         for procedureInstanceKey in procedureInstanceKeys:
             logger.debug(f"Updating status for {procedureInstanceKey}")
-            stmt = """UPDATE ProcedureInstance SET _LevelTwoReviewAction_key = {} WHERE _ProcedureInstance_key = '{}';"""
+            stmt = """UPDATE ProcedureInstance SET _LevelTwoReviewAction_key = {} WHERE _ProcedureInstance_key = '{
+            }';"""
             stmt = stmt.format(14, procedureInstanceKey)
             cursor = conn.cursor(buffered=True, dictionary=True)
             cursor.execute("SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED")
@@ -105,7 +105,6 @@ def process(srcFileName: str,
         queries = []
 
         logger.info("Constructing select statement for resubmission")
-        
 
     except FileNotFoundError as e:
         logger.error(e)
@@ -128,20 +127,19 @@ def resubmit(stmt: str,
     if not conn:
         logger.error("Application is not connected to any database")
 
-    
     targetPath = os.path.join(utils.get_project_root(), "KOMP_images", "JaxLims")
     fileLocationMap = jxl.buildFileMap(conn=conn, sql=stmt, target=targetPath)
     print(fileLocationMap)
     srcPath = "/Volumes/"  # If you are on mac/linux
     logger.info("Starts downloading . . .")
-    #jxl.download_from_drive(fileLocationMap, source=srcPath, target=targetPath)
+    # jxl.download_from_drive(fileLocationMap, source=srcPath, target=targetPath)
     logger.info("Done")
 
-def main():
 
+def main():
     print("Please tell me which QC report you want to use")
-    #mediaFilesCsv = input("Media Report: ")
-    #path_to_csv = os.path.join(utils.smbPath, mediaFilesCsv)
+    # mediaFilesCsv = input("Media Report: ")
+    # path_to_csv = os.path.join(utils.smbPath, mediaFilesCsv)
     path_to_csv = "/Volumes/phenotype/DccQcReports/J_QC_2023-04-19/J_failed_media_20230419.csv"
     logger.debug(f"Path to QC Report is: {path_to_csv}")
 
@@ -156,7 +154,7 @@ def main():
     1. Clean up the table 
     2. Read csv files and get organism id and impc code
     3. pass organism id and impc code to sql query to result
-    4. Use functions in images module to download and upload
+    4. Use functions in pictures module to download and upload
     5. Remove the duplicating records using set
     """
 

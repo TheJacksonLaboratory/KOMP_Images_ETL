@@ -1,5 +1,5 @@
 mysql-connector-python
-paramiko==3.0.0
-Requests==2.28.2
-setuptools==67.4.0
-urllib3==1.26.11
+paramiko==3.1.0
+Requests==2.28.1
+setuptools==65.6.3
+urllib3==1.26.14

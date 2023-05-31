@@ -1,17 +1,17 @@
 import collections
+import datetime
+import logging
 import os.path
 import shutil
 from collections import defaultdict
-from errno import errorcode
 from typing import Any
 
 import mysql.connector
 import paramiko
 import requests
-import datetime
-import logging
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("__main__")
+
 
 class image_upload_status(object):
 
@@ -69,19 +69,10 @@ def db_init(server: str,
         return conn
 
     except mysql.connector.Error as err1:
-        if err1.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-            logger.error("Wrong user name or password passed")
-
-        elif err1.errno == errorcode.ER_BAD_DB_ERROR:
-            logger.error("No such schema")
-
-        else:
-            error = str(err1.__dict__["orig"])
-            logger.error(error)
+        logger.error(err1)
 
     except ConnectionError as err2:
         logger.error(err2)
-
 
 
 """Function to get tokens for signing in"""
@@ -117,7 +108,7 @@ def getFileInfo(username: str, password: str, token: str, outputKey: int) -> lis
     :param token: Tokens for authenticating
     :param outputKey: Output key of an experiment/assay
 
-    return: Json object that stores metadata of images associate with the given output key
+    return: Json object that stores metadata of pictures associate with the given output key
 
     The function contains 3 parts: 1). Use token to see how many workgroup we are in. 2). Find the right workgroup,
     in this case, is "KOMP-JAX Lab" 3). Update and switch to the right workgroup, then get a new token for
@@ -191,7 +182,7 @@ def buildFileMap(json_objects: list[dict]) -> defaultdict[Any, Any]:
     cursor.execute(sql)
     queryResult = cursor.fetchall()
     print(queryResult)
-    
+
     fileLocationMap = collections.defaultdict(list)
     for json_obj in json_objects[0]:
         pair = [json_obj["taskInstanceKey"], json_obj["outputValue"], json_obj["taskOutputKey"],
@@ -210,9 +201,9 @@ def download_from_drive(fileLocationMap: defaultdict[list],
                         source: str,
                         target: str) -> None:
     """
-    :param fileLocationMap:Dictionary/Hashmap that contains information of images file
+    :param fileLocationMap:Dictionary/Hashmap that contains information of pictures file
     :param source: Base path of the file
-    :param target: Path you want to temporarily store the images
+    :param target: Path you want to temporarily store the pictures
     :return: None
     """
     if not fileLocationMap:
@@ -258,7 +249,7 @@ def download_from_drive(fileLocationMap: defaultdict[list],
                 download_from = os.path.join(source, fileLocation)
                 print(download_from)
                 download_to = os.path.join(dest, fileName)
-                #download_to = download_to.replace("\\", "/")
+                # download_to = download_to.replace("\\", "/")
                 print(download_to)
 
                 try:
@@ -271,7 +262,7 @@ def download_from_drive(fileLocationMap: defaultdict[list],
                     ftp_client = ssh_client.open_sftp()
                     print(os.path.join("", externalId, fileName))
                     ftp_client.put(download_to,
-                                   "images" + "/" + externalId + "/" + fileName)
+                                   "pictures" + "/" + externalId + "/" + fileName)
 
                     file_Status = image_upload_status(SourceFileName=fileLocation,
                                                       DestinationFileName=os.path.join("", externalId, fileName),
@@ -287,4 +278,3 @@ def download_from_drive(fileLocationMap: defaultdict[list],
 
                 except FileNotFoundError as e:
                     print(e)
-

@@ -1,9 +1,0 @@
-requests
-paramiko
-mysql.connector
-
-[:python_version == "3.9"]
-importlib-metadata
-
-[:python_version >= "3.9"]
-importlib-metadata
