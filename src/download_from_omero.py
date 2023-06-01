@@ -50,12 +50,7 @@ def update_images_status(record: dict,
     if not record:
         raise ValueError("Nothing to be inserted")
 
-    db_server = "rslims.jax.org"
-    db_user = "dba"
-    db_password = "rsdba"
-    db_name = "komp"
-
-    conn = db_init(server=db_server, username=db_user, password=db_password, database=db_name)
+    conn = db_init(server=db_server, username=db_username, password=db_password, database=db_name)
     cursor = conn.cursor()
 
     '''Remove duplicate records'''

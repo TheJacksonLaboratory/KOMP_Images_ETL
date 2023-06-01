@@ -49,12 +49,7 @@ def update_images_status(record: dict,
     if not record:
         raise ValueError("Nothing to be inserted")
 
-    db_server = "rslims.jax.org"
-    db_user = "dba"
-    db_password = "rsdba"
-    db_name = "komp"
-
-    conn = db_init(server=db_server, username=db_user, password=db_password, database=db_name)
+    conn = db_init(server=db_server, username=db_username, password=db_password, database=db_name)
     cursor = conn.cursor()
 
     '''Remove duplicate records'''
@@ -79,7 +74,7 @@ def update_images_status(record: dict,
 
 def generate_file_location(conn: mysql.connector.connection,
                            sql: str,
-                           target: str) -> collections.defaultdict[Any, list]:
+                           download_to: str) -> collections.defaultdict[Any, list]:
     """
 
     :param conn: Connection to database
@@ -91,37 +86,30 @@ def generate_file_location(conn: mysql.connector.connection,
         logger.error("No coonection")
         raise ConnectionError("Not connect to database")
 
-    # fileLocations = []
-    try:
-        os.mkdir(target)
-
-    except FileExistsError as e:
-        print(e)
-
     '''Query database'''
-    logger.info("Connecting to db")
+    # logger.info("Connecting to db")
     cursor = conn.cursor(buffered=True, dictionary=True)
     cursor.execute(sql)
-    queryResult = cursor.fetchall()
+    db_records = cursor.fetchall()
 
     # Parse the data returned by query
     fileLocationMap = collections.defaultdict(list)
-    for dict_ in queryResult:
+    for record in db_records:
 
-        procedureCode = dict_["DestinationFileName"].split("/")[4]
-        temp = dict_["SourceFileName"].split("\\")[4:]
+        IMPC_Code = record["DestinationFileName"].split("/")[4]
+        temp = record["SourceFileName"].split("\\")[4:]
         drive_path = "/Volumes/"  # If you are on mac/linux
         fileLocation = os.path.join(drive_path, *temp)
         # fileLocation = "//" + os.path.join("bht2stor.jax.org\\", *temp).replace("\\", "/") #If you are on windows
         logger.debug(f"Source file path is {fileLocation}")
 
-        fileLocationMap[procedureCode].append([int(dict_["_ImageFile_key"]), fileLocation])
+        fileLocationMap[IMPC_Code].append([int(record["_ImageFile_key"]), fileLocation])
 
-        dest = target + "/" + procedureCode
-        logger.debug(f"Destination of downloaded file is {dest}")
+        download_to_dest = download_to + "/" + IMPC_Code
+        logger.debug(f"Destination of downloaded file is {download_to_dest}")
 
         try:
-            os.mkdir(dest)
+            os.mkdir(download_to_dest)
 
         except FileExistsError as e:
             print(e)
@@ -142,26 +130,27 @@ def download_from_drive(fileLocationDict: collections.defaultdict[list],
     if not fileLocationDict or not target:
         raise ValueError()
 
-    for externalId, locations in fileLocationDict.items():
+    for IMPC_Code, locations in fileLocationDict.items():
 
-        logger.debug("Processing {}".format(externalId))
+        logger.debug("Processing {}".format(IMPC_Code))
         for loc in locations:
             imagefileKey = loc[0]
             download_from = loc[1]
-            download_to = target + "/" + externalId
+            download_to_dest = target + "/" + IMPC_Code
 
             try:
-                logger.info(f"Starting downloading {download_from} to {download_to}")
-                shutil.copy(download_from, download_to)
-                logger.info(f"Done downloading file {download_from}")
+                logger.info(f"Starting downloading {download_from} to {download_to_dest}")
+                shutil.copy(download_from, download_to_dest)
                 fileName = loc[1].split("/")[-1]
-                """Send downloaded files to the sever"""
+                logger.info(f"Done downloading file {fileName}")
 
+                """Send downloaded files to the sever"""
+                logger.info(f"Start to send file {fileName} to {hostname}")
                 send_to_server(file_to_send=fileName,
                                hostname=hostname,
                                username=server_user,
                                password=server_password,
-                               IMPC_Code=externalId,
+                               IMPC_Code=IMPC_Code,
                                imageFileKey=imagefileKey)
 
             except FileNotFoundError as e:
@@ -173,7 +162,7 @@ def download_from_drive(fileLocationDict: collections.defaultdict[list],
                                                   UploadStatus="Fail",
                                                   Message="File not found on the disk")
 
-                update_images_status(file_Status.__dict__, imagefilekey=loc[0])
+                update_images_status(file_Status.__dict__, imagefilekey=imagefileKey)
 
 
 def send_to_server(file_to_send: str,
@@ -245,7 +234,8 @@ def main():
     # cursor.execute(stmt)
     # db_records = cursor.fetchall()
 
-    fileLocationMap = generate_file_location()
+    fileLocationDict = generate_file_location(conn=conn, sql=stmt, download_to=download_to)
+    download_from_drive(fileLocationDict=fileLocationDict, target=download_to)
 
 
 # Press the green button in the gutter to run the script.
@@ -258,6 +248,11 @@ if __name__ == '__main__':
     db_name = utils.db_name
 
     download_to = "/Users/chent/Desktop/Pictures"
+    try:
+        os.mkdir(download_to)
+
+    except FileExistsError as e:
+        logger.error(e)
 
     hostname = utils.hostname
     server_user = utils.server_username
