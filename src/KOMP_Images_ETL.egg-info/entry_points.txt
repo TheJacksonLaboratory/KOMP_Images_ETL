@@ -1,0 +1,3 @@
+[console_scripts]
+omero = download_from_omero:main
+phenotypeDrive = download_from_drive:main

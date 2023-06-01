@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: KOMP-Images-ETL
+Version: 0.0.2
+Summary: Application to download files from various sources(Omero, Climb etc) and upload them into JAX's SFTP server
+Author: chentJAX
+Author-email: chent@jax.org

@@ -1,6 +1,6 @@
 [project]
-name = "DCCImagesPipeline"
-version = "0.0.1"
+name = "KOMP_Images_ETL"
+version = "0.0.2"
 dependencies = [
     "requests",
     "paramiko",

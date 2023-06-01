@@ -1,15 +1,15 @@
-import datetime
+from datetime import datetime
 import logging
 import os
 import shutil
 import time
-
+import sys
 import mysql.connector
 import paramiko
 import requests
 from requests import exceptions
 
-from src import utils
+import utils
 
 
 def db_init(server: str,
@@ -39,36 +39,37 @@ def db_init(server: str,
 
 class image_upload_status(object):
 
-    def __init__(self, DateOfUpload: datetime, UploadStatus: str, Message: str):
+    def __init__(self, DateOfUpload, UploadStatus, Message):
         self.DateOfUpload = DateOfUpload
         self.UploadStatus = UploadStatus
         self.Message = Message
 
 
-def update_images_status(record: dict,
-                         imagefilekey: int):
-    if not record:
+def update_images_status(imageDict: dict, imagefilekey):
+    if not imageDict:
         raise ValueError("Nothing to be inserted")
 
+    #db_server = "rslims.jax.org"
+    #db_user = "dba"
+    #db_password = "rsdba"
+    #db_name = "komp"
     conn = db_init(server=db_server, username=db_username, password=db_password, database=db_name)
-    cursor = conn.cursor()
+    cursor1 = conn.cursor()
 
-    '''Remove duplicate records'''
-
+    '''Remove deplciate records'''
     cleanStmt = """ DELETE i FROM komp.imagefileuploadstatus i, komp.imagefileuploadstatus j 
                     WHERE i._ImageFile_key > j._ImageFile_key AND i.SourceFileName = j.SourceFileName; 
                 """
-    cursor.execute(cleanStmt)
 
-    # placeholders = ', '.join(['%s'] * len(record))
-    columns = ', '.join(record.keys())
-    logger.debug(f"Columns are {columns}")
+    cursor1.execute(cleanStmt)
+    conn.commit()
 
+    cursor2 = conn.cursor()
     sql = "UPDATE KOMP.imagefileuploadstatus SET {} WHERE _ImageFile_key = {};".format(
-        ', '.join("{}='{}'".format(k, v) for k, v in record.items()), imagefilekey)
-    print(sql)
+        ', '.join("{}='{}'".format(k, v) for k, v in imageDict.items()), imagefilekey)
     logger.debug(sql)
-    cursor.execute(sql, list(record.values()))
+    print(sql)
+    cursor2.execute(sql)
     conn.commit()
     conn.close()
 
@@ -162,7 +163,7 @@ def download_from_omero(db_records: dict,
 
         if download_filename not in os.listdir(temp):
             logger.info(f"Unable to download file {download_filename}")
-            file_Status = image_upload_status(DateOfUpload=datetime.datetime.now(),
+            file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                               UploadStatus="Fail",
                                               Message="Fail to download file")
 
@@ -194,12 +195,12 @@ def send_to_server(file_to_send: str,
         ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh_client.connect(hostname=hostname, username=username, password=password)
         ftp_client = ssh_client.open_sftp()
-        ftp_client.chdir("/pictures/")
+        # ftp_client.chdir("/pictures/")
 
         try:
-            logger.info(ftp_client.stat('/pictures/' + IMPC_Code + "/" + file_to_send))
+            logger.info(ftp_client.stat('/images/' + IMPC_Code + "/" + file_to_send))
             logger.info(f'File exists in directory {IMPC_Code}')
-            file_Status = image_upload_status(DateOfUpload=datetime.datetime.now(),
+            file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                               UploadStatus="Success",
                                               Message="File already exits on server")
 
@@ -207,10 +208,10 @@ def send_to_server(file_to_send: str,
 
         except IOError:
             logger.info(f"Uploading {file_to_send}")
-            ftp_client.put(download_to + "/" + file_to_send,
-                           "pictures/" + IMPC_Code + "/" + file_to_send)
+            ftp_client.put(download_to + "/" + IMPC_Code + "/" + file_to_send,
+                           "images/" + IMPC_Code + "/" + file_to_send)
 
-            file_Status = image_upload_status(DateOfUpload=datetime.datetime.now(),
+            file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                               UploadStatus="Success",
                                               Message="File successfully uploaded to server")
 
@@ -218,6 +219,7 @@ def send_to_server(file_to_send: str,
 
         # os.remove(os.path.join(download_to, loc[1].split("/")[-1]))
         ftp_client.close()
+        logger.info(f"Finish uploading {file_to_send}")
 
     except paramiko.SSHException:
         logger.error("Connection Error")
@@ -253,21 +255,30 @@ def main():
 
     conn.close()
     logger.info("Process finished")
+    sys.exit()
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    logger = logging.getLogger("__main__")
+    # logger = logging.getLogger("__main__")
+
+    job_name = 'download_from_omero'
+    logging_dest = os.path.join(utils.get_project_root(), "logs")
+    date = datetime.now().strftime("%B-%d-%Y")
+    logging_filename = logging_dest + "/" + f'{date}.log'
+    logger = utils.createLogHandler(job_name, logging_filename)
+    logger.info('Logger has been created')
 
     db_username = utils.db_username
     db_password = utils.db_password
     db_server = utils.db_server
     db_name = utils.db_name
 
-    download_to = "/Users/chent/Desktop/Pictures"
+    download_to = "C:/Program Files/KOMP/ImageDownload/pictures"
 
     hostname = utils.hostname
     server_user = utils.server_username
     server_password = utils.server_password
 
     main()
+

@@ -13,15 +13,17 @@ def get_project_root() -> Path:
 
 """Setup logger"""
 
-logger = logging.getLogger(__name__)
-FORMAT = "[%(asctime)s->%(filename)s->%(funcName)s():%(lineno)s]%(levelname)s: %(message)s"
-logging.basicConfig(format=FORMAT, filemode="w", level=logging.DEBUG, force=True)
-logging_dest = os.path.join(get_project_root(), "logs")
-date = datetime.now().strftime("%B-%d-%Y")
-logging_filename = logging_dest + "/" + f'{date}.log'
-handler = RotatingFileHandler(logging_filename, maxBytes=10000000000, backupCount=10)
-handler.setFormatter(logging.Formatter(FORMAT))
-logger.addHandler(handler)
+
+def createLogHandler(job_name, log_file):
+    logger = logging.getLogger(__name__)
+    FORMAT = "[%(asctime)s->%(filename)s->%(funcName)s():%(lineno)s]%(levelname)s: %(message)s"
+    logging.basicConfig(format=FORMAT, filemode="w", level=logging.DEBUG, force=True)
+    handler = logging.FileHandler(log_file)
+    handler.setFormatter(logging.Formatter(FORMAT))
+    logger.addHandler(handler)
+
+    return logger
+
 
 """Omero/Climb username and password"""
 username = "chent"

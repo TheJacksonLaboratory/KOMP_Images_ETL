@@ -5,7 +5,7 @@ setup(name="KOMP_Images_ETL",
       author_email="chent@jax.org",
       description="Application to download files from various sources(Omero, Climb etc) and upload them into JAX's "
                   "SFTP server",
-      version='0.0.1',
+      version='0.0.2',
       include_package_data=True,
       install_requires=[
           'requests',
@@ -16,7 +16,8 @@ setup(name="KOMP_Images_ETL",
       # Create an entry point
       entry_points={
           'console_scripts': [
-              'download_images = App:main',
+              "omero=download_from_omero:main",
+              "phenotypeDrive=download_from_drive:main",
           ],
       },
       )
