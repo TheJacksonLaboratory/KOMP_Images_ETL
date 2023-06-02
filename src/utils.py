@@ -43,8 +43,24 @@ db_name = "rslims"
 """Disks location"""
 smbPath = "/Volumes/phenotype/DccQcReports/"
 
-"""SQL statement to get file location of an image"""
-stmt = """SELECT * FROM KOMP.imagefileuploadstatus WHERE DateOfUpload IS NULL AND Message IS NULL;"""
+"""SQL statements to get file location of an image"""
+#stmt = """SELECT * FROM KOMP.imagefileuploadstatus WHERE DateOfUpload IS NULL AND Message IS NULL;"""
+
+omero_stmt = """SELECT * FROM 
+                            KOMP.imagefileuploadstatus 
+                         WHERE 
+                            DateOfUpload IS NULL
+                         AND 
+                            SourceFileName LIKE '%omeroweb%';"""
+
+pheno_stmt = """SELECT * FROM 
+                            KOMP.imagefileuploadstatus 
+                         WHERE 
+                            DateOfUpload IS NULL
+                         AND 
+                            SourceFileName LIKE '%phenotype%'
+                         AND  
+                            DATEDIFF(NOW(), DateCreated) < 14;"""
 
 '''
 stmt = """SELECT ProcedureStatus, 

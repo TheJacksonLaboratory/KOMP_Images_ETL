@@ -1,0 +1,710 @@
+[2023-06-02 10:28:25,351->download_from_drive.py-><module>():249]INFO: Logger has been created
+[2023-06-02 10:28:25,351->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-06-02 10:28:26,342->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3573000-D88863-20230428-Report.pdf
+[2023-06-02 10:28:26,343->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,344->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3573156-D88880-20230428-Report.pdf
+[2023-06-02 10:28:26,344->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,344->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3573183-D88881-20230428-Report.pdf
+[2023-06-02 10:28:26,344->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,345->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3573273-A-9839-20230428-Report.pdf
+[2023-06-02 10:28:26,345->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,345->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3573300-A-9840-20230428-Report.pdf
+[2023-06-02 10:28:26,345->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,345->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3573327-A-9841-20230428-Report.pdf
+[2023-06-02 10:28:26,345->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,346->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3573556-A-9513-20230428-Report.pdf
+[2023-06-02 10:28:26,346->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,346->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3573583-A-9514-20230428-Report.pdf
+[2023-06-02 10:28:26,346->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,346->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3574900-A-10810-20230502-Report.pdf
+[2023-06-02 10:28:26,346->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,347->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3574927-A-10811-20230502-Report.pdf
+[2023-06-02 10:28:26,347->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,347->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3574954-A-10812-20230502-Report.pdf
+[2023-06-02 10:28:26,347->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,347->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575242-A-9754-20230502-Report.pdf
+[2023-06-02 10:28:26,347->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,348->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575296-A-9756-20230502-Report.pdf
+[2023-06-02 10:28:26,348->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,348->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575400-A-9800-20230504-Report.pdf
+[2023-06-02 10:28:26,348->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,348->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575427-A-9802-20230504-Report.pdf
+[2023-06-02 10:28:26,348->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,349->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575454-A-9806-20230504-Report.pdf
+[2023-06-02 10:28:26,349->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,349->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575481-A-9791-20230504-Report.pdf
+[2023-06-02 10:28:26,349->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,349->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575508-A-9808-20230504-Report.pdf
+[2023-06-02 10:28:26,349->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,350->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575535-A-9807-20230504-Report.pdf
+[2023-06-02 10:28:26,350->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,350->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575562-A-9809-20230504-Report.pdf
+[2023-06-02 10:28:26,350->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,350->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575589-A-9796-20230504-Report.pdf
+[2023-06-02 10:28:26,350->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,350->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575616-A-9711-20230504-Report.pdf
+[2023-06-02 10:28:26,351->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,351->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575643-A-9717-20230502-Report.pdf
+[2023-06-02 10:28:26,351->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,351->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575697-A-9707-20230502-Report.pdf
+[2023-06-02 10:28:26,351->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,351->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575724-A-9708-20230502-Report.pdf
+[2023-06-02 10:28:26,351->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,352->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575751-A-9695-20230502-Report.pdf
+[2023-06-02 10:28:26,352->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,352->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3575778-A-9700-20230502-Report.pdf
+[2023-06-02 10:28:26,352->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,352->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3577549-A-10504-20230512-Report.pdf
+[2023-06-02 10:28:26,352->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,353->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3577576-A-10505-20230512-Report.pdf
+[2023-06-02 10:28:26,353->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,353->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3577603-A-10507-20230512-Report.pdf
+[2023-06-02 10:28:26,353->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,353->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3577630-A-10503-20230512-Report.pdf
+[2023-06-02 10:28:26,353->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,353->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3577738-A-10598-20230512-Report.pdf
+[2023-06-02 10:28:26,354->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,354->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3577765-A-10587-20230512-Report.pdf
+[2023-06-02 10:28:26,354->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,354->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3577792-A-10610-20230512-Report.pdf
+[2023-06-02 10:28:26,354->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,354->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3577819-A-10611-20230512-Report.pdf
+[2023-06-02 10:28:26,354->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,355->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3577846-A-10612-20230512-Report.pdf
+[2023-06-02 10:28:26,355->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,355->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/ABR/KOMP/images/3577873-A-10609-20230512-Report.pdf
+[2023-06-02 10:28:26,355->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:28:26,355->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12608-RAW.pdf
+[2023-06-02 10:28:26,355->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,356->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12609-RAW.pdf
+[2023-06-02 10:28:26,356->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,356->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12611-RAW.pdf
+[2023-06-02 10:28:26,356->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,356->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12612-RAW.pdf
+[2023-06-02 10:28:26,356->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,357->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12613-RAW.pdf
+[2023-06-02 10:28:26,357->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,357->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12144-RAW.pdf
+[2023-06-02 10:28:26,357->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,357->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12145-RAW.pdf
+[2023-06-02 10:28:26,357->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,357->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12428-RAW.pdf
+[2023-06-02 10:28:26,357->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,358->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12418-RAW.pdf
+[2023-06-02 10:28:26,358->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,358->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12419-RAW.pdf
+[2023-06-02 10:28:26,358->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,358->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12420-RAW.pdf
+[2023-06-02 10:28:26,358->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,358->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12414-RAW.pdf
+[2023-06-02 10:28:26,358->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,359->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12409-RAW.pdf
+[2023-06-02 10:28:26,359->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,359->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12114-RAW.pdf
+[2023-06-02 10:28:26,359->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,359->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12137-RAW.pdf
+[2023-06-02 10:28:26,359->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,359->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12141-RAW.pdf
+[2023-06-02 10:28:26,359->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,360->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12234-RAW.pdf
+[2023-06-02 10:28:26,360->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,360->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12220-RAW.pdf
+[2023-06-02 10:28:26,360->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,360->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12239-RAW.pdf
+[2023-06-02 10:28:26,360->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,360->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12254-RAW.pdf
+[2023-06-02 10:28:26,360->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,361->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12257-RAW.pdf
+[2023-06-02 10:28:26,361->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,361->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-13616-RAW.pdf
+[2023-06-02 10:28:26,361->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,361->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-13614-RAW.pdf
+[2023-06-02 10:28:26,361->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,361->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-13615-RAW.pdf
+[2023-06-02 10:28:26,361->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,362->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-13617-RAW.pdf
+[2023-06-02 10:28:26,362->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,362->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-13618-RAW.pdf
+[2023-06-02 10:28:26,362->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,362->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12617-RAW.pdf
+[2023-06-02 10:28:26,362->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,362->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12616-RAW.pdf
+[2023-06-02 10:28:26,362->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,363->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12614-RAW.pdf
+[2023-06-02 10:28:26,363->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,363->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12625-RAW.pdf
+[2023-06-02 10:28:26,363->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,363->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12626-RAW.pdf
+[2023-06-02 10:28:26,363->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,363->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12621-RAW.pdf
+[2023-06-02 10:28:26,363->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,363->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12622-RAW.pdf
+[2023-06-02 10:28:26,364->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,364->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12653-RAW.pdf
+[2023-06-02 10:28:26,364->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,364->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12651-RAW.pdf
+[2023-06-02 10:28:26,364->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,364->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12658-RAW.pdf
+[2023-06-02 10:28:26,364->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,364->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12652-RAW.pdf
+[2023-06-02 10:28:26,365->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,365->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12648-RAW.pdf
+[2023-06-02 10:28:26,365->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,365->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12746-RAW.pdf
+[2023-06-02 10:28:26,365->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,365->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12748-RAW.pdf
+[2023-06-02 10:28:26,365->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,365->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12740-RAW.pdf
+[2023-06-02 10:28:26,365->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,366->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12790-RAW.pdf
+[2023-06-02 10:28:26,366->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,366->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12791-RAW.pdf
+[2023-06-02 10:28:26,366->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,366->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12792-RAW.pdf
+[2023-06-02 10:28:26,366->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,366->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12638-RAW.pdf
+[2023-06-02 10:28:26,366->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,366->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12627-RAW.pdf
+[2023-06-02 10:28:26,366->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,367->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12628-RAW.pdf
+[2023-06-02 10:28:26,367->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,367->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12762-RAW.pdf
+[2023-06-02 10:28:26,367->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,367->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12769-RAW.pdf
+[2023-06-02 10:28:26,367->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,367->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12760-RAW.pdf
+[2023-06-02 10:28:26,367->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,368->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EKG-V2/KOMP/images/A-12761-RAW.pdf
+[2023-06-02 10:28:26,368->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:28:26,368->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/719879 right.tif
+[2023-06-02 10:28:26,368->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,368->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/719879 left.tif
+[2023-06-02 10:28:26,368->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,369->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/719942 right.tif
+[2023-06-02 10:28:26,369->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,369->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/719942 left.tif
+[2023-06-02 10:28:26,369->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,369->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/720005 right.tif
+[2023-06-02 10:28:26,369->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,369->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/720005 left.tif
+[2023-06-02 10:28:26,369->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,369->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/720029 right.tif
+[2023-06-02 10:28:26,370->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,370->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/720029 left.tif
+[2023-06-02 10:28:26,370->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,370->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/720068 right.tif
+[2023-06-02 10:28:26,370->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,370->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/720068 left.tif
+[2023-06-02 10:28:26,370->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,370->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/737713 right.tif
+[2023-06-02 10:28:26,370->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,370->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/737713 left.tif
+[2023-06-02 10:28:26,371->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,371->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/737737 right.tif
+[2023-06-02 10:28:26,371->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,371->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/737737 left.tif
+[2023-06-02 10:28:26,371->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,371->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/737776 right.tif
+[2023-06-02 10:28:26,371->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,371->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/737776 left.tif
+[2023-06-02 10:28:26,371->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,371->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/737807 right.tif
+[2023-06-02 10:28:26,372->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,372->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/737807 left.tif
+[2023-06-02 10:28:26,372->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,372->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/737838 right.tif
+[2023-06-02 10:28:26,372->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,372->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/737838 left.tif
+[2023-06-02 10:28:26,372->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,372->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/765536 right.tif
+[2023-06-02 10:28:26,372->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,372->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/765536 left.tif
+[2023-06-02 10:28:26,373->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,373->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/765567 right.tif
+[2023-06-02 10:28:26,373->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,373->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/765567 left.tif
+[2023-06-02 10:28:26,373->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,373->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/765629 right.tif
+[2023-06-02 10:28:26,373->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,373->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is //bht2stor.jax.org//phenotype/EYE-MORPHOLOGY/KOMP/images/765629 left.tif
+[2023-06-02 10:28:26,373->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:28:26,376->download_from_drive.py->download_from_drive():134]DEBUG: Processing IMPC_ABR_002
+[2023-06-02 10:29:25,026->download_from_drive.py-><module>():249]INFO: Logger has been created
+[2023-06-02 10:29:25,026->download_from_drive.py-><module>():261]ERROR: [Errno 17] File exists: '/Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures'
+[2023-06-02 10:29:25,026->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-06-02 10:29:25,900->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573000-D88863-20230428-Report.pdf
+[2023-06-02 10:29:25,900->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,900->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573156-D88880-20230428-Report.pdf
+[2023-06-02 10:29:25,900->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,901->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573183-D88881-20230428-Report.pdf
+[2023-06-02 10:29:25,901->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,901->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573273-A-9839-20230428-Report.pdf
+[2023-06-02 10:29:25,901->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,901->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573300-A-9840-20230428-Report.pdf
+[2023-06-02 10:29:25,901->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,901->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573327-A-9841-20230428-Report.pdf
+[2023-06-02 10:29:25,901->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,901->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573556-A-9513-20230428-Report.pdf
+[2023-06-02 10:29:25,901->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,902->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573583-A-9514-20230428-Report.pdf
+[2023-06-02 10:29:25,902->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,902->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3574900-A-10810-20230502-Report.pdf
+[2023-06-02 10:29:25,902->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,902->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3574927-A-10811-20230502-Report.pdf
+[2023-06-02 10:29:25,902->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,902->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3574954-A-10812-20230502-Report.pdf
+[2023-06-02 10:29:25,902->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,902->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575242-A-9754-20230502-Report.pdf
+[2023-06-02 10:29:25,902->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,902->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575296-A-9756-20230502-Report.pdf
+[2023-06-02 10:29:25,903->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,903->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575400-A-9800-20230504-Report.pdf
+[2023-06-02 10:29:25,903->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,903->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575427-A-9802-20230504-Report.pdf
+[2023-06-02 10:29:25,903->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,903->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575454-A-9806-20230504-Report.pdf
+[2023-06-02 10:29:25,903->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,903->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575481-A-9791-20230504-Report.pdf
+[2023-06-02 10:29:25,903->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,903->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575508-A-9808-20230504-Report.pdf
+[2023-06-02 10:29:25,903->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,903->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575535-A-9807-20230504-Report.pdf
+[2023-06-02 10:29:25,904->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,904->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575562-A-9809-20230504-Report.pdf
+[2023-06-02 10:29:25,904->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,904->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575589-A-9796-20230504-Report.pdf
+[2023-06-02 10:29:25,904->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,904->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575616-A-9711-20230504-Report.pdf
+[2023-06-02 10:29:25,904->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,904->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575643-A-9717-20230502-Report.pdf
+[2023-06-02 10:29:25,904->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,904->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575697-A-9707-20230502-Report.pdf
+[2023-06-02 10:29:25,904->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,904->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575724-A-9708-20230502-Report.pdf
+[2023-06-02 10:29:25,905->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,905->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575751-A-9695-20230502-Report.pdf
+[2023-06-02 10:29:25,905->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,905->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575778-A-9700-20230502-Report.pdf
+[2023-06-02 10:29:25,905->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,905->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577549-A-10504-20230512-Report.pdf
+[2023-06-02 10:29:25,905->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,905->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577576-A-10505-20230512-Report.pdf
+[2023-06-02 10:29:25,905->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,905->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577603-A-10507-20230512-Report.pdf
+[2023-06-02 10:29:25,905->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,905->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577630-A-10503-20230512-Report.pdf
+[2023-06-02 10:29:25,906->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,906->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577738-A-10598-20230512-Report.pdf
+[2023-06-02 10:29:25,906->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,906->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577765-A-10587-20230512-Report.pdf
+[2023-06-02 10:29:25,906->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,906->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577792-A-10610-20230512-Report.pdf
+[2023-06-02 10:29:25,906->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,906->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577819-A-10611-20230512-Report.pdf
+[2023-06-02 10:29:25,906->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,906->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577846-A-10612-20230512-Report.pdf
+[2023-06-02 10:29:25,906->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,906->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577873-A-10609-20230512-Report.pdf
+[2023-06-02 10:29:25,907->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:29:25,907->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12608-RAW.pdf
+[2023-06-02 10:29:25,907->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,907->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12609-RAW.pdf
+[2023-06-02 10:29:25,907->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,907->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12611-RAW.pdf
+[2023-06-02 10:29:25,907->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,907->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12612-RAW.pdf
+[2023-06-02 10:29:25,907->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,907->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12613-RAW.pdf
+[2023-06-02 10:29:25,907->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,907->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12144-RAW.pdf
+[2023-06-02 10:29:25,908->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,908->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12145-RAW.pdf
+[2023-06-02 10:29:25,908->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,908->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12428-RAW.pdf
+[2023-06-02 10:29:25,908->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,908->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12418-RAW.pdf
+[2023-06-02 10:29:25,908->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,908->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12419-RAW.pdf
+[2023-06-02 10:29:25,908->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,908->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12420-RAW.pdf
+[2023-06-02 10:29:25,908->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,908->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12414-RAW.pdf
+[2023-06-02 10:29:25,909->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,909->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12409-RAW.pdf
+[2023-06-02 10:29:25,909->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,909->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12114-RAW.pdf
+[2023-06-02 10:29:25,909->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,909->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12137-RAW.pdf
+[2023-06-02 10:29:25,909->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,909->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12141-RAW.pdf
+[2023-06-02 10:29:25,909->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,909->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12234-RAW.pdf
+[2023-06-02 10:29:25,909->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,909->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12220-RAW.pdf
+[2023-06-02 10:29:25,910->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,910->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12239-RAW.pdf
+[2023-06-02 10:29:25,910->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,910->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12254-RAW.pdf
+[2023-06-02 10:29:25,910->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,910->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12257-RAW.pdf
+[2023-06-02 10:29:25,910->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,910->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-13616-RAW.pdf
+[2023-06-02 10:29:25,910->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,910->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-13614-RAW.pdf
+[2023-06-02 10:29:25,910->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,910->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-13615-RAW.pdf
+[2023-06-02 10:29:25,911->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,911->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-13617-RAW.pdf
+[2023-06-02 10:29:25,911->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,911->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-13618-RAW.pdf
+[2023-06-02 10:29:25,911->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,911->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12617-RAW.pdf
+[2023-06-02 10:29:25,911->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,911->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12616-RAW.pdf
+[2023-06-02 10:29:25,911->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,911->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12614-RAW.pdf
+[2023-06-02 10:29:25,911->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,911->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12625-RAW.pdf
+[2023-06-02 10:29:25,912->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,912->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12626-RAW.pdf
+[2023-06-02 10:29:25,912->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,912->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12621-RAW.pdf
+[2023-06-02 10:29:25,912->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,912->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12622-RAW.pdf
+[2023-06-02 10:29:25,912->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,912->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12653-RAW.pdf
+[2023-06-02 10:29:25,912->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,912->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12651-RAW.pdf
+[2023-06-02 10:29:25,912->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,912->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12658-RAW.pdf
+[2023-06-02 10:29:25,912->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,913->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12652-RAW.pdf
+[2023-06-02 10:29:25,913->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,913->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12648-RAW.pdf
+[2023-06-02 10:29:25,913->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,913->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12746-RAW.pdf
+[2023-06-02 10:29:25,913->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,913->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12748-RAW.pdf
+[2023-06-02 10:29:25,913->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,913->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12740-RAW.pdf
+[2023-06-02 10:29:25,913->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,913->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12790-RAW.pdf
+[2023-06-02 10:29:25,913->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,914->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12791-RAW.pdf
+[2023-06-02 10:29:25,914->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,914->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12792-RAW.pdf
+[2023-06-02 10:29:25,914->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,914->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12638-RAW.pdf
+[2023-06-02 10:29:25,914->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,914->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12627-RAW.pdf
+[2023-06-02 10:29:25,914->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,914->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12628-RAW.pdf
+[2023-06-02 10:29:25,914->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,914->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12762-RAW.pdf
+[2023-06-02 10:29:25,914->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,914->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12769-RAW.pdf
+[2023-06-02 10:29:25,915->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,915->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12760-RAW.pdf
+[2023-06-02 10:29:25,915->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,915->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12761-RAW.pdf
+[2023-06-02 10:29:25,915->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:29:25,915->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/719879 right.tif
+[2023-06-02 10:29:25,915->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,915->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/719879 left.tif
+[2023-06-02 10:29:25,915->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,915->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/719942 right.tif
+[2023-06-02 10:29:25,915->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,915->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/719942 left.tif
+[2023-06-02 10:29:25,916->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,916->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/720005 right.tif
+[2023-06-02 10:29:25,916->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,916->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/720005 left.tif
+[2023-06-02 10:29:25,916->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,916->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/720029 right.tif
+[2023-06-02 10:29:25,916->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,916->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/720029 left.tif
+[2023-06-02 10:29:25,916->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,916->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/720068 right.tif
+[2023-06-02 10:29:25,917->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,917->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/720068 left.tif
+[2023-06-02 10:29:25,917->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,917->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737713 right.tif
+[2023-06-02 10:29:25,917->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,917->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737713 left.tif
+[2023-06-02 10:29:25,917->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,917->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737737 right.tif
+[2023-06-02 10:29:25,917->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,917->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737737 left.tif
+[2023-06-02 10:29:25,917->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,917->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737776 right.tif
+[2023-06-02 10:29:25,917->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737776 left.tif
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737807 right.tif
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737807 left.tif
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737838 right.tif
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737838 left.tif
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/765536 right.tif
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/765536 left.tif
+[2023-06-02 10:29:25,918->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,919->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/765567 right.tif
+[2023-06-02 10:29:25,919->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,919->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/765567 left.tif
+[2023-06-02 10:29:25,919->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,919->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/765629 right.tif
+[2023-06-02 10:29:25,919->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,919->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/765629 left.tif
+[2023-06-02 10:29:25,919->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:29:25,920->download_from_drive.py->download_from_drive():134]DEBUG: Processing IMPC_ABR_002
+[2023-06-02 10:29:37,813->download_from_drive.py->download_from_drive():141]INFO: Starting downloading /Volumes/phenotype/ABR/KOMP/images/3573000-D88863-20230428-Report.pdf to /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:10,336->download_from_drive.py->download_from_drive():157]ERROR: [Errno 2] No such file or directory: '/Volumes/phenotype/ABR/KOMP/images/3573000-D88863-20230428-Report.pdf'
+[2023-06-02 10:30:10,337->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-06-02 10:30:20,045->download_from_drive.py-><module>():249]INFO: Logger has been created
+[2023-06-02 10:30:20,045->download_from_drive.py-><module>():261]ERROR: [Errno 17] File exists: '/Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures'
+[2023-06-02 10:30:20,046->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-06-02 10:30:20,938->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573000-D88863-20230428-Report.pdf
+[2023-06-02 10:30:20,938->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,939->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573156-D88880-20230428-Report.pdf
+[2023-06-02 10:30:20,939->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,939->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573183-D88881-20230428-Report.pdf
+[2023-06-02 10:30:20,939->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,939->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573273-A-9839-20230428-Report.pdf
+[2023-06-02 10:30:20,939->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,940->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573300-A-9840-20230428-Report.pdf
+[2023-06-02 10:30:20,940->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,940->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573327-A-9841-20230428-Report.pdf
+[2023-06-02 10:30:20,940->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,941->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573556-A-9513-20230428-Report.pdf
+[2023-06-02 10:30:20,941->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,941->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3573583-A-9514-20230428-Report.pdf
+[2023-06-02 10:30:20,941->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,941->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3574900-A-10810-20230502-Report.pdf
+[2023-06-02 10:30:20,941->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,942->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3574927-A-10811-20230502-Report.pdf
+[2023-06-02 10:30:20,942->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,942->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3574954-A-10812-20230502-Report.pdf
+[2023-06-02 10:30:20,942->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,942->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575242-A-9754-20230502-Report.pdf
+[2023-06-02 10:30:20,942->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,943->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575296-A-9756-20230502-Report.pdf
+[2023-06-02 10:30:20,943->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,943->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575400-A-9800-20230504-Report.pdf
+[2023-06-02 10:30:20,943->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,943->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575427-A-9802-20230504-Report.pdf
+[2023-06-02 10:30:20,944->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,944->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575454-A-9806-20230504-Report.pdf
+[2023-06-02 10:30:20,944->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,944->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575481-A-9791-20230504-Report.pdf
+[2023-06-02 10:30:20,944->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,944->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575508-A-9808-20230504-Report.pdf
+[2023-06-02 10:30:20,945->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,945->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575535-A-9807-20230504-Report.pdf
+[2023-06-02 10:30:20,945->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,945->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575562-A-9809-20230504-Report.pdf
+[2023-06-02 10:30:20,945->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,945->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575589-A-9796-20230504-Report.pdf
+[2023-06-02 10:30:20,945->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,946->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575616-A-9711-20230504-Report.pdf
+[2023-06-02 10:30:20,946->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,946->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575643-A-9717-20230502-Report.pdf
+[2023-06-02 10:30:20,946->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,946->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575697-A-9707-20230502-Report.pdf
+[2023-06-02 10:30:20,946->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,946->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575724-A-9708-20230502-Report.pdf
+[2023-06-02 10:30:20,946->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,947->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575751-A-9695-20230502-Report.pdf
+[2023-06-02 10:30:20,947->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,947->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3575778-A-9700-20230502-Report.pdf
+[2023-06-02 10:30:20,947->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,947->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577549-A-10504-20230512-Report.pdf
+[2023-06-02 10:30:20,947->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,947->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577576-A-10505-20230512-Report.pdf
+[2023-06-02 10:30:20,948->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,948->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577603-A-10507-20230512-Report.pdf
+[2023-06-02 10:30:20,948->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,948->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577630-A-10503-20230512-Report.pdf
+[2023-06-02 10:30:20,948->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,948->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577738-A-10598-20230512-Report.pdf
+[2023-06-02 10:30:20,948->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,948->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577765-A-10587-20230512-Report.pdf
+[2023-06-02 10:30:20,949->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,949->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577792-A-10610-20230512-Report.pdf
+[2023-06-02 10:30:20,949->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,949->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577819-A-10611-20230512-Report.pdf
+[2023-06-02 10:30:20,949->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,949->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577846-A-10612-20230512-Report.pdf
+[2023-06-02 10:30:20,949->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,949->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/ABR/KOMP/images/3577873-A-10609-20230512-Report.pdf
+[2023-06-02 10:30:20,950->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:20,950->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12608-RAW.pdf
+[2023-06-02 10:30:20,950->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,950->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12609-RAW.pdf
+[2023-06-02 10:30:20,950->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,950->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12611-RAW.pdf
+[2023-06-02 10:30:20,950->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,950->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12612-RAW.pdf
+[2023-06-02 10:30:20,951->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,951->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12613-RAW.pdf
+[2023-06-02 10:30:20,951->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,951->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12144-RAW.pdf
+[2023-06-02 10:30:20,951->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,951->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12145-RAW.pdf
+[2023-06-02 10:30:20,951->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,951->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12428-RAW.pdf
+[2023-06-02 10:30:20,952->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,952->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12418-RAW.pdf
+[2023-06-02 10:30:20,952->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,952->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12419-RAW.pdf
+[2023-06-02 10:30:20,952->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,952->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12420-RAW.pdf
+[2023-06-02 10:30:20,952->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,952->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12414-RAW.pdf
+[2023-06-02 10:30:20,952->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,953->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12409-RAW.pdf
+[2023-06-02 10:30:20,953->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,953->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12114-RAW.pdf
+[2023-06-02 10:30:20,953->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,953->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12137-RAW.pdf
+[2023-06-02 10:30:20,953->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,953->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12141-RAW.pdf
+[2023-06-02 10:30:20,953->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,954->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12234-RAW.pdf
+[2023-06-02 10:30:20,954->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,954->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12220-RAW.pdf
+[2023-06-02 10:30:20,954->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,954->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12239-RAW.pdf
+[2023-06-02 10:30:20,954->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,954->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12254-RAW.pdf
+[2023-06-02 10:30:20,954->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,955->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12257-RAW.pdf
+[2023-06-02 10:30:20,955->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,955->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-13616-RAW.pdf
+[2023-06-02 10:30:20,955->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,955->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-13614-RAW.pdf
+[2023-06-02 10:30:20,955->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,955->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-13615-RAW.pdf
+[2023-06-02 10:30:20,955->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,956->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-13617-RAW.pdf
+[2023-06-02 10:30:20,956->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,956->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-13618-RAW.pdf
+[2023-06-02 10:30:20,956->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,956->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12617-RAW.pdf
+[2023-06-02 10:30:20,956->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,956->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12616-RAW.pdf
+[2023-06-02 10:30:20,956->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,956->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12614-RAW.pdf
+[2023-06-02 10:30:20,957->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,957->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12625-RAW.pdf
+[2023-06-02 10:30:20,957->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,957->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12626-RAW.pdf
+[2023-06-02 10:30:20,957->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,957->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12621-RAW.pdf
+[2023-06-02 10:30:20,957->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,957->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12622-RAW.pdf
+[2023-06-02 10:30:20,957->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,958->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12653-RAW.pdf
+[2023-06-02 10:30:20,958->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,958->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12651-RAW.pdf
+[2023-06-02 10:30:20,958->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,958->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12658-RAW.pdf
+[2023-06-02 10:30:20,958->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,958->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12652-RAW.pdf
+[2023-06-02 10:30:20,958->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,958->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12648-RAW.pdf
+[2023-06-02 10:30:20,958->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,959->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12746-RAW.pdf
+[2023-06-02 10:30:20,959->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,959->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12748-RAW.pdf
+[2023-06-02 10:30:20,959->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,959->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12740-RAW.pdf
+[2023-06-02 10:30:20,959->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,959->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12790-RAW.pdf
+[2023-06-02 10:30:20,959->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,959->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12791-RAW.pdf
+[2023-06-02 10:30:20,960->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,960->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12792-RAW.pdf
+[2023-06-02 10:30:20,960->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,960->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12638-RAW.pdf
+[2023-06-02 10:30:20,960->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,960->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12627-RAW.pdf
+[2023-06-02 10:30:20,960->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,961->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12628-RAW.pdf
+[2023-06-02 10:30:20,961->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,961->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12762-RAW.pdf
+[2023-06-02 10:30:20,961->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,961->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12769-RAW.pdf
+[2023-06-02 10:30:20,961->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,961->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12760-RAW.pdf
+[2023-06-02 10:30:20,961->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,961->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EKG-V2/KOMP/images/A-12761-RAW.pdf
+[2023-06-02 10:30:20,961->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ECG_003
+[2023-06-02 10:30:20,962->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/719879 right.tif
+[2023-06-02 10:30:20,962->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,962->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/719879 left.tif
+[2023-06-02 10:30:20,962->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,962->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/719942 right.tif
+[2023-06-02 10:30:20,962->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,962->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/719942 left.tif
+[2023-06-02 10:30:20,962->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,962->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/720005 right.tif
+[2023-06-02 10:30:20,962->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,963->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/720005 left.tif
+[2023-06-02 10:30:20,963->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,963->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/720029 right.tif
+[2023-06-02 10:30:20,963->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,963->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/720029 left.tif
+[2023-06-02 10:30:20,963->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,963->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/720068 right.tif
+[2023-06-02 10:30:20,963->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,963->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/720068 left.tif
+[2023-06-02 10:30:20,963->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,964->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737713 right.tif
+[2023-06-02 10:30:20,964->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,964->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737713 left.tif
+[2023-06-02 10:30:20,964->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,964->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737737 right.tif
+[2023-06-02 10:30:20,964->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,964->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737737 left.tif
+[2023-06-02 10:30:20,964->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,964->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737776 right.tif
+[2023-06-02 10:30:20,964->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,965->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737776 left.tif
+[2023-06-02 10:30:20,965->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,965->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737807 right.tif
+[2023-06-02 10:30:20,965->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,965->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737807 left.tif
+[2023-06-02 10:30:20,965->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,965->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737838 right.tif
+[2023-06-02 10:30:20,965->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,965->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/737838 left.tif
+[2023-06-02 10:30:20,966->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,966->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/765536 right.tif
+[2023-06-02 10:30:20,966->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,966->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/765536 left.tif
+[2023-06-02 10:30:20,966->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,966->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/765567 right.tif
+[2023-06-02 10:30:20,966->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,966->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/765567 left.tif
+[2023-06-02 10:30:20,966->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,966->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/765629 right.tif
+[2023-06-02 10:30:20,967->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,967->download_from_drive.py->generate_file_location():103]DEBUG: Source file path is /Volumes/phenotype/EYE-MORPHOLOGY/KOMP/images/765629 left.tif
+[2023-06-02 10:30:20,967->download_from_drive.py->generate_file_location():108]DEBUG: Destination of downloaded file is /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_EYE_001
+[2023-06-02 10:30:20,968->download_from_drive.py->download_from_drive():134]DEBUG: Processing IMPC_ABR_002
+[2023-06-02 10:30:28,015->download_from_drive.py->download_from_drive():141]INFO: Starting downloading /Volumes/phenotype/ABR/KOMP/images/3573000-D88863-20230428-Report.pdf to /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:30:34,174->download_from_drive.py->download_from_drive():157]ERROR: [Errno 2] No such file or directory: '/Volumes/phenotype/ABR/KOMP/images/3573000-D88863-20230428-Report.pdf'
+[2023-06-02 10:30:34,175->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-06-02 10:30:55,354->download_from_drive.py->update_images_status():67]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-02', UploadStatus='Fail', Message='File not found on the disk' WHERE _ImageFile_key = 16844;
+[2023-06-02 10:31:01,216->download_from_drive.py->download_from_drive():141]INFO: Starting downloading /Volumes/phenotype/ABR/KOMP/images/3573156-D88880-20230428-Report.pdf to /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:31:02,578->download_from_drive.py->download_from_drive():157]ERROR: [Errno 2] No such file or directory: '/Volumes/phenotype/ABR/KOMP/images/3573156-D88880-20230428-Report.pdf'
+[2023-06-02 10:31:02,579->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-06-02 10:31:23,547->download_from_drive.py->update_images_status():67]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-02', UploadStatus='Fail', Message='File not found on the disk' WHERE _ImageFile_key = 16845;
+[2023-06-02 10:32:15,713->download_from_drive.py->download_from_drive():141]INFO: Starting downloading /Volumes/phenotype/ABR/KOMP/images/3573183-D88881-20230428-Report.pdf to /Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/Pictures/IMPC_ABR_002
+[2023-06-02 10:32:19,430->download_from_drive.py->download_from_drive():157]ERROR: [Errno 2] No such file or directory: '/Volumes/phenotype/ABR/KOMP/images/3573183-D88881-20230428-Report.pdf'
+[2023-06-02 10:32:19,430->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-06-02 10:32:40,506->download_from_drive.py->update_images_status():67]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-02', UploadStatus='Fail', Message='File not found on the disk' WHERE _ImageFile_key = 16846;

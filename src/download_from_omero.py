@@ -246,7 +246,7 @@ def DFS(dir_to_remove: str) -> None:
 
 def main():
     conn = db_init(server=db_server, username=db_username, password=db_password, database=db_name)
-    stmt = utils.stmt
+    stmt = utils.omero_stmt
     cursor = conn.cursor(buffered=True, dictionary=True)
     cursor.execute(stmt)
     db_records = cursor.fetchall()
@@ -274,7 +274,7 @@ if __name__ == '__main__':
     db_server = utils.db_server
     db_name = utils.db_name
 
-    download_to = "C:/Program Files/KOMP/ImageDownload/pictures"
+    download_to = os.path.join(utils.get_project_root(), "Pictures")
 
     hostname = utils.hostname
     server_user = utils.server_username

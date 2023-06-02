@@ -97,9 +97,9 @@ def generate_file_location(conn: mysql.connector.connection,
 
         IMPC_Code = record["DestinationFileName"].split("/")[4]
         temp = record["SourceFileName"].split("\\")[4:]
-        # drive_path = "/Volumes/"  # If you are on mac/linux
-        # fileLocation = os.path.join(drive_path, *temp)
-        fileLocation = "//" + os.path.join("bht2stor.jax.org\\", *temp).replace("\\", "/")  # If you are on windows
+        drive_path = "/Volumes/"  # If you are on mac/linux
+        fileLocation = os.path.join(drive_path, *temp)
+        #fileLocation = "//" + os.path.join("bht2stor.jax.org\\", *temp).replace("\\", "/")  # If you are on windows
         logger.debug(f"Source file path is {fileLocation}")
 
         fileLocationMap[IMPC_Code].append([int(record["_ImageFile_key"]), fileLocation])
@@ -152,6 +152,7 @@ def download_from_drive(fileLocationDict: collections.defaultdict[list],
                                IMPC_Code=IMPC_Code,
                                imageFileKey=imagefileKey)
 
+                DFS(dir_to_remove=target)
             except FileNotFoundError as e:
                 # missingFiles.append(download_images.split("/"[-1]))
                 logger.error(e)
@@ -178,10 +179,10 @@ def send_to_server(file_to_send: str,
         ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh_client.connect(hostname=hostname, username=username, password=password)
         ftp_client = ssh_client.open_sftp()
-        ftp_client.chdir("/pictures/")
+        #ftp_client.chdir("/images/")
 
         try:
-            logger.info(ftp_client.stat('/pictures/' + IMPC_Code + "/" + file_to_send))
+            logger.info(ftp_client.stat('/images/' + IMPC_Code + "/" + file_to_send))
             logger.info(f'File exists in directory {IMPC_Code}')
             file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                               UploadStatus="Success",
@@ -192,7 +193,7 @@ def send_to_server(file_to_send: str,
         except IOError:
             logger.info(f"Uploading {file_to_send}")
             ftp_client.put(download_to + "/" + file_to_send,
-                           "pictures/" + IMPC_Code + "/" + file_to_send)
+                           "images/" + IMPC_Code + "/" + file_to_send)
 
             file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                               UploadStatus="Success",
@@ -229,7 +230,7 @@ def DFS(dir_to_remove: str) -> None:
 
 def main():
     conn = db_init(server=db_server, username=db_username, password=db_password, database=db_name)
-    stmt = utils.stmt
+    stmt = utils.pheno_stmt
     # cursor = conn.cursor(buffered=True, dictionary=True)
     # cursor.execute(stmt)
     # db_records = cursor.fetchall()
