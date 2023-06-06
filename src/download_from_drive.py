@@ -194,7 +194,8 @@ def send_to_server(file_to_send: str,
             logger.info(f"Uploading {file_to_send}")
             ftp_client.put(download_to + "/" + file_to_send,
                            "images/" + IMPC_Code + "/" + file_to_send)
-
+            files = ftp_client.listdir('/images/' + IMPC_Code)
+            assert file_to_send in files, f"{file_to_send} uploaded to the server"
             file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                               UploadStatus="Success",
                                               Message="File successfully uploaded to server")

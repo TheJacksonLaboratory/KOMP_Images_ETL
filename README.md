@@ -41,9 +41,15 @@ Then use the following command to install the package to the `venv` you just cre
 
 The terminal/command prompt should looks like the following:
 
-<img src="/Users/chent/Desktop/KOMP_Project/DCCImagesPipeline/docs/images/Screenshot 2023-04-24 at 3.00.50 PM.png" alt="MarineGEO circle logo" style="height: 300px; width:400px;"/>
+<img src="/Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/docs/pictures/Screenshot 2023-04-24 at 3.00.50 PM.png" alt="MarineGEO circle logo" style="height: 300px; width:400px;"/>
 
 `setup.py` in the project folder will automatically build and install the depencies for you. 
+
+The alternative way to install the application is to use the following command in the terminal:
+
+```
+pip install -r requirements.txt
+```
 
 <br>
 <br>
@@ -52,14 +58,14 @@ The terminal/command prompt should looks like the following:
 
 After installing the package to the venv, type `ls .env/testvenv/bin` in yout terminal/command prompt, you should be able to see the follwing:
 
-<img src="/Users/chent/Desktop/KOMP_Project/DCCImagesPipeline/docs/images/Screenshot 2023-04-24 at 3.13.01 PM.png" alt="MarineGEO circle logo" style="height: 50px; width:300px;"/>
+<img src="/Users/chent/Desktop/KOMP_Project/KOMP_Images_ETL/docs/pictures/Screenshot 2023-04-24 at 3.13.01 PM.png" alt="MarineGEO circle logo" style="height: 50px; width:300px;"/>
 
-where the `download_images` is the entry point for running the app. Type it to your terminal/command prompt, the application will start to execute. It will ask you the source of the images (`Omero`, `Climb`, `JaxLims`); what conditions/filters you would to apply to the images(time, IMPC Code, animal id, status etc), in the example below, I will download some images from Omero, with `date` after `2023-04-21`. 
+where the `omero`, `phenotypeDrive`, is the entry point for running the app. Type it to your terminal/command prompt, the application will start to execute. The alternative way to run is via `Shell` or `Batchfile`. If you are on Linux or MacOS, type 
 
-<img src="/Users/chent/Desktop/KOMP_Project/DCCImagesPipeline/docs/images/Screenshot 2023-04-24 at 3.23.22 PM.png" alt="MarineGEO circle logo" >
-
-Then the app will ask for your credentials if you input `Omero` or `Climb` as the image source, input your username and password and the program will do its jobs immediately. 
-
+```
+./path/to/your/repository/submit.sh
+```
+, if you are on windows, `cd` to the project directory, then type `submit.bat` in your command prompt.
 
 
 ## Credits
