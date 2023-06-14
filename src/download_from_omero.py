@@ -1,9 +1,9 @@
-from datetime import datetime
-import logging
 import os
 import shutil
-import time
 import sys
+import time
+from datetime import datetime
+
 import mysql.connector
 import paramiko
 import requests
@@ -45,18 +45,14 @@ class image_upload_status(object):
         self.Message = Message
 
 
-def update_images_status(imageDict: dict, imagefilekey):
-    if not imageDict:
+def update_images_status(db_record: dict, imagefilekey:int):
+    if not db_record:
         raise ValueError("Nothing to be inserted")
 
-    #db_server = "rslims.jax.org"
-    #db_user = "dba"
-    #db_password = "rsdba"
-    #db_name = "komp"
     conn = db_init(server=db_server, username=db_username, password=db_password, database=db_name)
     cursor1 = conn.cursor()
 
-    '''Remove deplciate records'''
+    '''Remove duplicate records'''
     cleanStmt = """ DELETE i FROM komp.imagefileuploadstatus i, komp.imagefileuploadstatus j 
                     WHERE i._ImageFile_key > j._ImageFile_key AND i.SourceFileName = j.SourceFileName; 
                 """
@@ -66,7 +62,7 @@ def update_images_status(imageDict: dict, imagefilekey):
 
     cursor2 = conn.cursor()
     sql = "UPDATE KOMP.imagefileuploadstatus SET {} WHERE _ImageFile_key = {};".format(
-        ', '.join("{}='{}'".format(k, v) for k, v in imageDict.items()), imagefilekey)
+        ', '.join("{}='{}'".format(k, v) for k, v in db_record.items()), imagefilekey)
     logger.debug(sql)
     print(sql)
     cursor2.execute(sql)
@@ -77,13 +73,13 @@ def update_images_status(imageDict: dict, imagefilekey):
 def download_from_omero(db_records: dict,
                         username: str,
                         password: str,
-                        download_to) -> None:
+                        download_to_dir) -> None:
     """
     :param username: Your username of Omero.jax.org
     :param password: Your password of Omero.jax.org
-    :param download_to: Path you want to temporarily store the pictures
+    :param download_to_dir: Path you want to temporarily store the pictures
     :param db_records: SQL query you want to use
-    :param download_to:
+    :param download_to_dir:
     :return: None
     """
     session = requests.Session()
@@ -144,7 +140,7 @@ def download_from_omero(db_records: dict,
 
         """Create a directory to temporally hold the downloaded files"""
         impc_code = row["DestinationFileName"].split("/")[4]
-        temp = download_to + "/" + impc_code
+        temp = download_to_dir + "/" + impc_code
         try:
             os.mkdir(temp)
         except FileExistsError as e:
@@ -157,7 +153,7 @@ def download_from_omero(db_records: dict,
             with open(temp + "/" + download_filename, 'wb') as f:
                 for chunk in r.iter_content(chunk_size=8192):
                     f.write(chunk)
-                f.close()
+                #f.close()
 
         time.sleep(3)
 
@@ -167,12 +163,12 @@ def download_from_omero(db_records: dict,
                                               UploadStatus="Fail",
                                               Message="Fail to download file")
 
-            update_images_status(record=file_Status.__dict__, imagefilekey=imageFileKey)
+            update_images_status(db_record=file_Status.__dict__, imagefilekey=imageFileKey)
 
         else:
             logger.info(f"{download_filename} downloaded, ready to be sent to the server")
             send_to_server(file_to_send=download_filename,
-                           hostname=hostname,
+                           host_server=hostname,
                            username=server_user,
                            password=server_password,
                            IMPC_Code=impc_code,
@@ -182,7 +178,7 @@ def download_from_omero(db_records: dict,
 
 
 def send_to_server(file_to_send: str,
-                   hostname: str,
+                   host_server: str,
                    username: str,
                    password: str,
                    IMPC_Code: str,
@@ -193,9 +189,8 @@ def send_to_server(file_to_send: str,
     try:
         ssh_client = paramiko.SSHClient()
         ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh_client.connect(hostname=hostname, username=username, password=password)
+        ssh_client.connect(hostname=host_server, username=username, password=password)
         ftp_client = ssh_client.open_sftp()
-        # ftp_client.chdir("/pictures/")
 
         try:
             logger.info(ftp_client.stat('/images/' + IMPC_Code + "/" + file_to_send))
@@ -204,7 +199,7 @@ def send_to_server(file_to_send: str,
                                               UploadStatus="Success",
                                               Message="File already exits on server")
 
-            update_images_status(file_Status.__dict__, imageFileKey)
+            update_images_status(db_record=file_Status.__dict__, imagefilekey=imageFileKey)
 
         except IOError:
             logger.info(f"Uploading {file_to_send}")
@@ -253,7 +248,7 @@ def main():
     cursor.execute(stmt)
     db_records = cursor.fetchall()
     download_from_omero(db_records=db_records, username=utils.username, password=utils.password,
-                        download_to=download_to)
+                        download_to_dir=download_to)
 
     conn.close()
     logger.info("Process finished")

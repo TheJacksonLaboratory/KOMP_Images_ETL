@@ -42,8 +42,8 @@ class image_upload_status(object):
         self.Message = Message
 
 
-def update_images_status(imageDict: dict, imagefilekey):
-    if not imageDict:
+def update_images_status(db_record: dict, imagefilekey:int):
+    if not db_record:
         raise ValueError("Nothing to be inserted")
 
     db_server = "rslims.jax.org"
@@ -63,7 +63,7 @@ def update_images_status(imageDict: dict, imagefilekey):
 
     cursor2 = conn.cursor()
     sql = "UPDATE KOMP.imagefileuploadstatus SET {} WHERE _ImageFile_key = {};".format(
-        ', '.join("{}='{}'".format(k, v) for k, v in imageDict.items()), imagefilekey)
+        ', '.join("{}='{}'".format(k, v) for k, v in db_record.items()), imagefilekey)
     logger.debug(sql)
     print(sql)
     cursor2.execute(sql)
@@ -73,12 +73,12 @@ def update_images_status(imageDict: dict, imagefilekey):
 
 def generate_file_location(conn: mysql.connector.connection,
                            sql: str,
-                           download_to: str) -> collections.defaultdict[Any, list]:
+                           download_to_dir: str) -> collections.defaultdict[Any, list]:
     """
 
     :param conn: Connection to database
     :param sql: SQL query you want to execute
-    :param target: Path you want to temporarily store the pictures
+    :param download_to_dir: Path you want to temporarily store the pictures
     :return: Dictionary after parsing the query result
     """
     if not conn:
@@ -104,7 +104,7 @@ def generate_file_location(conn: mysql.connector.connection,
 
         fileLocationMap[IMPC_Code].append([int(record["_ImageFile_key"]), fileLocation])
 
-        download_to_dest = download_to + "/" + IMPC_Code
+        download_to_dest = download_to_dir + "/" + IMPC_Code
         logger.debug(f"Destination of downloaded file is {download_to_dest}")
 
         try:
@@ -121,7 +121,6 @@ def download_from_drive(fileLocationDict: collections.defaultdict[list],
                         target: str) -> None:
     """
     :param fileLocationDict:Dictionary/hashmap that contains information of pictures file
-    :param source: Base path of the file
     :param target: Path you want to temporarily store the pictures
     :return: None
     """
@@ -232,11 +231,7 @@ def DFS(dir_to_remove: str) -> None:
 def main():
     conn = db_init(server=db_server, username=db_username, password=db_password, database=db_name)
     stmt = utils.pheno_stmt
-    # cursor = conn.cursor(buffered=True, dictionary=True)
-    # cursor.execute(stmt)
-    # db_records = cursor.fetchall()
-
-    fileLocationDict = generate_file_location(conn=conn, sql=stmt, download_to=download_to)
+    fileLocationDict = generate_file_location(conn=conn, sql=stmt, download_to_dir=download_to)
     download_from_drive(fileLocationDict=fileLocationDict, target=download_to)
 
 
