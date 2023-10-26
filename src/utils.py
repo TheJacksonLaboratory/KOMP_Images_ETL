@@ -13,19 +13,23 @@ def get_project_root() -> Path:
 
 """Setup logger"""
 
-logger = logging.getLogger(__name__)
-FORMAT = "[%(asctime)s->%(filename)s->%(funcName)s():%(lineno)s]%(levelname)s: %(message)s"
-logging.basicConfig(format=FORMAT, filemode="w", level=logging.DEBUG, force=True)
-logging_dest = os.path.join(get_project_root(), "logs")
-date = datetime.now().strftime("%B-%d-%Y")
-logging_filename = logging_dest + "/" + f'{date}.log'
-handler = RotatingFileHandler(logging_filename, maxBytes=10000000000, backupCount=10)
-handler.setFormatter(logging.Formatter(FORMAT))
-logger.addHandler(handler)
+def createLogHandler(job_name,log_file):
+
+    logger = logging.getLogger(__name__)
+    FORMAT = "[%(asctime)s->%(filename)s->%(funcName)s():%(lineno)s]%(levelname)s: %(message)s"
+    logging.basicConfig(format=FORMAT, filemode="w", level=logging.DEBUG, force=True)
+    handler = logging.FileHandler(log_file)
+    handler.setFormatter(logging.Formatter(FORMAT))
+    logger.addHandler(handler)
+
+    return logger
+
+#logger = logging.getLogger(__name__)
+
 
 """Omero/Climb username and password"""
 username = "chent"
-password = "Ql4nc,tzjzsblj."
+password = "Steve19981230"
 
 """SFTP server credentials"""
 hostname = "bhjlk02lp.jax.org"
@@ -41,8 +45,29 @@ db_name = "rslims"
 """Disks location"""
 smbPath = "/Volumes/phenotype/DccQcReports/"
 
-"""SQL statement to get file location of an image"""
-stmt = """SELECT * FROM KOMP.imagefileuploadstatus WHERE DateOfUpload IS NULL AND Message IS NULL;"""
+"""SQL statements to get file location of an image"""
+omero_stmt = """SELECT * FROM 
+                            KOMP.imagefileuploadstatus 
+                         WHERE 
+                            DateOfUpload IS NULL
+                         AND 
+                            UploadStatus IS NULL
+                         AND 
+                            Message IS NULL
+                         AND
+                            SourceFileName LIKE '%omeroweb%';"""
+
+pheno_stmt = """SELECT * FROM KOMP.imagefileuploadstatus 
+		            WHERE 
+			    DateOfUpload IS NULL
+		            AND 
+			    UploadStatus IS NULL
+		            AND 
+			    Message IS NULL
+		            AND 
+			    SourceFileName LIKE '%phenotype%'
+		            AND  
+			    DATEDIFF(NOW(), DateCreated) < 21;"""
 
 '''
 stmt = """SELECT ProcedureStatus, 

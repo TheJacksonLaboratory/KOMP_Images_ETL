@@ -1,15 +1,25 @@
 import collections
-import datetime
-import logging
+from datetime import datetime
 import shutil
 from typing import Any
 
 import mysql.connector
 import os
-import sys
 import utils
 import paramiko
 
+
+def is_micro_ct(db_row: dict) -> bool:
+    return  "IMPC_EMA_001" in db_row["ImpcCode"] or "IMPC_EMO_001" in db_row["ImpcCode"]
+
+
+def get_micro_ct_impcCode(db_row: dict) -> str:
+    if "IMPC_EMA_001" in db_row["ImpcCode"]:
+        return "IMPC_EMA_001" 
+
+    if "IMPC_EMO_001" in db_row["ImpcCode"]:
+        return "IMPC_EMO_001"
+    
 
 def db_init(server: str,
             username: str,
@@ -44,30 +54,29 @@ class image_upload_status(object):
         self.Message = Message
 
 
-def update_images_status(record: dict,
-                         imagefilekey: int):
-    if not record:
+def update_images_status(imageDict: dict, imagefilekey):
+    if not imageDict:
         raise ValueError("Nothing to be inserted")
 
-    conn = db_init(server=db_server, username=db_username, password=db_password, database=db_name)
-    cursor = conn.cursor()
+    db_server = "rslims.jax.org"
+    db_user = "dba"
+    db_password = "rsdba"
+    db_name = "komp"
+    conn = db_init(server=db_server, username=db_user, password=db_password, database=db_name)
+    cursor1 = conn.cursor()
 
-    '''Remove duplicate records'''
-
+    
+    '''Remove deplciate records'''
     cleanStmt = """ DELETE i FROM komp.imagefileuploadstatus i, komp.imagefileuploadstatus j 
-                    WHERE i._ImageFile_key > j._ImageFile_key AND i.SourceFileName = j.SourceFileName; 
+                    WHERE i._ImageFile_key < j._ImageFile_key AND i.SourceFileName = j.SourceFileName; 
                 """
-    cursor.execute(cleanStmt)
-
-    # placeholders = ', '.join(['%s'] * len(record))
-    columns = ', '.join(record.keys())
-    logger.debug(f"Columns are {columns}")
-
-    sql = "UPDATE KOMP.imagefileuploadstatus SET {} WHERE _ImageFile_key = {};".format(
-        ', '.join("{}='{}'".format(k, v) for k, v in record.items()), imagefilekey)
-    print(sql)
+    
+    cursor1.execute(cleanStmt)
+    cursor2 = conn.cursor()
+    sql = "UPDATE KOMP.imagefileuploadstatus SET {} WHERE _ImageFile_key = {};".format(', '.join("{}='{}'".format(k,v) for k, v in imageDict.items()), imagefilekey)
     logger.debug(sql)
-    cursor.execute(sql, list(record.values()))
+    print(sql)
+    cursor2.execute(sql)
     conn.commit()
     conn.close()
 
@@ -95,15 +104,14 @@ def generate_file_location(conn: mysql.connector.connection,
     # Parse the data returned by query
     fileLocationMap = collections.defaultdict(list)
     for record in db_records:
-
-        IMPC_Code = record["DestinationFileName"].split("/")[4]
+ 
+        IMPC_Code = get_micro_ct_impcCode(db_row=record) if is_micro_ct(db_row=record) else record["DestinationFileName"].split("/")[4]
+        testcode = record["DestinationFileName"].split("/")[-1].split("_")[0] if not is_micro_ct(db_row=record) else ""
         temp = record["SourceFileName"].split("\\")[4:]
-        drive_path = "/Volumes/"  # If you are on mac/linux
-        fileLocation = os.path.join(drive_path, *temp)
-        # fileLocation = "//" + os.path.join("bht2stor.jax.org\\", *temp).replace("\\", "/") #If you are on windows
+        fileLocation = "//" + os.path.join("bht2stor.jax.org\\", *temp).replace("\\", "/") #If you are on windows
         logger.debug(f"Source file path is {fileLocation}")
 
-        fileLocationMap[IMPC_Code].append([int(record["_ImageFile_key"]), fileLocation])
+        fileLocationMap[IMPC_Code].append([int(record["_ImageFile_key"]), fileLocation, testcode])
 
         download_to_dest = download_to + "/" + IMPC_Code
         logger.debug(f"Destination of downloaded file is {download_to_dest}")
@@ -136,36 +144,43 @@ def download_from_drive(fileLocationDict: collections.defaultdict[list],
         for loc in locations:
             imagefileKey = loc[0]
             download_from = loc[1]
+            testcode = loc[2]
             download_to_dest = target + "/" + IMPC_Code
 
+            fileName = loc[1].split("/")[-1]
+            logger.info(f"Starting downloading file {fileName} from {download_from} to {download_to_dest}")
             try:
-                logger.info(f"Starting downloading {download_from} to {download_to_dest}")
                 shutil.copy(download_from, download_to_dest)
-                fileName = loc[1].split("/")[-1]
                 logger.info(f"Done downloading file {fileName}")
 
                 """Send downloaded files to the sever"""
                 logger.info(f"Start to send file {fileName} to {hostname}")
                 send_to_server(file_to_send=fileName,
-                               hostname=hostname,
-                               username=server_user,
-                               password=server_password,
-                               IMPC_Code=IMPC_Code,
-                               imageFileKey=imagefileKey)
-
+                               testcode=testcode,
+                                hostname=hostname,
+                                username=server_user,
+                                password=server_password,
+                                IMPC_Code=IMPC_Code,
+                                imageFileKey=imagefileKey)
+                DFS(dir_to_remove=download_to_dest)
+            
             except FileNotFoundError as e:
                 # missingFiles.append(download_images.split("/"[-1]))
                 logger.error(e)
 
                 """Create object"""
-                file_Status = image_upload_status(DateOfUpload=datetime.datetime.now(),
+                file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                                   UploadStatus="Fail",
                                                   Message="File not found on the disk")
 
                 update_images_status(file_Status.__dict__, imagefilekey=imagefileKey)
+            
+
+               
 
 
 def send_to_server(file_to_send: str,
+                   testcode: str,
                    hostname: str,
                    username: str,
                    password: str,
@@ -179,23 +194,23 @@ def send_to_server(file_to_send: str,
         ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh_client.connect(hostname=hostname, username=username, password=password)
         ftp_client = ssh_client.open_sftp()
-        ftp_client.chdir("/pictures/")
-
+        #ftp_client.chdir("/images/")
+        final_filename = testcode + "_" + file_to_send if testcode else file_to_send
         try:
-            logger.info(ftp_client.stat('/pictures/' + IMPC_Code + "/" + file_to_send))
-            logger.info(f'File exists in directory {IMPC_Code}')
-            file_Status = image_upload_status(DateOfUpload=datetime.datetime.now(),
+            logger.info(ftp_client.stat('/images/' + IMPC_Code + "/" + final_filename))
+            logger.info(f'File {final_filename} exists in directory {IMPC_Code}')
+            file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                               UploadStatus="Success",
                                               Message="File already exits on server")
 
             update_images_status(file_Status.__dict__, imageFileKey)
 
         except IOError:
-            logger.info(f"Uploading {file_to_send}")
-            ftp_client.put(download_to + "/" + file_to_send,
-                           "pictures/" + IMPC_Code + "/" + file_to_send)
+            logger.info(f"Uploading {final_filename}")
+            ftp_client.put(download_to + "/" + IMPC_Code + "/" + file_to_send,
+                           "images/" + IMPC_Code + "/" + final_filename)
 
-            file_Status = image_upload_status(DateOfUpload=datetime.datetime.now(),
+            file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                               UploadStatus="Success",
                                               Message="File successfully uploaded to server")
 
@@ -203,6 +218,7 @@ def send_to_server(file_to_send: str,
 
         # os.remove(os.path.join(download_to, loc[1].split("/")[-1]))
         ftp_client.close()
+        logger.info(f"Finish uploading {file_to_send}")
 
     except paramiko.SSHException:
         logger.error("Connection Error")
@@ -229,25 +245,27 @@ def DFS(dir_to_remove: str) -> None:
 
 def main():
     conn = db_init(server=db_server, username=db_username, password=db_password, database=db_name)
-    stmt = utils.stmt
-    # cursor = conn.cursor(buffered=True, dictionary=True)
-    # cursor.execute(stmt)
-    # db_records = cursor.fetchall()
+    stmt = utils.pheno_stmt
 
     fileLocationDict = generate_file_location(conn=conn, sql=stmt, download_to=download_to)
     download_from_drive(fileLocationDict=fileLocationDict, target=download_to)
 
-
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    logger = logging.getLogger("__main__")
+
+    job_name = 'download_from_drive'
+    logging_dest = os.path.join(utils.get_project_root(), "logs")
+    date = datetime.now().strftime("%B-%d-%Y")
+    logging_filename = logging_dest + "/" + f'{date}.log'
+    logger = utils.createLogHandler(job_name ,logging_filename )
+    logger.info('Logger has been created')
 
     db_username = utils.db_username
     db_password = utils.db_password
     db_server = utils.db_server
     db_name = utils.db_name
 
-    download_to = "/Users/chent/Desktop/Pictures"
+    download_to = "C:/Program Files/KOMP/ImageDownload/pictures"
     try:
         os.mkdir(download_to)
 

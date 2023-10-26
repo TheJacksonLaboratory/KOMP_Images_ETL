@@ -1,0 +1,422 @@
+[2023-06-06 11:49:36,694->download_from_omero.py-><module>():272]INFO: Logger has been created
+[2023-06-06 11:49:36,694->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:49:36,819->download_from_omero.py->download_from_omero():98]DEBUG: https://omeroweb.jax.org/api/v0/
+[2023-06-06 11:49:36,851->download_from_omero.py->download_from_omero():119]DEBUG: https://omeroweb.jax.org/api/v0/login/
+[2023-06-06 11:49:39,523->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 377325_fundus_D79559_OS_12-31-31.642_06-21-22-1.tif
+[2023-06-06 11:49:39,523->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:49:42,960->download_from_omero.py->download_from_omero():173]INFO: 377325_fundus_D79559_OS_12-31-31.642_06-21-22-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:49:43,194->download_from_omero.py->send_to_server():212]INFO: Uploading 377325_fundus_D79559_OS_12-31-31.642_06-21-22-1.tif
+[2023-06-06 11:49:43,226->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:50:09,320->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 16691;
+[2023-06-06 11:50:09,336->download_from_omero.py->send_to_server():224]INFO: Finish uploading 377325_fundus_D79559_OS_12-31-31.642_06-21-22-1.tif
+[2023-06-06 11:50:12,336->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\377325_fundus_D79559_OS_12-31-31.642_06-21-22-1.tif
+[2023-06-06 11:50:12,336->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\377325_fundus_D79559_OS_12-31-31.642_06-21-22-1.tif
+[2023-06-06 11:50:12,336->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 377326_fundus_D80148_OS_13-29-44.187_06-28-22-1.tif
+[2023-06-06 11:50:12,336->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:50:15,648->download_from_omero.py->download_from_omero():173]INFO: 377326_fundus_D80148_OS_13-29-44.187_06-28-22-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:50:15,867->download_from_omero.py->send_to_server():212]INFO: Uploading 377326_fundus_D80148_OS_13-29-44.187_06-28-22-1.tif
+[2023-06-06 11:50:15,898->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:50:42,055->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 16692;
+[2023-06-06 11:50:42,071->download_from_omero.py->send_to_server():224]INFO: Finish uploading 377326_fundus_D80148_OS_13-29-44.187_06-28-22-1.tif
+[2023-06-06 11:50:45,071->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\377326_fundus_D80148_OS_13-29-44.187_06-28-22-1.tif
+[2023-06-06 11:50:45,071->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\377326_fundus_D80148_OS_13-29-44.187_06-28-22-1.tif
+[2023-06-06 11:50:45,071->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 377327_fundus_D80141_OD_13-07-27.080_06-28-22-1.tif
+[2023-06-06 11:50:45,071->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:50:49,039->download_from_omero.py->download_from_omero():173]INFO: 377327_fundus_D80141_OD_13-07-27.080_06-28-22-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:50:49,258->download_from_omero.py->send_to_server():212]INFO: Uploading 377327_fundus_D80141_OD_13-07-27.080_06-28-22-1.tif
+[2023-06-06 11:50:49,289->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:51:15,759->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 16693;
+[2023-06-06 11:51:15,759->download_from_omero.py->send_to_server():224]INFO: Finish uploading 377327_fundus_D80141_OD_13-07-27.080_06-28-22-1.tif
+[2023-06-06 11:51:18,759->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\377327_fundus_D80141_OD_13-07-27.080_06-28-22-1.tif
+[2023-06-06 11:51:18,759->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\377327_fundus_D80141_OD_13-07-27.080_06-28-22-1.tif
+[2023-06-06 11:51:18,759->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410818_fundus2_A-11473_OD_12-31-07.981_05-11-23-1.tif
+[2023-06-06 11:51:18,759->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:51:22,415->download_from_omero.py->download_from_omero():173]INFO: 410818_fundus2_A-11473_OD_12-31-07.981_05-11-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:51:22,649->download_from_omero.py->send_to_server():212]INFO: Uploading 410818_fundus2_A-11473_OD_12-31-07.981_05-11-23-1.tif
+[2023-06-06 11:51:22,681->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:51:49,213->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18438;
+[2023-06-06 11:51:49,213->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410818_fundus2_A-11473_OD_12-31-07.981_05-11-23-1.tif
+[2023-06-06 11:51:52,228->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410818_fundus2_A-11473_OD_12-31-07.981_05-11-23-1.tif
+[2023-06-06 11:51:52,228->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410818_fundus2_A-11473_OD_12-31-07.981_05-11-23-1.tif
+[2023-06-06 11:51:52,228->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410824_fundus2_D88861_OD_07-53-01.117_04-13-23-1.tif
+[2023-06-06 11:51:52,228->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:51:55,838->download_from_omero.py->download_from_omero():173]INFO: 410824_fundus2_D88861_OD_07-53-01.117_04-13-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:51:56,057->download_from_omero.py->send_to_server():212]INFO: Uploading 410824_fundus2_D88861_OD_07-53-01.117_04-13-23-1.tif
+[2023-06-06 11:51:56,088->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:52:22,104->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18439;
+[2023-06-06 11:52:22,104->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410824_fundus2_D88861_OD_07-53-01.117_04-13-23-1.tif
+[2023-06-06 11:52:25,104->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410824_fundus2_D88861_OD_07-53-01.117_04-13-23-1.tif
+[2023-06-06 11:52:25,104->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410824_fundus2_D88861_OD_07-53-01.117_04-13-23-1.tif
+[2023-06-06 11:52:25,104->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410852_fundus2_A-10942_OD3_12-49-45.291_05-11-23-1.tif
+[2023-06-06 11:52:25,104->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:52:28,604->download_from_omero.py->download_from_omero():173]INFO: 410852_fundus2_A-10942_OD3_12-49-45.291_05-11-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:52:28,823->download_from_omero.py->send_to_server():212]INFO: Uploading 410852_fundus2_A-10942_OD3_12-49-45.291_05-11-23-1.tif
+[2023-06-06 11:52:28,854->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:52:54,839->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18440;
+[2023-06-06 11:52:54,839->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410852_fundus2_A-10942_OD3_12-49-45.291_05-11-23-1.tif
+[2023-06-06 11:52:57,839->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410852_fundus2_A-10942_OD3_12-49-45.291_05-11-23-1.tif
+[2023-06-06 11:52:57,839->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410852_fundus2_A-10942_OD3_12-49-45.291_05-11-23-1.tif
+[2023-06-06 11:52:57,839->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410862_fundus2_A-11689_OD2_10-27-07.896_05-18-23-1.tif
+[2023-06-06 11:52:57,839->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:53:01,386->download_from_omero.py->download_from_omero():173]INFO: 410862_fundus2_A-11689_OD2_10-27-07.896_05-18-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:53:01,605->download_from_omero.py->send_to_server():212]INFO: Uploading 410862_fundus2_A-11689_OD2_10-27-07.896_05-18-23-1.tif
+[2023-06-06 11:53:01,636->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:53:28,386->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18441;
+[2023-06-06 11:53:28,386->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410862_fundus2_A-11689_OD2_10-27-07.896_05-18-23-1.tif
+[2023-06-06 11:53:31,387->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410862_fundus2_A-11689_OD2_10-27-07.896_05-18-23-1.tif
+[2023-06-06 11:53:31,387->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410862_fundus2_A-11689_OD2_10-27-07.896_05-18-23-1.tif
+[2023-06-06 11:53:31,387->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410865_fundus2_A-9482_OD_10-13-37.744_04-20-23-1.tif
+[2023-06-06 11:53:31,387->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:53:34,918->download_from_omero.py->download_from_omero():173]INFO: 410865_fundus2_A-9482_OD_10-13-37.744_04-20-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:53:35,137->download_from_omero.py->send_to_server():212]INFO: Uploading 410865_fundus2_A-9482_OD_10-13-37.744_04-20-23-1.tif
+[2023-06-06 11:53:35,168->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:54:01,450->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18442;
+[2023-06-06 11:54:01,465->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410865_fundus2_A-9482_OD_10-13-37.744_04-20-23-1.tif
+[2023-06-06 11:54:04,465->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410865_fundus2_A-9482_OD_10-13-37.744_04-20-23-1.tif
+[2023-06-06 11:54:04,465->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410865_fundus2_A-9482_OD_10-13-37.744_04-20-23-1.tif
+[2023-06-06 11:54:04,465->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410869_fundus2_A-10489_OS1_10-50-30.704_05-04-23-1.tif
+[2023-06-06 11:54:04,465->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:54:07,934->download_from_omero.py->download_from_omero():173]INFO: 410869_fundus2_A-10489_OS1_10-50-30.704_05-04-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:54:08,153->download_from_omero.py->send_to_server():212]INFO: Uploading 410869_fundus2_A-10489_OS1_10-50-30.704_05-04-23-1.tif
+[2023-06-06 11:54:08,184->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:54:34,654->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18443;
+[2023-06-06 11:54:34,669->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410869_fundus2_A-10489_OS1_10-50-30.704_05-04-23-1.tif
+[2023-06-06 11:54:37,669->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410869_fundus2_A-10489_OS1_10-50-30.704_05-04-23-1.tif
+[2023-06-06 11:54:37,669->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410869_fundus2_A-10489_OS1_10-50-30.704_05-04-23-1.tif
+[2023-06-06 11:54:37,669->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410902_fundus2_A-9723_OD1_08-30-09.610_04-25-23-1.tif
+[2023-06-06 11:54:37,669->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:54:41,216->download_from_omero.py->download_from_omero():173]INFO: 410902_fundus2_A-9723_OD1_08-30-09.610_04-25-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:54:41,435->download_from_omero.py->send_to_server():212]INFO: Uploading 410902_fundus2_A-9723_OD1_08-30-09.610_04-25-23-1.tif
+[2023-06-06 11:54:41,466->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:55:07,920->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18444;
+[2023-06-06 11:55:07,936->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410902_fundus2_A-9723_OD1_08-30-09.610_04-25-23-1.tif
+[2023-06-06 11:55:10,936->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410902_fundus2_A-9723_OD1_08-30-09.610_04-25-23-1.tif
+[2023-06-06 11:55:10,936->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410902_fundus2_A-9723_OD1_08-30-09.610_04-25-23-1.tif
+[2023-06-06 11:55:10,936->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410904_fundus2_D88894_OS_07-57-03.761_04-25-23-1.tif
+[2023-06-06 11:55:10,936->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:55:14,404->download_from_omero.py->download_from_omero():173]INFO: 410904_fundus2_D88894_OS_07-57-03.761_04-25-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:55:14,623->download_from_omero.py->send_to_server():212]INFO: Uploading 410904_fundus2_D88894_OS_07-57-03.761_04-25-23-1.tif
+[2023-06-06 11:55:14,654->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:55:40,686->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18445;
+[2023-06-06 11:55:40,702->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410904_fundus2_D88894_OS_07-57-03.761_04-25-23-1.tif
+[2023-06-06 11:55:43,702->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410904_fundus2_D88894_OS_07-57-03.761_04-25-23-1.tif
+[2023-06-06 11:55:43,702->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410904_fundus2_D88894_OS_07-57-03.761_04-25-23-1.tif
+[2023-06-06 11:55:43,702->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410819_fundus2_A-11689_OD_10-26-02.592_05-18-23-1.tif
+[2023-06-06 11:55:43,702->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:55:47,217->download_from_omero.py->download_from_omero():173]INFO: 410819_fundus2_A-11689_OD_10-26-02.592_05-18-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:55:47,436->download_from_omero.py->send_to_server():212]INFO: Uploading 410819_fundus2_A-11689_OD_10-26-02.592_05-18-23-1.tif
+[2023-06-06 11:55:47,467->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:56:14,233->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18446;
+[2023-06-06 11:56:14,233->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410819_fundus2_A-11689_OD_10-26-02.592_05-18-23-1.tif
+[2023-06-06 11:56:17,249->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410819_fundus2_A-11689_OD_10-26-02.592_05-18-23-1.tif
+[2023-06-06 11:56:17,249->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410819_fundus2_A-11689_OD_10-26-02.592_05-18-23-1.tif
+[2023-06-06 11:56:17,249->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410836_fundus2_A-11689_OD3_10-27-48.363_05-18-23-1.tif
+[2023-06-06 11:56:17,249->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:56:20,765->download_from_omero.py->download_from_omero():173]INFO: 410836_fundus2_A-11689_OD3_10-27-48.363_05-18-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:56:20,984->download_from_omero.py->send_to_server():212]INFO: Uploading 410836_fundus2_A-11689_OD3_10-27-48.363_05-18-23-1.tif
+[2023-06-06 11:56:21,015->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:56:47,140->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18447;
+[2023-06-06 11:56:47,156->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410836_fundus2_A-11689_OD3_10-27-48.363_05-18-23-1.tif
+[2023-06-06 11:56:50,156->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410836_fundus2_A-11689_OD3_10-27-48.363_05-18-23-1.tif
+[2023-06-06 11:56:50,156->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410836_fundus2_A-11689_OD3_10-27-48.363_05-18-23-1.tif
+[2023-06-06 11:56:50,156->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410843_fundus2_D88883_OD_09-49-21.110_04-20-23-1.tif
+[2023-06-06 11:56:50,156->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:56:53,593->download_from_omero.py->download_from_omero():173]INFO: 410843_fundus2_D88883_OD_09-49-21.110_04-20-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:56:53,812->download_from_omero.py->send_to_server():212]INFO: Uploading 410843_fundus2_D88883_OD_09-49-21.110_04-20-23-1.tif
+[2023-06-06 11:56:53,843->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:57:20,781->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18448;
+[2023-06-06 11:57:20,781->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410843_fundus2_D88883_OD_09-49-21.110_04-20-23-1.tif
+[2023-06-06 11:57:23,781->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410843_fundus2_D88883_OD_09-49-21.110_04-20-23-1.tif
+[2023-06-06 11:57:23,781->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410843_fundus2_D88883_OD_09-49-21.110_04-20-23-1.tif
+[2023-06-06 11:57:23,781->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410846_fundus2_A-11689_OD1_10-26-43.496_05-18-23-1.tif
+[2023-06-06 11:57:23,781->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:57:27,219->download_from_omero.py->download_from_omero():173]INFO: 410846_fundus2_A-11689_OD1_10-26-43.496_05-18-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:57:27,438->download_from_omero.py->send_to_server():212]INFO: Uploading 410846_fundus2_A-11689_OD1_10-26-43.496_05-18-23-1.tif
+[2023-06-06 11:57:27,469->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:57:53,891->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18449;
+[2023-06-06 11:57:53,891->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410846_fundus2_A-11689_OD1_10-26-43.496_05-18-23-1.tif
+[2023-06-06 11:57:56,891->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410846_fundus2_A-11689_OD1_10-26-43.496_05-18-23-1.tif
+[2023-06-06 11:57:56,891->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410846_fundus2_A-11689_OD1_10-26-43.496_05-18-23-1.tif
+[2023-06-06 11:57:56,891->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410867_fundus2_A-9511_OS1_10-07-08.634_04-20-23-1.tif
+[2023-06-06 11:57:56,891->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:58:00,376->download_from_omero.py->download_from_omero():173]INFO: 410867_fundus2_A-9511_OS1_10-07-08.634_04-20-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:58:00,594->download_from_omero.py->send_to_server():212]INFO: Uploading 410867_fundus2_A-9511_OS1_10-07-08.634_04-20-23-1.tif
+[2023-06-06 11:58:00,626->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:58:27,111->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18450;
+[2023-06-06 11:58:27,126->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410867_fundus2_A-9511_OS1_10-07-08.634_04-20-23-1.tif
+[2023-06-06 11:58:30,126->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410867_fundus2_A-9511_OS1_10-07-08.634_04-20-23-1.tif
+[2023-06-06 11:58:30,126->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410867_fundus2_A-9511_OS1_10-07-08.634_04-20-23-1.tif
+[2023-06-06 11:58:30,126->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410868_fundus2_A-8664_OD_09-50-40.301_04-06-23-1.tif
+[2023-06-06 11:58:30,126->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:58:33,580->download_from_omero.py->download_from_omero():173]INFO: 410868_fundus2_A-8664_OD_09-50-40.301_04-06-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:58:33,798->download_from_omero.py->send_to_server():212]INFO: Uploading 410868_fundus2_A-8664_OD_09-50-40.301_04-06-23-1.tif
+[2023-06-06 11:58:33,830->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:59:00,205->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18451;
+[2023-06-06 11:59:00,205->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410868_fundus2_A-8664_OD_09-50-40.301_04-06-23-1.tif
+[2023-06-06 11:59:03,205->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410868_fundus2_A-8664_OD_09-50-40.301_04-06-23-1.tif
+[2023-06-06 11:59:03,205->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410868_fundus2_A-8664_OD_09-50-40.301_04-06-23-1.tif
+[2023-06-06 11:59:03,205->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410878_fundus2_A-9739_OD1_08-36-41.598_04-25-23-1.tif
+[2023-06-06 11:59:03,205->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:59:06,643->download_from_omero.py->download_from_omero():173]INFO: 410878_fundus2_A-9739_OD1_08-36-41.598_04-25-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:59:06,862->download_from_omero.py->send_to_server():212]INFO: Uploading 410878_fundus2_A-9739_OD1_08-36-41.598_04-25-23-1.tif
+[2023-06-06 11:59:06,893->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 11:59:33,237->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18452;
+[2023-06-06 11:59:33,253->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410878_fundus2_A-9739_OD1_08-36-41.598_04-25-23-1.tif
+[2023-06-06 11:59:36,253->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410878_fundus2_A-9739_OD1_08-36-41.598_04-25-23-1.tif
+[2023-06-06 11:59:36,253->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410878_fundus2_A-9739_OD1_08-36-41.598_04-25-23-1.tif
+[2023-06-06 11:59:36,253->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410817_fundus2_A-10942_OD_12-48-49.100_05-11-23-1.tif
+[2023-06-06 11:59:36,253->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 11:59:39,675->download_from_omero.py->download_from_omero():173]INFO: 410817_fundus2_A-10942_OD_12-48-49.100_05-11-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 11:59:39,894->download_from_omero.py->send_to_server():212]INFO: Uploading 410817_fundus2_A-10942_OD_12-48-49.100_05-11-23-1.tif
+[2023-06-06 11:59:39,925->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:00:06,754->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18453;
+[2023-06-06 12:00:06,754->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410817_fundus2_A-10942_OD_12-48-49.100_05-11-23-1.tif
+[2023-06-06 12:00:09,754->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410817_fundus2_A-10942_OD_12-48-49.100_05-11-23-1.tif
+[2023-06-06 12:00:09,754->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410817_fundus2_A-10942_OD_12-48-49.100_05-11-23-1.tif
+[2023-06-06 12:00:09,754->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410827_fundus2_A-9503_OS1_08-23-13.416_04-13-23-1.tif
+[2023-06-06 12:00:09,754->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:00:13,223->download_from_omero.py->download_from_omero():173]INFO: 410827_fundus2_A-9503_OS1_08-23-13.416_04-13-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:00:13,441->download_from_omero.py->send_to_server():212]INFO: Uploading 410827_fundus2_A-9503_OS1_08-23-13.416_04-13-23-1.tif
+[2023-06-06 12:00:13,473->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:00:40,223->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18454;
+[2023-06-06 12:00:40,223->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410827_fundus2_A-9503_OS1_08-23-13.416_04-13-23-1.tif
+[2023-06-06 12:00:43,223->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410827_fundus2_A-9503_OS1_08-23-13.416_04-13-23-1.tif
+[2023-06-06 12:00:43,223->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410827_fundus2_A-9503_OS1_08-23-13.416_04-13-23-1.tif
+[2023-06-06 12:00:43,223->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410828_fundus2_A-11689_OS_10-31-37.502_05-18-23-1.tif
+[2023-06-06 12:00:43,223->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:00:46,708->download_from_omero.py->download_from_omero():173]INFO: 410828_fundus2_A-11689_OS_10-31-37.502_05-18-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:00:46,927->download_from_omero.py->send_to_server():212]INFO: Uploading 410828_fundus2_A-11689_OS_10-31-37.502_05-18-23-1.tif
+[2023-06-06 12:00:46,958->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:01:13,740->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18455;
+[2023-06-06 12:01:13,740->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410828_fundus2_A-11689_OS_10-31-37.502_05-18-23-1.tif
+[2023-06-06 12:01:16,755->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410828_fundus2_A-11689_OS_10-31-37.502_05-18-23-1.tif
+[2023-06-06 12:01:16,755->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410828_fundus2_A-11689_OS_10-31-37.502_05-18-23-1.tif
+[2023-06-06 12:01:16,755->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410832_fundus2_A-8666_OS_09-57-28.553_04-06-23-1.tif
+[2023-06-06 12:01:16,755->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:01:20,240->download_from_omero.py->download_from_omero():173]INFO: 410832_fundus2_A-8666_OS_09-57-28.553_04-06-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:01:20,474->download_from_omero.py->send_to_server():212]INFO: Uploading 410832_fundus2_A-8666_OS_09-57-28.553_04-06-23-1.tif
+[2023-06-06 12:01:20,505->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:01:47,021->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18456;
+[2023-06-06 12:01:47,021->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410832_fundus2_A-8666_OS_09-57-28.553_04-06-23-1.tif
+[2023-06-06 12:01:50,021->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410832_fundus2_A-8666_OS_09-57-28.553_04-06-23-1.tif
+[2023-06-06 12:01:50,021->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410832_fundus2_A-8666_OS_09-57-28.553_04-06-23-1.tif
+[2023-06-06 12:01:50,021->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410837_fundus2_A-10942_OD1_12-49-27.367_05-11-23-1.tif
+[2023-06-06 12:01:50,021->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:01:53,412->download_from_omero.py->download_from_omero():173]INFO: 410837_fundus2_A-10942_OD1_12-49-27.367_05-11-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:01:53,631->download_from_omero.py->send_to_server():212]INFO: Uploading 410837_fundus2_A-10942_OD1_12-49-27.367_05-11-23-1.tif
+[2023-06-06 12:01:53,662->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:02:20,100->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18457;
+[2023-06-06 12:02:20,116->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410837_fundus2_A-10942_OD1_12-49-27.367_05-11-23-1.tif
+[2023-06-06 12:02:23,116->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410837_fundus2_A-10942_OD1_12-49-27.367_05-11-23-1.tif
+[2023-06-06 12:02:23,116->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410837_fundus2_A-10942_OD1_12-49-27.367_05-11-23-1.tif
+[2023-06-06 12:02:23,116->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410840_fundus2_A-8970_OD1_08-31-02.211_04-13-23-1.tif
+[2023-06-06 12:02:23,116->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:02:26,569->download_from_omero.py->download_from_omero():173]INFO: 410840_fundus2_A-8970_OD1_08-31-02.211_04-13-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:02:26,788->download_from_omero.py->send_to_server():212]INFO: Uploading 410840_fundus2_A-8970_OD1_08-31-02.211_04-13-23-1.tif
+[2023-06-06 12:02:26,819->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:02:53,476->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18458;
+[2023-06-06 12:02:53,491->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410840_fundus2_A-8970_OD1_08-31-02.211_04-13-23-1.tif
+[2023-06-06 12:02:56,491->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410840_fundus2_A-8970_OD1_08-31-02.211_04-13-23-1.tif
+[2023-06-06 12:02:56,491->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410840_fundus2_A-8970_OD1_08-31-02.211_04-13-23-1.tif
+[2023-06-06 12:02:56,491->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410844_fundus2_A-10978_OD_12-56-45.995_05-11-23-1.tif
+[2023-06-06 12:02:56,491->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:02:59,976->download_from_omero.py->download_from_omero():173]INFO: 410844_fundus2_A-10978_OD_12-56-45.995_05-11-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:03:00,194->download_from_omero.py->send_to_server():212]INFO: Uploading 410844_fundus2_A-10978_OD_12-56-45.995_05-11-23-1.tif
+[2023-06-06 12:03:00,226->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:03:27,101->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18459;
+[2023-06-06 12:03:27,101->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410844_fundus2_A-10978_OD_12-56-45.995_05-11-23-1.tif
+[2023-06-06 12:03:30,101->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410844_fundus2_A-10978_OD_12-56-45.995_05-11-23-1.tif
+[2023-06-06 12:03:30,101->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410844_fundus2_A-10978_OD_12-56-45.995_05-11-23-1.tif
+[2023-06-06 12:03:30,101->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410855_fundus2_A-9511_OD1_10-02-43.621_04-20-23-1.tif
+[2023-06-06 12:03:30,101->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:03:33,570->download_from_omero.py->download_from_omero():173]INFO: 410855_fundus2_A-9511_OD1_10-02-43.621_04-20-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:03:33,789->download_from_omero.py->send_to_server():212]INFO: Uploading 410855_fundus2_A-9511_OD1_10-02-43.621_04-20-23-1.tif
+[2023-06-06 12:03:33,820->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:04:00,102->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18460;
+[2023-06-06 12:04:00,102->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410855_fundus2_A-9511_OD1_10-02-43.621_04-20-23-1.tif
+[2023-06-06 12:04:03,102->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410855_fundus2_A-9511_OD1_10-02-43.621_04-20-23-1.tif
+[2023-06-06 12:04:03,102->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410855_fundus2_A-9511_OD1_10-02-43.621_04-20-23-1.tif
+[2023-06-06 12:04:03,102->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410864_fundus2_A-9482_OD1_10-14-15.746_04-20-23-1.tif
+[2023-06-06 12:04:03,102->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:04:06,555->download_from_omero.py->download_from_omero():173]INFO: 410864_fundus2_A-9482_OD1_10-14-15.746_04-20-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:04:06,774->download_from_omero.py->send_to_server():212]INFO: Uploading 410864_fundus2_A-9482_OD1_10-14-15.746_04-20-23-1.tif
+[2023-06-06 12:04:06,805->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:04:33,462->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18461;
+[2023-06-06 12:04:33,462->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410864_fundus2_A-9482_OD1_10-14-15.746_04-20-23-1.tif
+[2023-06-06 12:04:36,462->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410864_fundus2_A-9482_OD1_10-14-15.746_04-20-23-1.tif
+[2023-06-06 12:04:36,462->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410864_fundus2_A-9482_OD1_10-14-15.746_04-20-23-1.tif
+[2023-06-06 12:04:36,462->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410890_fundus2_A-9810_OS1_09-04-52.794_04-25-23-1.tif
+[2023-06-06 12:04:36,462->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:04:39,884->download_from_omero.py->download_from_omero():173]INFO: 410890_fundus2_A-9810_OS1_09-04-52.794_04-25-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:04:40,103->download_from_omero.py->send_to_server():212]INFO: Uploading 410890_fundus2_A-9810_OS1_09-04-52.794_04-25-23-1.tif
+[2023-06-06 12:04:40,134->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:05:06,634->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18462;
+[2023-06-06 12:05:06,634->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410890_fundus2_A-9810_OS1_09-04-52.794_04-25-23-1.tif
+[2023-06-06 12:05:09,634->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410890_fundus2_A-9810_OS1_09-04-52.794_04-25-23-1.tif
+[2023-06-06 12:05:09,634->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410890_fundus2_A-9810_OS1_09-04-52.794_04-25-23-1.tif
+[2023-06-06 12:05:09,634->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410891_fundus2_A-10489_OS_10-49-46.414_05-04-23-1.tif
+[2023-06-06 12:05:09,634->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:05:13,072->download_from_omero.py->download_from_omero():173]INFO: 410891_fundus2_A-10489_OS_10-49-46.414_05-04-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:05:13,291->download_from_omero.py->send_to_server():212]INFO: Uploading 410891_fundus2_A-10489_OS_10-49-46.414_05-04-23-1.tif
+[2023-06-06 12:05:13,322->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:05:39,588->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18463;
+[2023-06-06 12:05:39,588->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410891_fundus2_A-10489_OS_10-49-46.414_05-04-23-1.tif
+[2023-06-06 12:05:42,604->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410891_fundus2_A-10489_OS_10-49-46.414_05-04-23-1.tif
+[2023-06-06 12:05:42,604->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410891_fundus2_A-10489_OS_10-49-46.414_05-04-23-1.tif
+[2023-06-06 12:05:42,604->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410896_fundus2_A-9810_OS_09-04-34.433_04-25-23-1.tif
+[2023-06-06 12:05:42,604->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:05:46,041->download_from_omero.py->download_from_omero():173]INFO: 410896_fundus2_A-9810_OS_09-04-34.433_04-25-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:05:46,260->download_from_omero.py->send_to_server():212]INFO: Uploading 410896_fundus2_A-9810_OS_09-04-34.433_04-25-23-1.tif
+[2023-06-06 12:05:46,291->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:06:12,776->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18464;
+[2023-06-06 12:06:12,792->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410896_fundus2_A-9810_OS_09-04-34.433_04-25-23-1.tif
+[2023-06-06 12:06:15,792->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410896_fundus2_A-9810_OS_09-04-34.433_04-25-23-1.tif
+[2023-06-06 12:06:15,792->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410896_fundus2_A-9810_OS_09-04-34.433_04-25-23-1.tif
+[2023-06-06 12:06:15,792->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410897_fundus2_A-10460_OD_10-43-12.256_05-04-23-1.tif
+[2023-06-06 12:06:15,792->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:06:19,261->download_from_omero.py->download_from_omero():173]INFO: 410897_fundus2_A-10460_OD_10-43-12.256_05-04-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:06:19,480->download_from_omero.py->send_to_server():212]INFO: Uploading 410897_fundus2_A-10460_OD_10-43-12.256_05-04-23-1.tif
+[2023-06-06 12:06:19,511->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:06:46,652->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18465;
+[2023-06-06 12:06:46,652->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410897_fundus2_A-10460_OD_10-43-12.256_05-04-23-1.tif
+[2023-06-06 12:06:49,652->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410897_fundus2_A-10460_OD_10-43-12.256_05-04-23-1.tif
+[2023-06-06 12:06:49,652->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410897_fundus2_A-10460_OD_10-43-12.256_05-04-23-1.tif
+[2023-06-06 12:06:49,652->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410898_fundus2_A-10934_OD1_12-44-04.616_05-11-23-1.tif
+[2023-06-06 12:06:49,652->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:06:53,027->download_from_omero.py->download_from_omero():173]INFO: 410898_fundus2_A-10934_OD1_12-44-04.616_05-11-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:06:53,246->download_from_omero.py->send_to_server():212]INFO: Uploading 410898_fundus2_A-10934_OD1_12-44-04.616_05-11-23-1.tif
+[2023-06-06 12:06:53,277->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:07:20,278->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18466;
+[2023-06-06 12:07:20,278->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410898_fundus2_A-10934_OD1_12-44-04.616_05-11-23-1.tif
+[2023-06-06 12:07:23,278->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410898_fundus2_A-10934_OD1_12-44-04.616_05-11-23-1.tif
+[2023-06-06 12:07:23,278->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410898_fundus2_A-10934_OD1_12-44-04.616_05-11-23-1.tif
+[2023-06-06 12:07:23,278->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410900_fundus2_A-10460_OD2_10-44-05.438_05-04-23-1.tif
+[2023-06-06 12:07:23,278->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:07:26,700->download_from_omero.py->download_from_omero():173]INFO: 410900_fundus2_A-10460_OD2_10-44-05.438_05-04-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:07:26,934->download_from_omero.py->send_to_server():212]INFO: Uploading 410900_fundus2_A-10460_OD2_10-44-05.438_05-04-23-1.tif
+[2023-06-06 12:07:26,966->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:07:54,013->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18467;
+[2023-06-06 12:07:54,013->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410900_fundus2_A-10460_OD2_10-44-05.438_05-04-23-1.tif
+[2023-06-06 12:07:57,013->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410900_fundus2_A-10460_OD2_10-44-05.438_05-04-23-1.tif
+[2023-06-06 12:07:57,013->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410900_fundus2_A-10460_OD2_10-44-05.438_05-04-23-1.tif
+[2023-06-06 12:07:57,013->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410901_fundus2_A-9836_OD1_09-56-03.091_04-20-23-1.tif
+[2023-06-06 12:07:57,013->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:08:00,482->download_from_omero.py->download_from_omero():173]INFO: 410901_fundus2_A-9836_OD1_09-56-03.091_04-20-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:08:00,701->download_from_omero.py->send_to_server():212]INFO: Uploading 410901_fundus2_A-9836_OD1_09-56-03.091_04-20-23-1.tif
+[2023-06-06 12:08:00,732->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:08:27,482->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18468;
+[2023-06-06 12:08:27,482->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410901_fundus2_A-9836_OD1_09-56-03.091_04-20-23-1.tif
+[2023-06-06 12:08:30,482->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410901_fundus2_A-9836_OD1_09-56-03.091_04-20-23-1.tif
+[2023-06-06 12:08:30,482->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410901_fundus2_A-9836_OD1_09-56-03.091_04-20-23-1.tif
+[2023-06-06 12:08:30,482->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410905_fundus2_A-11689_OS1_10-32-33.069_05-18-23-1.tif
+[2023-06-06 12:08:30,482->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:08:33,889->download_from_omero.py->download_from_omero():173]INFO: 410905_fundus2_A-11689_OS1_10-32-33.069_05-18-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:08:34,107->download_from_omero.py->send_to_server():212]INFO: Uploading 410905_fundus2_A-11689_OS1_10-32-33.069_05-18-23-1.tif
+[2023-06-06 12:08:34,139->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:09:00,436->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18469;
+[2023-06-06 12:09:00,436->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410905_fundus2_A-11689_OS1_10-32-33.069_05-18-23-1.tif
+[2023-06-06 12:09:03,436->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410905_fundus2_A-11689_OS1_10-32-33.069_05-18-23-1.tif
+[2023-06-06 12:09:03,436->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410905_fundus2_A-11689_OS1_10-32-33.069_05-18-23-1.tif
+[2023-06-06 12:09:03,436->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410858_fundus2_A-9511_OS_10-06-29.025_04-20-23-1.tif
+[2023-06-06 12:09:03,436->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:09:06,858->download_from_omero.py->download_from_omero():173]INFO: 410858_fundus2_A-9511_OS_10-06-29.025_04-20-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:09:07,077->download_from_omero.py->send_to_server():212]INFO: Uploading 410858_fundus2_A-9511_OS_10-06-29.025_04-20-23-1.tif
+[2023-06-06 12:09:07,108->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:09:33,421->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18470;
+[2023-06-06 12:09:33,436->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410858_fundus2_A-9511_OS_10-06-29.025_04-20-23-1.tif
+[2023-06-06 12:09:36,437->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410858_fundus2_A-9511_OS_10-06-29.025_04-20-23-1.tif
+[2023-06-06 12:09:36,437->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410858_fundus2_A-9511_OS_10-06-29.025_04-20-23-1.tif
+[2023-06-06 12:09:36,437->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410859_fundus2_A-10934_OD_12-42-55.071_05-11-23-1.tif
+[2023-06-06 12:09:36,437->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:09:39,859->download_from_omero.py->download_from_omero():173]INFO: 410859_fundus2_A-10934_OD_12-42-55.071_05-11-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:09:40,077->download_from_omero.py->send_to_server():212]INFO: Uploading 410859_fundus2_A-10934_OD_12-42-55.071_05-11-23-1.tif
+[2023-06-06 12:09:40,109->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:10:06,640->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18471;
+[2023-06-06 12:10:06,656->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410859_fundus2_A-10934_OD_12-42-55.071_05-11-23-1.tif
+[2023-06-06 12:10:09,656->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410859_fundus2_A-10934_OD_12-42-55.071_05-11-23-1.tif
+[2023-06-06 12:10:09,656->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410859_fundus2_A-10934_OD_12-42-55.071_05-11-23-1.tif
+[2023-06-06 12:10:09,656->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410833_fundus2_A-9511_OD_10-02-23.497_04-20-23-1.tif
+[2023-06-06 12:10:09,656->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:10:13,125->download_from_omero.py->download_from_omero():173]INFO: 410833_fundus2_A-9511_OD_10-02-23.497_04-20-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:10:13,344->download_from_omero.py->send_to_server():212]INFO: Uploading 410833_fundus2_A-9511_OD_10-02-23.497_04-20-23-1.tif
+[2023-06-06 12:10:13,375->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:10:39,750->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18472;
+[2023-06-06 12:10:39,766->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410833_fundus2_A-9511_OD_10-02-23.497_04-20-23-1.tif
+[2023-06-06 12:10:42,766->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410833_fundus2_A-9511_OD_10-02-23.497_04-20-23-1.tif
+[2023-06-06 12:10:42,766->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410833_fundus2_A-9511_OD_10-02-23.497_04-20-23-1.tif
+[2023-06-06 12:10:42,766->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410848_fundus2_A-10460_OD1_10-43-40.664_05-04-23-1.tif
+[2023-06-06 12:10:42,766->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:10:46,188->download_from_omero.py->download_from_omero():173]INFO: 410848_fundus2_A-10460_OD1_10-43-40.664_05-04-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:10:46,407->download_from_omero.py->send_to_server():212]INFO: Uploading 410848_fundus2_A-10460_OD1_10-43-40.664_05-04-23-1.tif
+[2023-06-06 12:10:46,438->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:11:12,892->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18473;
+[2023-06-06 12:11:12,907->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410848_fundus2_A-10460_OD1_10-43-40.664_05-04-23-1.tif
+[2023-06-06 12:11:15,907->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410848_fundus2_A-10460_OD1_10-43-40.664_05-04-23-1.tif
+[2023-06-06 12:11:15,907->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410848_fundus2_A-10460_OD1_10-43-40.664_05-04-23-1.tif
+[2023-06-06 12:11:15,907->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410872_fundus2_A-9836_OD_09-55-42.358_04-20-23-1.tif
+[2023-06-06 12:11:15,907->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:11:19,314->download_from_omero.py->download_from_omero():173]INFO: 410872_fundus2_A-9836_OD_09-55-42.358_04-20-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:11:19,533->download_from_omero.py->send_to_server():212]INFO: Uploading 410872_fundus2_A-9836_OD_09-55-42.358_04-20-23-1.tif
+[2023-06-06 12:11:19,564->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:11:46,158->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18474;
+[2023-06-06 12:11:46,158->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410872_fundus2_A-9836_OD_09-55-42.358_04-20-23-1.tif
+[2023-06-06 12:11:49,158->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410872_fundus2_A-9836_OD_09-55-42.358_04-20-23-1.tif
+[2023-06-06 12:11:49,158->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410872_fundus2_A-9836_OD_09-55-42.358_04-20-23-1.tif
+[2023-06-06 12:11:49,158->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410875_fundus2_D88883_OD1_09-50-03.230_04-20-23-1.tif
+[2023-06-06 12:11:49,158->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:11:52,565->download_from_omero.py->download_from_omero():173]INFO: 410875_fundus2_D88883_OD1_09-50-03.230_04-20-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:11:52,783->download_from_omero.py->send_to_server():212]INFO: Uploading 410875_fundus2_D88883_OD1_09-50-03.230_04-20-23-1.tif
+[2023-06-06 12:11:52,815->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:12:19,237->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18475;
+[2023-06-06 12:12:19,237->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410875_fundus2_D88883_OD1_09-50-03.230_04-20-23-1.tif
+[2023-06-06 12:12:22,237->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410875_fundus2_D88883_OD1_09-50-03.230_04-20-23-1.tif
+[2023-06-06 12:12:22,237->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410875_fundus2_D88883_OD1_09-50-03.230_04-20-23-1.tif
+[2023-06-06 12:12:22,237->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410882_fundus2_A-10942_OD4_12-50-03.419_05-11-23-1.tif
+[2023-06-06 12:12:22,237->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:12:25,675->download_from_omero.py->download_from_omero():173]INFO: 410882_fundus2_A-10942_OD4_12-50-03.419_05-11-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:12:25,893->download_from_omero.py->send_to_server():212]INFO: Uploading 410882_fundus2_A-10942_OD4_12-50-03.419_05-11-23-1.tif
+[2023-06-06 12:12:25,925->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:12:52,331->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18476;
+[2023-06-06 12:12:52,331->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410882_fundus2_A-10942_OD4_12-50-03.419_05-11-23-1.tif
+[2023-06-06 12:12:55,332->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410882_fundus2_A-10942_OD4_12-50-03.419_05-11-23-1.tif
+[2023-06-06 12:12:55,332->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410882_fundus2_A-10942_OD4_12-50-03.419_05-11-23-1.tif
+[2023-06-06 12:12:55,332->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410883_fundus2_A-9723_OD_08-29-23.730_04-25-23-1.tif
+[2023-06-06 12:12:55,332->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:12:58,707->download_from_omero.py->download_from_omero():173]INFO: 410883_fundus2_A-9723_OD_08-29-23.730_04-25-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:12:58,941->download_from_omero.py->send_to_server():212]INFO: Uploading 410883_fundus2_A-9723_OD_08-29-23.730_04-25-23-1.tif
+[2023-06-06 12:12:58,972->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:13:25,285->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18477;
+[2023-06-06 12:13:25,301->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410883_fundus2_A-9723_OD_08-29-23.730_04-25-23-1.tif
+[2023-06-06 12:13:28,301->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410883_fundus2_A-9723_OD_08-29-23.730_04-25-23-1.tif
+[2023-06-06 12:13:28,301->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410883_fundus2_A-9723_OD_08-29-23.730_04-25-23-1.tif
+[2023-06-06 12:13:28,301->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410885_fundus2_A-9739_OD_08-36-06.561_04-25-23-1.tif
+[2023-06-06 12:13:28,301->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:13:31,707->download_from_omero.py->download_from_omero():173]INFO: 410885_fundus2_A-9739_OD_08-36-06.561_04-25-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:13:31,926->download_from_omero.py->send_to_server():212]INFO: Uploading 410885_fundus2_A-9739_OD_08-36-06.561_04-25-23-1.tif
+[2023-06-06 12:13:31,957->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:13:58,333->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18478;
+[2023-06-06 12:13:58,333->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410885_fundus2_A-9739_OD_08-36-06.561_04-25-23-1.tif
+[2023-06-06 12:14:01,333->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410885_fundus2_A-9739_OD_08-36-06.561_04-25-23-1.tif
+[2023-06-06 12:14:01,333->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410885_fundus2_A-9739_OD_08-36-06.561_04-25-23-1.tif
+[2023-06-06 12:14:01,333->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410889_fundus2_A-8970_OD_08-30-37.080_04-13-23-1.tif
+[2023-06-06 12:14:01,333->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:14:04,755->download_from_omero.py->download_from_omero():173]INFO: 410889_fundus2_A-8970_OD_08-30-37.080_04-13-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:14:04,973->download_from_omero.py->send_to_server():212]INFO: Uploading 410889_fundus2_A-8970_OD_08-30-37.080_04-13-23-1.tif
+[2023-06-06 12:14:05,005->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:14:31,880->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18479;
+[2023-06-06 12:14:31,896->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410889_fundus2_A-8970_OD_08-30-37.080_04-13-23-1.tif
+[2023-06-06 12:14:34,896->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410889_fundus2_A-8970_OD_08-30-37.080_04-13-23-1.tif
+[2023-06-06 12:14:34,896->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410889_fundus2_A-8970_OD_08-30-37.080_04-13-23-1.tif
+[2023-06-06 12:14:34,896->download_from_omero.py->download_from_omero():142]DEBUG: Final file name is 410892_fundus2_A-9503_OS_08-21-46.212_04-13-23-1.tif
+[2023-06-06 12:14:34,896->download_from_omero.py->download_from_omero():151]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003'
+[2023-06-06 12:14:38,333->download_from_omero.py->download_from_omero():173]INFO: 410892_fundus2_A-9503_OS_08-21-46.212_04-13-23-1.tif downloaded, ready to be sent to the server
+[2023-06-06 12:14:38,552->download_from_omero.py->send_to_server():212]INFO: Uploading 410892_fundus2_A-9503_OS_08-21-46.212_04-13-23-1.tif
+[2023-06-06 12:14:38,583->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-06-06 12:15:05,490->download_from_omero.py->update_images_status():70]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-06-06', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 18480;
+[2023-06-06 12:15:05,490->download_from_omero.py->send_to_server():224]INFO: Finish uploading 410892_fundus2_A-9503_OS_08-21-46.212_04-13-23-1.tif
+[2023-06-06 12:15:08,490->download_from_omero.py->DFS():237]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410892_fundus2_A-9503_OS_08-21-46.212_04-13-23-1.tif
+[2023-06-06 12:15:08,490->download_from_omero.py->DFS():239]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/JAX_ERG_003\410892_fundus2_A-9503_OS_08-21-46.212_04-13-23-1.tif
+[2023-06-06 12:15:08,490->download_from_omero.py->main():259]INFO: Process finished
+[2023-06-06 12:15:13,631->download_from_drive.py-><module>():253]INFO: Logger has been created
+[2023-06-06 12:15:13,631->download_from_drive.py-><module>():265]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures'
+[2023-06-06 12:15:13,631->download_from_drive.py->db_init():24]INFO: Connecting to database . . .

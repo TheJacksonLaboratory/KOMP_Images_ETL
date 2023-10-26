@@ -1,0 +1,178 @@
+[2023-10-12 17:00:06,278->download_from_omero.py-><module>():272]INFO: Logger has been created
+[2023-10-12 17:00:06,278->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:00:06,637->download_from_omero.py->download_from_omero():98]DEBUG: https://omeroweb.jax.org/api/v0/
+[2023-10-12 17:00:06,669->download_from_omero.py->download_from_omero():119]DEBUG: https://omeroweb.jax.org/api/v0/login/
+[2023-10-12 17:00:09,543->download_from_omero.py->main():259]INFO: Process finished
+[2023-10-12 17:00:14,575->download_from_drive.py-><module>():258]INFO: Logger has been created
+[2023-10-12 17:00:14,575->download_from_drive.py-><module>():270]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures'
+[2023-10-12 17:00:14,575->download_from_drive.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16684_1.jpg
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16686_1.jpg
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16163_1.jpg
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16163_2.jpg
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16146_1.jpg
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16146_2.jpg
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16152_1.jpg
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16152_2.jpg
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16158_1.jpg
+[2023-10-12 17:00:14,606->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16281_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16280_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16259_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16140_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16215_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16097_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16097_2.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16098_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16094_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22583_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22578_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22578_2.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22549_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22549_2.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-21354_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-21354_2.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22551_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22551_2.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-21556_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():105]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-21480_1.jpg
+[2023-10-12 17:00:14,622->download_from_drive.py->generate_file_location():110]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->download_from_drive():136]DEBUG: Processing IMPC_CSD_003
+[2023-10-12 17:00:14,622->download_from_drive.py->download_from_drive():144]INFO: Starting downloading file A-16684_1.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16684_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:14,880->download_from_drive.py->download_from_drive():147]INFO: Done downloading file A-16684_1.jpg
+[2023-10-12 17:00:14,881->download_from_drive.py->download_from_drive():150]INFO: Start to send file A-16684_1.jpg to bhjlk02lp.jax.org
+[2023-10-12 17:00:15,238->download_from_drive.py->send_to_server():202]INFO: Uploading 3603115_A-16684_1.jpg
+[2023-10-12 17:00:15,253->download_from_drive.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:00:55,011->download_from_drive.py->update_images_status():68]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-10-12', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 36444;
+[2023-10-12 17:00:55,011->download_from_drive.py->send_to_server():214]INFO: Finish uploading A-16684_1.jpg
+[2023-10-12 17:00:55,011->download_from_drive.py->DFS():227]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16684_1.jpg
+[2023-10-12 17:00:55,011->download_from_drive.py->DFS():229]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16684_1.jpg
+[2023-10-12 17:00:55,011->download_from_drive.py->download_from_drive():144]INFO: Starting downloading file A-16686_1.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16686_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:00:55,480->download_from_drive.py->download_from_drive():147]INFO: Done downloading file A-16686_1.jpg
+[2023-10-12 17:00:55,480->download_from_drive.py->download_from_drive():150]INFO: Start to send file A-16686_1.jpg to bhjlk02lp.jax.org
+[2023-10-12 17:00:55,840->download_from_drive.py->send_to_server():202]INFO: Uploading 3603167_A-16686_1.jpg
+[2023-10-12 17:00:55,856->download_from_drive.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:01:35,776->download_from_drive.py->update_images_status():68]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-10-12', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 36445;
+[2023-10-12 17:01:35,776->download_from_drive.py->send_to_server():214]INFO: Finish uploading A-16686_1.jpg
+[2023-10-12 17:01:35,776->download_from_drive.py->DFS():227]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16686_1.jpg
+[2023-10-12 17:01:35,776->download_from_drive.py->DFS():229]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16686_1.jpg
+[2023-10-12 17:01:35,776->download_from_drive.py->download_from_drive():144]INFO: Starting downloading file A-16163_1.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16163_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:01:35,838->download_from_drive.py->download_from_drive():147]INFO: Done downloading file A-16163_1.jpg
+[2023-10-12 17:01:35,838->download_from_drive.py->download_from_drive():150]INFO: Start to send file A-16163_1.jpg to bhjlk02lp.jax.org
+[2023-10-12 17:01:36,167->download_from_drive.py->send_to_server():202]INFO: Uploading 3603296_A-16163_1.jpg
+[2023-10-12 17:01:36,182->download_from_drive.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:02:16,229->download_from_drive.py->update_images_status():68]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-10-12', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 36446;
+[2023-10-12 17:02:16,229->download_from_drive.py->send_to_server():214]INFO: Finish uploading A-16163_1.jpg
+[2023-10-12 17:02:16,229->download_from_drive.py->DFS():227]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16163_1.jpg
+[2023-10-12 17:02:16,229->download_from_drive.py->DFS():229]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16163_1.jpg
+[2023-10-12 17:02:16,229->download_from_drive.py->download_from_drive():144]INFO: Starting downloading file A-16163_2.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16163_2.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:02:16,395->download_from_drive.py->download_from_drive():147]INFO: Done downloading file A-16163_2.jpg
+[2023-10-12 17:02:16,395->download_from_drive.py->download_from_drive():150]INFO: Start to send file A-16163_2.jpg to bhjlk02lp.jax.org
+[2023-10-12 17:02:16,698->download_from_drive.py->send_to_server():202]INFO: Uploading 3603296_A-16163_2.jpg
+[2023-10-12 17:02:16,717->download_from_drive.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:02:56,454->download_from_drive.py->update_images_status():68]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-10-12', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 36447;
+[2023-10-12 17:02:56,459->download_from_drive.py->send_to_server():214]INFO: Finish uploading A-16163_2.jpg
+[2023-10-12 17:02:56,460->download_from_drive.py->DFS():227]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16163_2.jpg
+[2023-10-12 17:02:56,460->download_from_drive.py->DFS():229]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16163_2.jpg
+[2023-10-12 17:02:56,462->download_from_drive.py->download_from_drive():144]INFO: Starting downloading file A-16146_1.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16146_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:02:56,620->download_from_drive.py->download_from_drive():147]INFO: Done downloading file A-16146_1.jpg
+[2023-10-12 17:02:56,620->download_from_drive.py->download_from_drive():150]INFO: Start to send file A-16146_1.jpg to bhjlk02lp.jax.org
+[2023-10-12 17:02:56,946->download_from_drive.py->send_to_server():202]INFO: Uploading 3603377_A-16146_1.jpg
+[2023-10-12 17:02:56,962->download_from_drive.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:03:36,149->download_from_drive.py->update_images_status():68]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-10-12', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 36448;
+[2023-10-12 17:03:36,149->download_from_drive.py->send_to_server():214]INFO: Finish uploading A-16146_1.jpg
+[2023-10-12 17:03:36,149->download_from_drive.py->DFS():227]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16146_1.jpg
+[2023-10-12 17:03:36,149->download_from_drive.py->DFS():229]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16146_1.jpg
+[2023-10-12 17:03:36,149->download_from_drive.py->download_from_drive():144]INFO: Starting downloading file A-16146_2.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16146_2.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:03:36,351->download_from_drive.py->download_from_drive():147]INFO: Done downloading file A-16146_2.jpg
+[2023-10-12 17:03:36,351->download_from_drive.py->download_from_drive():150]INFO: Start to send file A-16146_2.jpg to bhjlk02lp.jax.org
+[2023-10-12 17:03:36,665->download_from_drive.py->send_to_server():202]INFO: Uploading 3603377_A-16146_2.jpg
+[2023-10-12 17:03:36,681->download_from_drive.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:04:16,601->download_from_drive.py->update_images_status():68]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-10-12', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 36449;
+[2023-10-12 17:04:16,606->download_from_drive.py->send_to_server():214]INFO: Finish uploading A-16146_2.jpg
+[2023-10-12 17:04:16,606->download_from_drive.py->DFS():227]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16146_2.jpg
+[2023-10-12 17:04:16,606->download_from_drive.py->DFS():229]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16146_2.jpg
+[2023-10-12 17:04:16,608->download_from_drive.py->download_from_drive():144]INFO: Starting downloading file A-16152_1.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16152_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:04:16,949->download_from_drive.py->download_from_drive():147]INFO: Done downloading file A-16152_1.jpg
+[2023-10-12 17:04:16,949->download_from_drive.py->download_from_drive():150]INFO: Start to send file A-16152_1.jpg to bhjlk02lp.jax.org
+[2023-10-12 17:04:17,258->download_from_drive.py->send_to_server():202]INFO: Uploading 3603404_A-16152_1.jpg
+[2023-10-12 17:04:17,274->download_from_drive.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:04:56,933->download_from_drive.py->update_images_status():68]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-10-12', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 36450;
+[2023-10-12 17:04:56,938->download_from_drive.py->send_to_server():214]INFO: Finish uploading A-16152_1.jpg
+[2023-10-12 17:04:56,938->download_from_drive.py->DFS():227]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16152_1.jpg
+[2023-10-12 17:04:56,938->download_from_drive.py->DFS():229]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16152_1.jpg
+[2023-10-12 17:04:56,940->download_from_drive.py->download_from_drive():144]INFO: Starting downloading file A-16152_2.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16152_2.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:04:56,992->download_from_drive.py->download_from_drive():147]INFO: Done downloading file A-16152_2.jpg
+[2023-10-12 17:04:56,992->download_from_drive.py->download_from_drive():150]INFO: Start to send file A-16152_2.jpg to bhjlk02lp.jax.org
+[2023-10-12 17:04:57,307->download_from_drive.py->send_to_server():202]INFO: Uploading 3603404_A-16152_2.jpg
+[2023-10-12 17:04:57,323->download_from_drive.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:05:37,181->download_from_drive.py->update_images_status():68]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-10-12', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 36451;
+[2023-10-12 17:05:37,186->download_from_drive.py->send_to_server():214]INFO: Finish uploading A-16152_2.jpg
+[2023-10-12 17:05:37,187->download_from_drive.py->DFS():227]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16152_2.jpg
+[2023-10-12 17:05:37,187->download_from_drive.py->DFS():229]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16152_2.jpg
+[2023-10-12 17:05:37,189->download_from_drive.py->download_from_drive():144]INFO: Starting downloading file A-16158_1.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16158_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:05:37,257->download_from_drive.py->download_from_drive():147]INFO: Done downloading file A-16158_1.jpg
+[2023-10-12 17:05:37,257->download_from_drive.py->download_from_drive():150]INFO: Start to send file A-16158_1.jpg to bhjlk02lp.jax.org
+[2023-10-12 17:05:37,585->download_from_drive.py->send_to_server():202]INFO: Uploading 3603454_A-16158_1.jpg
+[2023-10-12 17:05:37,600->download_from_drive.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:06:16,955->download_from_drive.py->update_images_status():68]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-10-12', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 36452;
+[2023-10-12 17:06:16,960->download_from_drive.py->send_to_server():214]INFO: Finish uploading A-16158_1.jpg
+[2023-10-12 17:06:16,961->download_from_drive.py->DFS():227]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16158_1.jpg
+[2023-10-12 17:06:16,961->download_from_drive.py->DFS():229]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16158_1.jpg
+[2023-10-12 17:06:16,962->download_from_drive.py->download_from_drive():144]INFO: Starting downloading file A-16281_1.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16281_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:06:17,694->download_from_drive.py->download_from_drive():147]INFO: Done downloading file A-16281_1.jpg
+[2023-10-12 17:06:17,694->download_from_drive.py->download_from_drive():150]INFO: Start to send file A-16281_1.jpg to bhjlk02lp.jax.org
+[2023-10-12 17:06:18,007->download_from_drive.py->send_to_server():202]INFO: Uploading 3603479_A-16281_1.jpg
+[2023-10-12 17:06:18,007->download_from_drive.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:06:57,663->download_from_drive.py->update_images_status():68]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-10-12', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 36453;
+[2023-10-12 17:06:57,663->download_from_drive.py->send_to_server():214]INFO: Finish uploading A-16281_1.jpg
+[2023-10-12 17:06:57,663->download_from_drive.py->DFS():227]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16281_1.jpg
+[2023-10-12 17:06:57,663->download_from_drive.py->DFS():229]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16281_1.jpg
+[2023-10-12 17:06:57,663->download_from_drive.py->download_from_drive():144]INFO: Starting downloading file A-16280_1.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16280_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:06:57,755->download_from_drive.py->download_from_drive():147]INFO: Done downloading file A-16280_1.jpg
+[2023-10-12 17:06:57,755->download_from_drive.py->download_from_drive():150]INFO: Start to send file A-16280_1.jpg to bhjlk02lp.jax.org
+[2023-10-12 17:06:58,068->download_from_drive.py->send_to_server():202]INFO: Uploading 3603506_A-16280_1.jpg
+[2023-10-12 17:06:58,083->download_from_drive.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:07:38,099->download_from_drive.py->update_images_status():68]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-10-12', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 36454;
+[2023-10-12 17:07:38,099->download_from_drive.py->send_to_server():214]INFO: Finish uploading A-16280_1.jpg
+[2023-10-12 17:07:38,099->download_from_drive.py->DFS():227]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16280_1.jpg
+[2023-10-12 17:07:38,099->download_from_drive.py->DFS():229]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16280_1.jpg
+[2023-10-12 17:07:38,099->download_from_drive.py->download_from_drive():144]INFO: Starting downloading file A-16259_1.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16259_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-10-12 17:07:38,177->download_from_drive.py->download_from_drive():147]INFO: Done downloading file A-16259_1.jpg
+[2023-10-12 17:07:38,177->download_from_drive.py->download_from_drive():150]INFO: Start to send file A-16259_1.jpg to bhjlk02lp.jax.org
+[2023-10-12 17:07:38,497->download_from_drive.py->send_to_server():202]INFO: Uploading 3603533_A-16259_1.jpg
+[2023-10-12 17:07:38,506->download_from_drive.py->db_init():27]INFO: Connecting to database . . .
+[2023-10-12 17:08:18,536->download_from_drive.py->update_images_status():68]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-10-12', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 36455;
+[2023-10-12 17:08:18,536->download_from_drive.py->send_to_server():214]INFO: Finish uploading A-16259_1.jpg
+[2023-10-12 17:08:18,536->download_from_drive.py->DFS():227]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16259_1.jpg
+[2023-10-12 17:08:18,536->download_from_drive.py->DFS():229]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16259_1.jpg
+[2023-10-12 17:08:18,536->download_from_drive.py->download_from_drive():144]INFO: Starting downloading file  from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/ to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003

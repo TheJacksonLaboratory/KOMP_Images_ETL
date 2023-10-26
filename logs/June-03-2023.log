@@ -1,0 +1,3 @@
+[2023-06-03 17:51:50,479->download_from_drive.py-><module>():253]INFO: Logger has been created
+[2023-06-03 17:51:50,479->download_from_drive.py-><module>():265]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures'
+[2023-06-03 17:51:50,479->download_from_drive.py->db_init():24]INFO: Connecting to database . . .

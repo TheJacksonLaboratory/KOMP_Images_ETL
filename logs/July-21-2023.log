@@ -1,0 +1,781 @@
+[2023-07-21 13:12:16,197->download_from_omero.py-><module>():272]INFO: Logger has been created
+[2023-07-21 13:12:16,197->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
+[2023-07-21 13:12:16,307->download_from_omero.py->download_from_omero():98]DEBUG: https://omeroweb.jax.org/api/v0/
+[2023-07-21 13:12:16,338->download_from_omero.py->download_from_omero():119]DEBUG: https://omeroweb.jax.org/api/v0/login/
+[2023-07-21 13:12:31,554->download_from_drive.py-><module>():253]INFO: Logger has been created
+[2023-07-21 13:12:31,554->download_from_drive.py-><module>():265]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures'
+[2023-07-21 13:12:31,554->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-14285-RAW.pdf
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-14286-RAW.pdf
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-14287-RAW.pdf
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-14288-RAW.pdf
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-14289-RAW.pdf
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13682-RAW.pdf
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13695-RAW.pdf
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13698-RAW.pdf
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13699-RAW.pdf
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13671-RAW.pdf
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13735-RAW.pdf
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13731-RAW.pdf
+[2023-07-21 13:12:31,585->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13727-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13723-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13637-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13639-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13657-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13638-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13634-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13635-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13656-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13652-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13653-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13654-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-16337-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-16338-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-16339-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-16340-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-16341-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15545-RAW.pdf
+[2023-07-21 13:12:31,601->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15538-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15542-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15684-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15685-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15683-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15682-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15626-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15633-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15595-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15591-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15597-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15555-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15605-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15609-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15611-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15608-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15615-RAW.pdf
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/719892 J20033 P69284 image1.jpg
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/720015 J20052 P69285 image1.jpg
+[2023-07-21 13:12:31,617->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-18007_1.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16764_1.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16764_2.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16778_1.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16784_1.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16784_2.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16784_3.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16964_1.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16750_1.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16750_2.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16902_1.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16872_1.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16872_2.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16869_1.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-17257_1.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-17257_2.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-18446_1.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-18447_1.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-18447_2.jpg
+[2023-07-21 13:12:31,632->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,648->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-17157_1.jpg
+[2023-07-21 13:12:31,648->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,648->download_from_drive.py->generate_file_location():102]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-17144_1.jpg
+[2023-07-21 13:12:31,648->download_from_drive.py->generate_file_location():107]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:12:31,648->download_from_drive.py->download_from_drive():133]DEBUG: Processing IMPC_ECG_003
+[2023-07-21 13:12:31,648->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-14285-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:12:31,726->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-14285-RAW.pdf
+[2023-07-21 13:12:31,726->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-14285-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:12:32,163->download_from_drive.py->send_to_server():197]INFO: Uploading A-14285-RAW.pdf
+[2023-07-21 13:12:32,179->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:13:10,977->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26274;
+[2023-07-21 13:13:10,977->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-14285-RAW.pdf
+[2023-07-21 13:13:10,977->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-14285-RAW.pdf
+[2023-07-21 13:13:10,977->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-14285-RAW.pdf
+[2023-07-21 13:13:10,977->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-14286-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:13:11,086->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-14286-RAW.pdf
+[2023-07-21 13:13:11,086->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-14286-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:13:11,461->download_from_drive.py->send_to_server():197]INFO: Uploading A-14286-RAW.pdf
+[2023-07-21 13:13:11,461->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:13:49,915->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26275;
+[2023-07-21 13:13:49,915->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-14286-RAW.pdf
+[2023-07-21 13:13:49,915->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-14286-RAW.pdf
+[2023-07-21 13:13:49,915->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-14286-RAW.pdf
+[2023-07-21 13:13:49,915->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-14287-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:13:50,040->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-14287-RAW.pdf
+[2023-07-21 13:13:50,040->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-14287-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:13:50,431->download_from_drive.py->send_to_server():197]INFO: Uploading A-14287-RAW.pdf
+[2023-07-21 13:13:50,431->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:14:28,947->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26276;
+[2023-07-21 13:14:28,963->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-14287-RAW.pdf
+[2023-07-21 13:14:28,963->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-14287-RAW.pdf
+[2023-07-21 13:14:28,963->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-14287-RAW.pdf
+[2023-07-21 13:14:28,963->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-14288-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:14:29,104->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-14288-RAW.pdf
+[2023-07-21 13:14:29,104->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-14288-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:14:29,463->download_from_drive.py->send_to_server():197]INFO: Uploading A-14288-RAW.pdf
+[2023-07-21 13:14:29,463->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:15:07,339->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26277;
+[2023-07-21 13:15:07,354->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-14288-RAW.pdf
+[2023-07-21 13:15:07,354->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-14288-RAW.pdf
+[2023-07-21 13:15:07,354->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-14288-RAW.pdf
+[2023-07-21 13:15:07,354->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-14289-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:15:07,448->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-14289-RAW.pdf
+[2023-07-21 13:15:07,448->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-14289-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:15:07,808->download_from_drive.py->send_to_server():197]INFO: Uploading A-14289-RAW.pdf
+[2023-07-21 13:15:07,808->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:15:46,668->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26278;
+[2023-07-21 13:15:46,683->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-14289-RAW.pdf
+[2023-07-21 13:15:46,683->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-14289-RAW.pdf
+[2023-07-21 13:15:46,683->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-14289-RAW.pdf
+[2023-07-21 13:15:46,683->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13682-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:15:46,777->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13682-RAW.pdf
+[2023-07-21 13:15:46,777->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13682-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:15:47,136->download_from_drive.py->send_to_server():197]INFO: Uploading A-13682-RAW.pdf
+[2023-07-21 13:15:47,152->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:16:25,481->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26279;
+[2023-07-21 13:16:25,481->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13682-RAW.pdf
+[2023-07-21 13:16:25,496->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13682-RAW.pdf
+[2023-07-21 13:16:25,496->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13682-RAW.pdf
+[2023-07-21 13:16:25,496->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13695-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:16:25,715->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13695-RAW.pdf
+[2023-07-21 13:16:25,715->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13695-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:16:26,090->download_from_drive.py->send_to_server():197]INFO: Uploading A-13695-RAW.pdf
+[2023-07-21 13:16:26,090->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:17:05,107->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26280;
+[2023-07-21 13:17:05,107->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13695-RAW.pdf
+[2023-07-21 13:17:05,107->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13695-RAW.pdf
+[2023-07-21 13:17:05,107->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13695-RAW.pdf
+[2023-07-21 13:17:05,107->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13698-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:17:05,185->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13698-RAW.pdf
+[2023-07-21 13:17:05,185->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13698-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:17:05,560->download_from_drive.py->send_to_server():197]INFO: Uploading A-13698-RAW.pdf
+[2023-07-21 13:17:05,560->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:17:44,842->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26281;
+[2023-07-21 13:17:44,857->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13698-RAW.pdf
+[2023-07-21 13:17:44,857->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13698-RAW.pdf
+[2023-07-21 13:17:44,857->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13698-RAW.pdf
+[2023-07-21 13:17:44,857->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13699-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:17:44,920->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13699-RAW.pdf
+[2023-07-21 13:17:44,920->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13699-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:17:45,279->download_from_drive.py->send_to_server():197]INFO: Uploading A-13699-RAW.pdf
+[2023-07-21 13:17:45,279->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:18:23,639->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26282;
+[2023-07-21 13:18:23,639->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13699-RAW.pdf
+[2023-07-21 13:18:23,639->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13699-RAW.pdf
+[2023-07-21 13:18:23,639->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13699-RAW.pdf
+[2023-07-21 13:18:23,639->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13671-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:18:23,733->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13671-RAW.pdf
+[2023-07-21 13:18:23,733->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13671-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:18:24,108->download_from_drive.py->send_to_server():197]INFO: Uploading A-13671-RAW.pdf
+[2023-07-21 13:18:24,108->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:19:02,515->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26283;
+[2023-07-21 13:19:02,515->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13671-RAW.pdf
+[2023-07-21 13:19:02,515->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13671-RAW.pdf
+[2023-07-21 13:19:02,515->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13671-RAW.pdf
+[2023-07-21 13:19:02,515->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13735-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:19:02,593->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13735-RAW.pdf
+[2023-07-21 13:19:02,593->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13735-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:19:02,952->download_from_drive.py->send_to_server():197]INFO: Uploading A-13735-RAW.pdf
+[2023-07-21 13:19:02,952->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:19:41,875->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26284;
+[2023-07-21 13:19:41,875->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13735-RAW.pdf
+[2023-07-21 13:19:41,875->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13735-RAW.pdf
+[2023-07-21 13:19:41,875->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13735-RAW.pdf
+[2023-07-21 13:19:41,875->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13731-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:19:41,938->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13731-RAW.pdf
+[2023-07-21 13:19:41,938->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13731-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:19:42,297->download_from_drive.py->send_to_server():197]INFO: Uploading A-13731-RAW.pdf
+[2023-07-21 13:19:42,297->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:20:19,735->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26285;
+[2023-07-21 13:20:19,735->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13731-RAW.pdf
+[2023-07-21 13:20:19,735->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13731-RAW.pdf
+[2023-07-21 13:20:19,735->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13731-RAW.pdf
+[2023-07-21 13:20:19,735->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13727-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:20:19,813->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13727-RAW.pdf
+[2023-07-21 13:20:19,813->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13727-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:20:20,173->download_from_drive.py->send_to_server():197]INFO: Uploading A-13727-RAW.pdf
+[2023-07-21 13:20:20,173->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:20:59,021->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26286;
+[2023-07-21 13:20:59,037->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13727-RAW.pdf
+[2023-07-21 13:20:59,037->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13727-RAW.pdf
+[2023-07-21 13:20:59,037->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13727-RAW.pdf
+[2023-07-21 13:20:59,037->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13723-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:20:59,099->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13723-RAW.pdf
+[2023-07-21 13:20:59,099->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13723-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:20:59,459->download_from_drive.py->send_to_server():197]INFO: Uploading A-13723-RAW.pdf
+[2023-07-21 13:20:59,459->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:21:38,260->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26287;
+[2023-07-21 13:21:38,260->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13723-RAW.pdf
+[2023-07-21 13:21:38,260->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13723-RAW.pdf
+[2023-07-21 13:21:38,260->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13723-RAW.pdf
+[2023-07-21 13:21:38,260->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13637-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:21:38,338->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13637-RAW.pdf
+[2023-07-21 13:21:38,338->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13637-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:21:38,697->download_from_drive.py->send_to_server():197]INFO: Uploading A-13637-RAW.pdf
+[2023-07-21 13:21:38,697->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:22:16,184->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26288;
+[2023-07-21 13:22:16,200->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13637-RAW.pdf
+[2023-07-21 13:22:16,200->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13637-RAW.pdf
+[2023-07-21 13:22:16,200->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13637-RAW.pdf
+[2023-07-21 13:22:16,200->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13639-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:22:16,246->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13639-RAW.pdf
+[2023-07-21 13:22:16,246->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13639-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:22:16,622->download_from_drive.py->send_to_server():197]INFO: Uploading A-13639-RAW.pdf
+[2023-07-21 13:22:16,622->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:22:55,811->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26289;
+[2023-07-21 13:22:55,811->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13639-RAW.pdf
+[2023-07-21 13:22:55,811->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13639-RAW.pdf
+[2023-07-21 13:22:55,811->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13639-RAW.pdf
+[2023-07-21 13:22:55,811->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13657-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:22:55,905->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13657-RAW.pdf
+[2023-07-21 13:22:55,905->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13657-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:22:56,264->download_from_drive.py->send_to_server():197]INFO: Uploading A-13657-RAW.pdf
+[2023-07-21 13:22:56,264->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:23:33,594->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26290;
+[2023-07-21 13:23:33,594->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13657-RAW.pdf
+[2023-07-21 13:23:33,594->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13657-RAW.pdf
+[2023-07-21 13:23:33,594->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13657-RAW.pdf
+[2023-07-21 13:23:33,609->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13638-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:23:33,703->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13638-RAW.pdf
+[2023-07-21 13:23:33,703->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13638-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:23:34,063->download_from_drive.py->send_to_server():197]INFO: Uploading A-13638-RAW.pdf
+[2023-07-21 13:23:34,063->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:24:11,517->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26291;
+[2023-07-21 13:24:11,533->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13638-RAW.pdf
+[2023-07-21 13:24:11,533->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13638-RAW.pdf
+[2023-07-21 13:24:11,533->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13638-RAW.pdf
+[2023-07-21 13:24:11,533->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13634-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:24:11,580->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13634-RAW.pdf
+[2023-07-21 13:24:11,580->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13634-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:24:11,939->download_from_drive.py->send_to_server():197]INFO: Uploading A-13634-RAW.pdf
+[2023-07-21 13:24:11,939->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:24:49,003->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26292;
+[2023-07-21 13:24:49,018->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13634-RAW.pdf
+[2023-07-21 13:24:49,018->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13634-RAW.pdf
+[2023-07-21 13:24:49,018->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13634-RAW.pdf
+[2023-07-21 13:24:49,018->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13635-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:24:49,081->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13635-RAW.pdf
+[2023-07-21 13:24:49,081->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13635-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:24:49,424->download_from_drive.py->send_to_server():197]INFO: Uploading A-13635-RAW.pdf
+[2023-07-21 13:24:49,424->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:25:26,472->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26293;
+[2023-07-21 13:25:26,472->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13635-RAW.pdf
+[2023-07-21 13:25:26,472->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13635-RAW.pdf
+[2023-07-21 13:25:26,472->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13635-RAW.pdf
+[2023-07-21 13:25:26,488->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13656-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:25:26,691->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13656-RAW.pdf
+[2023-07-21 13:25:26,691->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13656-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:25:27,050->download_from_drive.py->send_to_server():197]INFO: Uploading A-13656-RAW.pdf
+[2023-07-21 13:25:27,050->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:26:04,458->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26294;
+[2023-07-21 13:26:04,458->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13656-RAW.pdf
+[2023-07-21 13:26:04,458->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13656-RAW.pdf
+[2023-07-21 13:26:04,458->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13656-RAW.pdf
+[2023-07-21 13:26:04,458->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13652-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:26:04,661->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13652-RAW.pdf
+[2023-07-21 13:26:04,661->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13652-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:26:05,036->download_from_drive.py->send_to_server():197]INFO: Uploading A-13652-RAW.pdf
+[2023-07-21 13:26:05,036->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:26:41,802->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26295;
+[2023-07-21 13:26:41,802->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13652-RAW.pdf
+[2023-07-21 13:26:41,818->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13652-RAW.pdf
+[2023-07-21 13:26:41,818->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13652-RAW.pdf
+[2023-07-21 13:26:41,818->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13653-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:26:41,865->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13653-RAW.pdf
+[2023-07-21 13:26:41,865->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13653-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:26:42,240->download_from_drive.py->send_to_server():197]INFO: Uploading A-13653-RAW.pdf
+[2023-07-21 13:26:42,240->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:27:19,631->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26296;
+[2023-07-21 13:27:19,631->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13653-RAW.pdf
+[2023-07-21 13:27:19,631->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13653-RAW.pdf
+[2023-07-21 13:27:19,631->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13653-RAW.pdf
+[2023-07-21 13:27:19,631->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-13654-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:27:19,756->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-13654-RAW.pdf
+[2023-07-21 13:27:19,756->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-13654-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:27:20,147->download_from_drive.py->send_to_server():197]INFO: Uploading A-13654-RAW.pdf
+[2023-07-21 13:27:20,147->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:27:57,585->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26297;
+[2023-07-21 13:27:57,585->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-13654-RAW.pdf
+[2023-07-21 13:27:57,585->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13654-RAW.pdf
+[2023-07-21 13:27:57,585->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-13654-RAW.pdf
+[2023-07-21 13:27:57,585->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-16337-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:27:57,710->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16337-RAW.pdf
+[2023-07-21 13:27:57,710->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16337-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:27:58,085->download_from_drive.py->send_to_server():197]INFO: Uploading A-16337-RAW.pdf
+[2023-07-21 13:27:58,085->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:28:36,023->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26298;
+[2023-07-21 13:28:36,023->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16337-RAW.pdf
+[2023-07-21 13:28:36,023->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-16337-RAW.pdf
+[2023-07-21 13:28:36,023->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-16337-RAW.pdf
+[2023-07-21 13:28:36,023->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-16338-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:28:36,086->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16338-RAW.pdf
+[2023-07-21 13:28:36,086->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16338-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:28:36,461->download_from_drive.py->send_to_server():197]INFO: Uploading A-16338-RAW.pdf
+[2023-07-21 13:28:36,461->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:29:14,649->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26299;
+[2023-07-21 13:29:14,649->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16338-RAW.pdf
+[2023-07-21 13:29:14,649->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-16338-RAW.pdf
+[2023-07-21 13:29:14,649->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-16338-RAW.pdf
+[2023-07-21 13:29:14,649->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-16339-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:29:14,712->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16339-RAW.pdf
+[2023-07-21 13:29:14,712->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16339-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:29:15,071->download_from_drive.py->send_to_server():197]INFO: Uploading A-16339-RAW.pdf
+[2023-07-21 13:29:15,071->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:29:51,931->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26300;
+[2023-07-21 13:29:51,947->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16339-RAW.pdf
+[2023-07-21 13:29:51,947->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-16339-RAW.pdf
+[2023-07-21 13:29:51,947->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-16339-RAW.pdf
+[2023-07-21 13:29:51,947->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-16340-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:29:51,994->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16340-RAW.pdf
+[2023-07-21 13:29:51,994->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16340-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:29:52,369->download_from_drive.py->send_to_server():197]INFO: Uploading A-16340-RAW.pdf
+[2023-07-21 13:29:52,369->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:30:30,119->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26301;
+[2023-07-21 13:30:30,119->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16340-RAW.pdf
+[2023-07-21 13:30:30,119->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-16340-RAW.pdf
+[2023-07-21 13:30:30,119->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-16340-RAW.pdf
+[2023-07-21 13:30:30,119->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-16341-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:30:30,182->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16341-RAW.pdf
+[2023-07-21 13:30:30,182->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16341-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:30:30,541->download_from_drive.py->send_to_server():197]INFO: Uploading A-16341-RAW.pdf
+[2023-07-21 13:30:30,541->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:31:07,917->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26302;
+[2023-07-21 13:31:07,917->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16341-RAW.pdf
+[2023-07-21 13:31:07,917->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-16341-RAW.pdf
+[2023-07-21 13:31:07,917->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-16341-RAW.pdf
+[2023-07-21 13:31:07,917->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15545-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:31:08,120->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15545-RAW.pdf
+[2023-07-21 13:31:08,120->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15545-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:31:08,495->download_from_drive.py->send_to_server():197]INFO: Uploading A-15545-RAW.pdf
+[2023-07-21 13:31:08,495->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:31:47,027->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26303;
+[2023-07-21 13:31:47,027->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15545-RAW.pdf
+[2023-07-21 13:31:47,027->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15545-RAW.pdf
+[2023-07-21 13:31:47,027->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15545-RAW.pdf
+[2023-07-21 13:31:47,027->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15538-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:31:47,105->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15538-RAW.pdf
+[2023-07-21 13:31:47,105->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15538-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:31:47,465->download_from_drive.py->send_to_server():197]INFO: Uploading A-15538-RAW.pdf
+[2023-07-21 13:31:47,465->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:32:26,075->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26304;
+[2023-07-21 13:32:26,090->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15538-RAW.pdf
+[2023-07-21 13:32:26,090->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15538-RAW.pdf
+[2023-07-21 13:32:26,090->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15538-RAW.pdf
+[2023-07-21 13:32:26,090->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15542-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:32:26,184->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15542-RAW.pdf
+[2023-07-21 13:32:26,184->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15542-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:32:26,544->download_from_drive.py->send_to_server():197]INFO: Uploading A-15542-RAW.pdf
+[2023-07-21 13:32:26,544->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:33:04,404->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26305;
+[2023-07-21 13:33:04,419->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15542-RAW.pdf
+[2023-07-21 13:33:04,419->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15542-RAW.pdf
+[2023-07-21 13:33:04,419->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15542-RAW.pdf
+[2023-07-21 13:33:04,419->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15684-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:33:04,482->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15684-RAW.pdf
+[2023-07-21 13:33:04,482->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15684-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:33:04,857->download_from_drive.py->send_to_server():197]INFO: Uploading A-15684-RAW.pdf
+[2023-07-21 13:33:04,857->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:33:43,139->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26306;
+[2023-07-21 13:33:43,155->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15684-RAW.pdf
+[2023-07-21 13:33:43,155->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15684-RAW.pdf
+[2023-07-21 13:33:43,155->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15684-RAW.pdf
+[2023-07-21 13:33:43,155->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15685-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:33:43,217->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15685-RAW.pdf
+[2023-07-21 13:33:43,217->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15685-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:33:43,592->download_from_drive.py->send_to_server():197]INFO: Uploading A-15685-RAW.pdf
+[2023-07-21 13:33:43,592->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:34:21,968->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26307;
+[2023-07-21 13:34:21,968->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15685-RAW.pdf
+[2023-07-21 13:34:21,983->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15685-RAW.pdf
+[2023-07-21 13:34:21,983->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15685-RAW.pdf
+[2023-07-21 13:34:21,983->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15683-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:34:22,046->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15683-RAW.pdf
+[2023-07-21 13:34:22,046->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15683-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:34:22,405->download_from_drive.py->send_to_server():197]INFO: Uploading A-15683-RAW.pdf
+[2023-07-21 13:34:22,405->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:35:01,140->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26308;
+[2023-07-21 13:35:01,140->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15683-RAW.pdf
+[2023-07-21 13:35:01,140->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15683-RAW.pdf
+[2023-07-21 13:35:01,140->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15683-RAW.pdf
+[2023-07-21 13:35:01,140->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15682-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:35:01,203->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15682-RAW.pdf
+[2023-07-21 13:35:01,203->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15682-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:35:01,578->download_from_drive.py->send_to_server():197]INFO: Uploading A-15682-RAW.pdf
+[2023-07-21 13:35:01,578->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:35:39,110->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26309;
+[2023-07-21 13:35:39,110->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15682-RAW.pdf
+[2023-07-21 13:35:39,110->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15682-RAW.pdf
+[2023-07-21 13:35:39,110->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15682-RAW.pdf
+[2023-07-21 13:35:39,110->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15626-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:35:39,157->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15626-RAW.pdf
+[2023-07-21 13:35:39,157->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15626-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:35:39,532->download_from_drive.py->send_to_server():197]INFO: Uploading A-15626-RAW.pdf
+[2023-07-21 13:35:39,532->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:36:17,158->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26310;
+[2023-07-21 13:36:17,158->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15626-RAW.pdf
+[2023-07-21 13:36:17,158->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15626-RAW.pdf
+[2023-07-21 13:36:17,158->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15626-RAW.pdf
+[2023-07-21 13:36:17,158->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15633-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:36:17,220->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15633-RAW.pdf
+[2023-07-21 13:36:17,220->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15633-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:36:17,579->download_from_drive.py->send_to_server():197]INFO: Uploading A-15633-RAW.pdf
+[2023-07-21 13:36:17,579->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:36:55,158->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26311;
+[2023-07-21 13:36:55,174->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15633-RAW.pdf
+[2023-07-21 13:36:55,174->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15633-RAW.pdf
+[2023-07-21 13:36:55,174->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15633-RAW.pdf
+[2023-07-21 13:36:55,174->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15595-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:36:55,252->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15595-RAW.pdf
+[2023-07-21 13:36:55,252->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15595-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:36:55,612->download_from_drive.py->send_to_server():197]INFO: Uploading A-15595-RAW.pdf
+[2023-07-21 13:36:55,612->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:37:33,253->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26312;
+[2023-07-21 13:37:33,253->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15595-RAW.pdf
+[2023-07-21 13:37:33,253->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15595-RAW.pdf
+[2023-07-21 13:37:33,253->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15595-RAW.pdf
+[2023-07-21 13:37:33,269->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15591-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:37:33,347->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15591-RAW.pdf
+[2023-07-21 13:37:33,347->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15591-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:37:33,706->download_from_drive.py->send_to_server():197]INFO: Uploading A-15591-RAW.pdf
+[2023-07-21 13:37:33,706->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:38:10,519->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26313;
+[2023-07-21 13:38:10,535->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15591-RAW.pdf
+[2023-07-21 13:38:10,535->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15591-RAW.pdf
+[2023-07-21 13:38:10,535->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15591-RAW.pdf
+[2023-07-21 13:38:10,535->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15597-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:38:10,582->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15597-RAW.pdf
+[2023-07-21 13:38:10,582->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15597-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:38:10,957->download_from_drive.py->send_to_server():197]INFO: Uploading A-15597-RAW.pdf
+[2023-07-21 13:38:10,957->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:38:47,973->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26314;
+[2023-07-21 13:38:47,988->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15597-RAW.pdf
+[2023-07-21 13:38:47,988->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15597-RAW.pdf
+[2023-07-21 13:38:47,988->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15597-RAW.pdf
+[2023-07-21 13:38:47,988->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15555-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:38:48,051->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15555-RAW.pdf
+[2023-07-21 13:38:48,051->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15555-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:38:48,442->download_from_drive.py->send_to_server():197]INFO: Uploading A-15555-RAW.pdf
+[2023-07-21 13:38:48,457->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:39:24,911->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26315;
+[2023-07-21 13:39:24,911->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15555-RAW.pdf
+[2023-07-21 13:39:24,911->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15555-RAW.pdf
+[2023-07-21 13:39:24,911->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15555-RAW.pdf
+[2023-07-21 13:39:24,911->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15605-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:39:24,989->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15605-RAW.pdf
+[2023-07-21 13:39:24,989->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15605-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:39:25,348->download_from_drive.py->send_to_server():197]INFO: Uploading A-15605-RAW.pdf
+[2023-07-21 13:39:25,348->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:40:01,834->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26316;
+[2023-07-21 13:40:01,849->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15605-RAW.pdf
+[2023-07-21 13:40:01,849->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15605-RAW.pdf
+[2023-07-21 13:40:01,849->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15605-RAW.pdf
+[2023-07-21 13:40:01,865->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15609-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:40:01,927->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15609-RAW.pdf
+[2023-07-21 13:40:01,927->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15609-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:40:02,318->download_from_drive.py->send_to_server():197]INFO: Uploading A-15609-RAW.pdf
+[2023-07-21 13:40:02,318->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:40:39,069->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26317;
+[2023-07-21 13:40:39,069->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15609-RAW.pdf
+[2023-07-21 13:40:39,084->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15609-RAW.pdf
+[2023-07-21 13:40:39,084->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15609-RAW.pdf
+[2023-07-21 13:40:39,084->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15611-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:40:39,225->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15611-RAW.pdf
+[2023-07-21 13:40:39,225->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15611-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:40:39,600->download_from_drive.py->send_to_server():197]INFO: Uploading A-15611-RAW.pdf
+[2023-07-21 13:40:39,600->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:41:16,195->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26318;
+[2023-07-21 13:41:16,195->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15611-RAW.pdf
+[2023-07-21 13:41:16,195->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15611-RAW.pdf
+[2023-07-21 13:41:16,195->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15611-RAW.pdf
+[2023-07-21 13:41:16,195->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15608-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:41:16,257->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15608-RAW.pdf
+[2023-07-21 13:41:16,257->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15608-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:41:16,632->download_from_drive.py->send_to_server():197]INFO: Uploading A-15608-RAW.pdf
+[2023-07-21 13:41:16,632->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:41:53,164->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26319;
+[2023-07-21 13:41:53,164->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15608-RAW.pdf
+[2023-07-21 13:41:53,164->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15608-RAW.pdf
+[2023-07-21 13:41:53,180->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15608-RAW.pdf
+[2023-07-21 13:41:53,180->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/EKG-V2/KOMP/images/A-15615-RAW.pdf to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003
+[2023-07-21 13:41:53,227->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-15615-RAW.pdf
+[2023-07-21 13:41:53,227->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-15615-RAW.pdf to bhjlk02lp.jax.org
+[2023-07-21 13:41:53,586->download_from_drive.py->send_to_server():197]INFO: Uploading A-15615-RAW.pdf
+[2023-07-21 13:41:53,586->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:42:30,259->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26320;
+[2023-07-21 13:42:30,259->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-15615-RAW.pdf
+[2023-07-21 13:42:30,259->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15615-RAW.pdf
+[2023-07-21 13:42:30,259->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_ECG_003\A-15615-RAW.pdf
+[2023-07-21 13:42:30,259->download_from_drive.py->download_from_drive():133]DEBUG: Processing IMPC_CSD_003
+[2023-07-21 13:42:30,259->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/719892 J20033 P69284 image1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:42:30,352->download_from_drive.py->download_from_drive():144]INFO: Done downloading file 719892 J20033 P69284 image1.jpg
+[2023-07-21 13:42:30,352->download_from_drive.py->download_from_drive():147]INFO: Start to send file 719892 J20033 P69284 image1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:42:30,743->download_from_drive.py->send_to_server():188]INFO: -rw-r--r--   1 99000    1000      3384419 26 Apr 18:56 ?
+[2023-07-21 13:42:30,743->download_from_drive.py->send_to_server():189]INFO: File exists in directory IMPC_CSD_003
+[2023-07-21 13:42:30,743->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:43:07,588->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File already exits on server' WHERE _ImageFile_key = 26321;
+[2023-07-21 13:43:07,603->download_from_drive.py->send_to_server():209]INFO: Finish uploading 719892 J20033 P69284 image1.jpg
+[2023-07-21 13:43:07,603->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\719892 J20033 P69284 image1.jpg
+[2023-07-21 13:43:07,603->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\719892 J20033 P69284 image1.jpg
+[2023-07-21 13:43:07,603->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/720015 J20052 P69285 image1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:43:07,681->download_from_drive.py->download_from_drive():144]INFO: Done downloading file 720015 J20052 P69285 image1.jpg
+[2023-07-21 13:43:07,681->download_from_drive.py->download_from_drive():147]INFO: Start to send file 720015 J20052 P69285 image1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:43:08,072->download_from_drive.py->send_to_server():188]INFO: -rw-r--r--   1 99000    1000      2828651 26 Apr 18:56 ?
+[2023-07-21 13:43:08,072->download_from_drive.py->send_to_server():189]INFO: File exists in directory IMPC_CSD_003
+[2023-07-21 13:43:08,072->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:43:45,276->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File already exits on server' WHERE _ImageFile_key = 26322;
+[2023-07-21 13:43:45,276->download_from_drive.py->send_to_server():209]INFO: Finish uploading 720015 J20052 P69285 image1.jpg
+[2023-07-21 13:43:45,276->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\720015 J20052 P69285 image1.jpg
+[2023-07-21 13:43:45,276->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\720015 J20052 P69285 image1.jpg
+[2023-07-21 13:43:45,276->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-18007_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:43:45,354->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-18007_1.jpg
+[2023-07-21 13:43:45,354->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-18007_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:43:45,713->download_from_drive.py->send_to_server():197]INFO: Uploading A-18007_1.jpg
+[2023-07-21 13:43:45,745->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:44:23,339->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26323;
+[2023-07-21 13:44:23,355->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-18007_1.jpg
+[2023-07-21 13:44:23,355->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-18007_1.jpg
+[2023-07-21 13:44:23,355->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-18007_1.jpg
+[2023-07-21 13:44:23,355->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16764_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:44:23,417->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16764_1.jpg
+[2023-07-21 13:44:23,417->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16764_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:44:23,792->download_from_drive.py->send_to_server():197]INFO: Uploading A-16764_1.jpg
+[2023-07-21 13:44:23,808->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:45:01,324->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26324;
+[2023-07-21 13:45:01,340->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16764_1.jpg
+[2023-07-21 13:45:01,340->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16764_1.jpg
+[2023-07-21 13:45:01,340->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16764_1.jpg
+[2023-07-21 13:45:01,340->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16764_2.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:45:01,434->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16764_2.jpg
+[2023-07-21 13:45:01,434->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16764_2.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:45:01,809->download_from_drive.py->send_to_server():197]INFO: Uploading A-16764_2.jpg
+[2023-07-21 13:45:01,824->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:45:38,778->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26325;
+[2023-07-21 13:45:38,778->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16764_2.jpg
+[2023-07-21 13:45:38,778->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16764_2.jpg
+[2023-07-21 13:45:38,778->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16764_2.jpg
+[2023-07-21 13:45:38,778->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16778_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:45:38,856->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16778_1.jpg
+[2023-07-21 13:45:38,856->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16778_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:45:39,231->download_from_drive.py->send_to_server():197]INFO: Uploading A-16778_1.jpg
+[2023-07-21 13:45:39,247->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:46:15,685->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26326;
+[2023-07-21 13:46:15,685->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16778_1.jpg
+[2023-07-21 13:46:15,700->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16778_1.jpg
+[2023-07-21 13:46:15,700->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16778_1.jpg
+[2023-07-21 13:46:15,700->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16784_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:46:15,810->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16784_1.jpg
+[2023-07-21 13:46:15,810->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16784_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:46:16,185->download_from_drive.py->send_to_server():197]INFO: Uploading A-16784_1.jpg
+[2023-07-21 13:46:16,216->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:46:52,951->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26327;
+[2023-07-21 13:46:52,951->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16784_1.jpg
+[2023-07-21 13:46:52,951->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16784_1.jpg
+[2023-07-21 13:46:52,951->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16784_1.jpg
+[2023-07-21 13:46:52,951->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16784_2.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:46:53,139->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16784_2.jpg
+[2023-07-21 13:46:53,139->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16784_2.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:46:53,514->download_from_drive.py->send_to_server():197]INFO: Uploading A-16784_2.jpg
+[2023-07-21 13:46:53,529->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:47:31,124->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26328;
+[2023-07-21 13:47:31,139->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16784_2.jpg
+[2023-07-21 13:47:31,139->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16784_2.jpg
+[2023-07-21 13:47:31,139->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16784_2.jpg
+[2023-07-21 13:47:31,139->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16784_3.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:47:31,264->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16784_3.jpg
+[2023-07-21 13:47:31,264->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16784_3.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:47:31,624->download_from_drive.py->send_to_server():197]INFO: Uploading A-16784_3.jpg
+[2023-07-21 13:47:31,639->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:48:09,656->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26329;
+[2023-07-21 13:48:09,656->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16784_3.jpg
+[2023-07-21 13:48:09,656->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16784_3.jpg
+[2023-07-21 13:48:09,656->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16784_3.jpg
+[2023-07-21 13:48:09,656->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16964_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:48:09,749->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16964_1.jpg
+[2023-07-21 13:48:09,749->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16964_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:48:10,124->download_from_drive.py->send_to_server():197]INFO: Uploading A-16964_1.jpg
+[2023-07-21 13:48:10,140->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:48:48,016->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26330;
+[2023-07-21 13:48:48,016->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16964_1.jpg
+[2023-07-21 13:48:48,016->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16964_1.jpg
+[2023-07-21 13:48:48,016->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16964_1.jpg
+[2023-07-21 13:48:48,016->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16750_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:48:48,141->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16750_1.jpg
+[2023-07-21 13:48:48,141->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16750_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:48:48,516->download_from_drive.py->send_to_server():197]INFO: Uploading A-16750_1.jpg
+[2023-07-21 13:48:48,516->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:49:26,173->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26331;
+[2023-07-21 13:49:26,173->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16750_1.jpg
+[2023-07-21 13:49:26,173->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16750_1.jpg
+[2023-07-21 13:49:26,173->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16750_1.jpg
+[2023-07-21 13:49:26,173->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16750_2.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:49:26,235->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16750_2.jpg
+[2023-07-21 13:49:26,235->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16750_2.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:49:26,610->download_from_drive.py->send_to_server():197]INFO: Uploading A-16750_2.jpg
+[2023-07-21 13:49:26,626->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:50:04,752->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26332;
+[2023-07-21 13:50:04,752->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16750_2.jpg
+[2023-07-21 13:50:04,752->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16750_2.jpg
+[2023-07-21 13:50:04,752->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16750_2.jpg
+[2023-07-21 13:50:04,768->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16902_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:50:04,830->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16902_1.jpg
+[2023-07-21 13:50:04,830->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16902_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:50:05,205->download_from_drive.py->send_to_server():197]INFO: Uploading A-16902_1.jpg
+[2023-07-21 13:50:05,221->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:50:42,847->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26333;
+[2023-07-21 13:50:42,847->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16902_1.jpg
+[2023-07-21 13:50:42,847->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16902_1.jpg
+[2023-07-21 13:50:42,847->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16902_1.jpg
+[2023-07-21 13:50:42,847->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16872_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:50:42,894->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16872_1.jpg
+[2023-07-21 13:50:42,894->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16872_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:50:43,269->download_from_drive.py->send_to_server():197]INFO: Uploading A-16872_1.jpg
+[2023-07-21 13:50:43,269->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:51:20,691->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26334;
+[2023-07-21 13:51:20,707->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16872_1.jpg
+[2023-07-21 13:51:20,707->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16872_1.jpg
+[2023-07-21 13:51:20,707->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16872_1.jpg
+[2023-07-21 13:51:20,707->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16872_2.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:51:20,816->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16872_2.jpg
+[2023-07-21 13:51:20,816->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16872_2.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:51:21,191->download_from_drive.py->send_to_server():197]INFO: Uploading A-16872_2.jpg
+[2023-07-21 13:51:21,207->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:51:59,426->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26335;
+[2023-07-21 13:51:59,442->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16872_2.jpg
+[2023-07-21 13:51:59,442->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16872_2.jpg
+[2023-07-21 13:51:59,442->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16872_2.jpg
+[2023-07-21 13:51:59,442->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-16869_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:51:59,505->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-16869_1.jpg
+[2023-07-21 13:51:59,505->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-16869_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:51:59,864->download_from_drive.py->send_to_server():197]INFO: Uploading A-16869_1.jpg
+[2023-07-21 13:51:59,880->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:52:37,771->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26336;
+[2023-07-21 13:52:37,771->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-16869_1.jpg
+[2023-07-21 13:52:37,771->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16869_1.jpg
+[2023-07-21 13:52:37,771->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-16869_1.jpg
+[2023-07-21 13:52:37,786->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-17257_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:52:37,849->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-17257_1.jpg
+[2023-07-21 13:52:37,849->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-17257_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:52:38,208->download_from_drive.py->send_to_server():197]INFO: Uploading A-17257_1.jpg
+[2023-07-21 13:52:38,240->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:53:15,349->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26337;
+[2023-07-21 13:53:15,365->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-17257_1.jpg
+[2023-07-21 13:53:15,365->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-17257_1.jpg
+[2023-07-21 13:53:15,365->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-17257_1.jpg
+[2023-07-21 13:53:15,365->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-17257_2.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:53:15,428->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-17257_2.jpg
+[2023-07-21 13:53:15,428->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-17257_2.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:53:15,803->download_from_drive.py->send_to_server():197]INFO: Uploading A-17257_2.jpg
+[2023-07-21 13:53:15,818->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:53:53,460->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26338;
+[2023-07-21 13:53:53,475->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-17257_2.jpg
+[2023-07-21 13:53:53,475->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-17257_2.jpg
+[2023-07-21 13:53:53,475->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-17257_2.jpg
+[2023-07-21 13:53:53,475->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-18446_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:53:53,585->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-18446_1.jpg
+[2023-07-21 13:53:53,585->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-18446_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:53:53,944->download_from_drive.py->send_to_server():197]INFO: Uploading A-18446_1.jpg
+[2023-07-21 13:53:53,960->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:54:31,664->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26339;
+[2023-07-21 13:54:31,679->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-18446_1.jpg
+[2023-07-21 13:54:31,679->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-18446_1.jpg
+[2023-07-21 13:54:31,679->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-18446_1.jpg
+[2023-07-21 13:54:31,679->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-18447_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:54:31,726->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-18447_1.jpg
+[2023-07-21 13:54:31,726->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-18447_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:54:32,085->download_from_drive.py->send_to_server():197]INFO: Uploading A-18447_1.jpg
+[2023-07-21 13:54:32,101->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:55:10,352->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26340;
+[2023-07-21 13:55:10,368->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-18447_1.jpg
+[2023-07-21 13:55:10,368->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-18447_1.jpg
+[2023-07-21 13:55:10,368->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-18447_1.jpg
+[2023-07-21 13:55:10,368->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-18447_2.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:55:10,461->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-18447_2.jpg
+[2023-07-21 13:55:10,461->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-18447_2.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:55:10,836->download_from_drive.py->send_to_server():197]INFO: Uploading A-18447_2.jpg
+[2023-07-21 13:55:10,852->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:55:48,306->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26341;
+[2023-07-21 13:55:48,306->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-18447_2.jpg
+[2023-07-21 13:55:48,306->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-18447_2.jpg
+[2023-07-21 13:55:48,306->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-18447_2.jpg
+[2023-07-21 13:55:48,306->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-17157_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:55:48,368->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-17157_1.jpg
+[2023-07-21 13:55:48,368->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-17157_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:55:48,728->download_from_drive.py->send_to_server():197]INFO: Uploading A-17157_1.jpg
+[2023-07-21 13:55:48,743->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:56:25,791->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26342;
+[2023-07-21 13:56:25,791->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-17157_1.jpg
+[2023-07-21 13:56:25,791->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-17157_1.jpg
+[2023-07-21 13:56:25,791->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-17157_1.jpg
+[2023-07-21 13:56:25,806->download_from_drive.py->download_from_drive():140]INFO: Starting downloading //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-17144_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-07-21 13:56:25,869->download_from_drive.py->download_from_drive():144]INFO: Done downloading file A-17144_1.jpg
+[2023-07-21 13:56:25,869->download_from_drive.py->download_from_drive():147]INFO: Start to send file A-17144_1.jpg to bhjlk02lp.jax.org
+[2023-07-21 13:56:26,244->download_from_drive.py->send_to_server():197]INFO: Uploading A-17144_1.jpg
+[2023-07-21 13:56:26,259->download_from_drive.py->db_init():24]INFO: Connecting to database . . .
+[2023-07-21 13:57:03,526->download_from_drive.py->update_images_status():66]DEBUG: UPDATE KOMP.imagefileuploadstatus SET DateOfUpload='2023-07-21', UploadStatus='Success', Message='File successfully uploaded to server' WHERE _ImageFile_key = 26343;
+[2023-07-21 13:57:03,542->download_from_drive.py->send_to_server():209]INFO: Finish uploading A-17144_1.jpg
+[2023-07-21 13:57:03,542->download_from_drive.py->DFS():222]DEBUG: C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-17144_1.jpg
+[2023-07-21 13:57:03,542->download_from_drive.py->DFS():224]DEBUG: Deleteing C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003\A-17144_1.jpg
