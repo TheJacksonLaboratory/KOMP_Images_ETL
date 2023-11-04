@@ -106,6 +106,17 @@ def generate_file_location(conn: mysql.connector.connection,
     for record in db_records:
  
         IMPC_Code = get_micro_ct_impcCode(db_row=record) if is_micro_ct(db_row=record) else record["DestinationFileName"].split("/")[4]
+        source_file_name = record["SourceFileName"].split("\\")
+        image_file_key = record["_ImageFile_key"]
+
+        #Case when no specific image name is provided, e.g \\\\jax\\jax\\phenotype\\SHIRPA\\KOMP\\images\\ in column "SourceFileName"
+        if source_file_name[-1] == '':
+            file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
+                                              UploadStatus="Failed",
+                                              Message="Misformatted image name")
+
+            update_images_status(file_Status.__dict__, image_file_key)
+            continue
         testcode = record["DestinationFileName"].split("/")[-1].split("_")[0] if not is_micro_ct(db_row=record) else ""
         temp = record["SourceFileName"].split("\\")[4:]
         fileLocation = "//" + os.path.join("bht2stor.jax.org\\", *temp).replace("\\", "/") #If you are on windows
