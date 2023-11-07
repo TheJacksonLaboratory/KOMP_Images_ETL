@@ -1,7 +1,0 @@
-[2023-08-10 19:08:21,810->download_from_omero.py-><module>():272]INFO: Logger has been created
-[2023-08-10 19:08:21,810->download_from_omero.py->db_init():27]INFO: Connecting to database . . .
-[2023-08-10 19:08:22,213->download_from_omero.py->download_from_omero():98]DEBUG: https://omeroweb.jax.org/api/v0/
-[2023-08-10 19:08:22,235->download_from_omero.py->download_from_omero():119]DEBUG: https://omeroweb.jax.org/api/v0/login/
-[2023-08-10 19:08:34,564->download_from_drive.py-><module>():253]INFO: Logger has been created
-[2023-08-10 19:08:34,564->download_from_drive.py-><module>():265]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures'
-[2023-08-10 19:08:34,580->download_from_drive.py->db_init():24]INFO: Connecting to database . . .

@@ -42,9 +42,6 @@ db_username = "dba"
 db_password = "rsdba"
 db_name = "rslims"
 
-"""Disks location"""
-smbPath = "/Volumes/phenotype/DccQcReports/"
-
 """SQL statements to get file location of an image"""
 omero_stmt = """SELECT * FROM 
                             KOMP.imagefileuploadstatus 

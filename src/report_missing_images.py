@@ -19,7 +19,7 @@ def get_failed_images():
     STMT = """
             SELECT SourceFileName, TaskKey, Message 
                 FROM komp.imagefileuploadstatus 
-            WHERE UploadStatus = 'Fail';
+            WHERE UploadStatus = 'Fail' AND DATEDIFF(NOW(), DateOfUpload) < 21;
         """
     conn = mysql.connector.connect(
                     host=db_server, 
@@ -74,7 +74,7 @@ def write_file(missed_images_info):
     date = datetime.now().strftime("%B-%d-%Y")
     filename = f"Missing_images_{date}.csv"
     df = pd.DataFrame(missed_images_info)
-    df.to_csv(filename)
+    df.to_csv(f"Z:\KOMP\missing_images\{filename}")
 
 
 
