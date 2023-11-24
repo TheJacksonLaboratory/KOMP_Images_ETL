@@ -276,8 +276,8 @@ if __name__ == '__main__':
     db_server = utils.db_server
     db_name = utils.db_name
 
-    download_to = "C:/Program Files/KOMP/ImageDownload/pictures"
-
+    download_to = utils.download_to
+    
     hostname = utils.hostname
     server_user = utils.server_username
     server_password = utils.server_password

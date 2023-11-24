@@ -412,3 +412,136 @@
 [2023-11-24 16:31:42,724->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
 [2023-11-24 16:31:42,724->download_from_drive.py->download_from_drive():154]DEBUG: Processing IMPC_CSD_003
 [2023-11-24 16:31:42,724->download_from_drive.py->download_from_drive():162]INFO: Starting downloading file A-22028_1.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22028_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,906->download_from_drive.py-><module>():272]INFO: Logger has been created
+[2023-11-24 16:44:28,907->download_from_drive.py-><module>():285]ERROR: [WinError 183] Cannot create a file when that file already exists: 'C:/Program Files/KOMP/ImageDownload/pictures'
+[2023-11-24 16:44:28,907->download_from_drive.py->db_init():36]INFO: Connecting to database . . .
+[2023-11-24 16:44:28,935->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22028_1.jpg
+[2023-11-24 16:44:28,935->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,937->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22028_2.jpg
+[2023-11-24 16:44:28,937->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,937->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22030_1.jpg
+[2023-11-24 16:44:28,938->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,938->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22029_1.jpg
+[2023-11-24 16:44:28,938->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,939->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22029_2.jpg
+[2023-11-24 16:44:28,939->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,940->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20669_1.jpg
+[2023-11-24 16:44:28,940->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,941->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20669_2.jpg
+[2023-11-24 16:44:28,941->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,942->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20669_3.jpg
+[2023-11-24 16:44:28,942->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,942->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20670_1.jpg
+[2023-11-24 16:44:28,943->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,943->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20670_2.jpg
+[2023-11-24 16:44:28,943->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,944->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20670_3.jpg
+[2023-11-24 16:44:28,944->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,945->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20942_1.jpg
+[2023-11-24 16:44:28,945->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,946->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20942_2.jpg
+[2023-11-24 16:44:28,946->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,946->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20638_1.jpg
+[2023-11-24 16:44:28,946->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,947->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20629_1.jpg
+[2023-11-24 16:44:28,947->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,948->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20656_1.jpg
+[2023-11-24 16:44:28,948->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,949->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20658_1.jpg
+[2023-11-24 16:44:28,949->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,950->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-24771_1.jpg
+[2023-11-24 16:44:28,950->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,950->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-23417_1.jpg
+[2023-11-24 16:44:28,951->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,951->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26857_1.jpg
+[2023-11-24 16:44:28,951->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,952->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26856_1.jpg
+[2023-11-24 16:44:28,952->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,953->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26858_1.jpg
+[2023-11-24 16:44:28,953->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,954->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26282_1.jpg
+[2023-11-24 16:44:28,954->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,955->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26299_1.jpg
+[2023-11-24 16:44:28,955->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,956->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-25989_1.jpg
+[2023-11-24 16:44:28,958->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,961->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-25988_1.jpg
+[2023-11-24 16:44:28,965->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,966->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-25988_2.jpg
+[2023-11-24 16:44:28,966->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,967->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26071_1.jpg
+[2023-11-24 16:44:28,968->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,968->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26061_1.jpg
+[2023-11-24 16:44:28,969->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,969->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26067_1.jpg
+[2023-11-24 16:44:28,970->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,970->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-27700_1.jpg
+[2023-11-24 16:44:28,971->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,971->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26113_1.jpg
+[2023-11-24 16:44:28,971->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,972->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22028_1.jpg
+[2023-11-24 16:44:28,972->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,973->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22028_2.jpg
+[2023-11-24 16:44:28,973->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,974->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22030_1.jpg
+[2023-11-24 16:44:28,974->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,975->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22029_1.jpg
+[2023-11-24 16:44:28,975->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,975->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22029_2.jpg
+[2023-11-24 16:44:28,976->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,976->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20669_1.jpg
+[2023-11-24 16:44:28,976->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,977->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20669_2.jpg
+[2023-11-24 16:44:28,977->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,978->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20669_3.jpg
+[2023-11-24 16:44:28,978->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,979->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20670_1.jpg
+[2023-11-24 16:44:28,979->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,980->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20670_2.jpg
+[2023-11-24 16:44:28,980->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,980->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20670_3.jpg
+[2023-11-24 16:44:28,981->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,981->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20942_1.jpg
+[2023-11-24 16:44:28,981->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,982->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20942_2.jpg
+[2023-11-24 16:44:28,982->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,983->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20638_1.jpg
+[2023-11-24 16:44:28,983->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,984->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20629_1.jpg
+[2023-11-24 16:44:28,984->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,985->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20656_1.jpg
+[2023-11-24 16:44:28,985->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,985->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-20658_1.jpg
+[2023-11-24 16:44:28,986->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,986->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-24771_1.jpg
+[2023-11-24 16:44:28,987->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,987->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-23417_1.jpg
+[2023-11-24 16:44:28,987->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,992->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26857_1.jpg
+[2023-11-24 16:44:28,992->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:28,996->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26856_1.jpg
+[2023-11-24 16:44:29,001->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:29,002->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26858_1.jpg
+[2023-11-24 16:44:29,003->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:29,004->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26282_1.jpg
+[2023-11-24 16:44:29,004->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:29,005->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26299_1.jpg
+[2023-11-24 16:44:29,005->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:29,006->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-25989_1.jpg
+[2023-11-24 16:44:29,006->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:29,007->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-25988_1.jpg
+[2023-11-24 16:44:29,007->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:29,008->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-25988_2.jpg
+[2023-11-24 16:44:29,008->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:29,008->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26071_1.jpg
+[2023-11-24 16:44:29,009->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:29,009->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26061_1.jpg
+[2023-11-24 16:44:29,009->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:29,010->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26067_1.jpg
+[2023-11-24 16:44:29,010->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:29,011->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-27700_1.jpg
+[2023-11-24 16:44:29,011->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:29,012->download_from_drive.py->generate_file_location():123]DEBUG: Source file path is //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-26113_1.jpg
+[2023-11-24 16:44:29,012->download_from_drive.py->generate_file_location():128]DEBUG: Destination of downloaded file is C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003
+[2023-11-24 16:44:29,013->download_from_drive.py->download_from_drive():154]DEBUG: Processing IMPC_CSD_003
+[2023-11-24 16:44:29,013->download_from_drive.py->download_from_drive():162]INFO: Starting downloading file A-22028_1.jpg from //bht2stor.jax.org/phenotype/SHIRPA/KOMP/images/A-22028_1.jpg to C:/Program Files/KOMP/ImageDownload/pictures/IMPC_CSD_003

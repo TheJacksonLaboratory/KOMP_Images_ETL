@@ -66,6 +66,8 @@ pheno_stmt = """SELECT * FROM KOMP.imagefileuploadstatus
 		            AND  
 			    DATEDIFF(NOW(), DateCreated) < 21;"""
 
+download_to = "C:/Program Files/KOMP/ImageDownload/pictures"
+
 '''
 stmt = """SELECT ProcedureStatus, 
                             ProcedureDefinition, 

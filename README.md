@@ -46,7 +46,7 @@ Then use the following command to install the package to the `venv` you just cre
 
 # Usage
 
-To use, please check the word document contained in this repositiory. 
+To use, simply type ```python download_from_omero.py``` to start download and upload images from OMERO; type ```python download_from_drive.py``` to download and upload images from phenotype drive; ```python report_missing_images.py``` to create a report of missing images. For more details,  please check the word document contained in this repositiory. 
 
 
 

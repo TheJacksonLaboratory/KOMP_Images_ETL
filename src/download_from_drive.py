@@ -276,7 +276,8 @@ if __name__ == '__main__':
     db_server = utils.db_server
     db_name = utils.db_name
 
-    download_to = "C:/Program Files/KOMP/ImageDownload/pictures"
+    #download_to = "C:/Program Files/KOMP/ImageDownload/pictures"
+    download_to = utils.download_to
     try:
         os.mkdir(download_to)
 
