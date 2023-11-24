@@ -40,22 +40,14 @@ Then use the following command to install the package to the `venv` you just cre
 ```
 
 
-`setup.py` in the project folder will automatically build and install the depencies for you. 
 
 <br>
 <br>
 
-## Usage
+# Usage
 
-After installing the package to the venv, type `ls .env/testvenv/bin` in yout terminal/command prompt, you should be able to see the follwing:
+To use, please check the word document contained in this repositiory. 
 
-
-
-where the `download_images` is the entry point for running the app. Type it to your terminal/command prompt, the application will start to execute. It will ask you the source of the images (`Omero`, `Climb`, `JaxLims`); what conditions/filters you would to apply to the images(time, IMPC Code, animal id, status etc), in the example below, I will download some images from Omero, with `date` after `2023-04-21`. 
-
-<img src="/Users/chent/Desktop/KOMP_Project/DCCImagesPipeline/docs/images/Screenshot 2023-04-24 at 3.23.22 PM.png" alt="MarineGEO circle logo" >
-
-Then the app will ask for your credentials if you input `Omero` or `Climb` as the image source, input your username and password and the program will do its jobs immediately. 
 
 
 
