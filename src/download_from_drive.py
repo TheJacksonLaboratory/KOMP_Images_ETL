@@ -157,7 +157,7 @@ def download_from_drive(fileLocationDict: collections.defaultdict[list],
             download_from = loc[1]
             testcode = loc[2]
             download_to_dest = target + "/" + IMPC_Code
-
+            
             fileName = loc[1].split("/")[-1]
             logger.info(f"Starting downloading file {fileName} from {download_from} to {download_to_dest}")
             try:
@@ -205,11 +205,10 @@ def send_to_server(file_to_send: str,
         ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh_client.connect(hostname=hostname, username=username, password=password)
         ftp_client = ssh_client.open_sftp()
-        #ftp_client.chdir("/images/")
-        final_filename = testcode + "_" + file_to_send if testcode else file_to_send
+        # Got rid of testcode messiness
         try:
-            logger.info(ftp_client.stat('/images/' + IMPC_Code + "/" + final_filename))
-            logger.info(f'File {final_filename} exists in directory {IMPC_Code}')
+            logger.info(ftp_client.stat('/images/' + IMPC_Code + "/" + file_to_send))
+            logger.info(f'File {file_to_send} exists in directory {IMPC_Code}')
             file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                               UploadStatus="Success",
                                               Message="File already exits on server")
@@ -217,9 +216,9 @@ def send_to_server(file_to_send: str,
             update_images_status(file_Status.__dict__, imageFileKey)
 
         except IOError:
-            logger.info(f"Uploading {final_filename}")
+            logger.info(f"Uploading {file_to_send}")
             ftp_client.put(download_to + "/" + IMPC_Code + "/" + file_to_send,
-                           "images/" + IMPC_Code + "/" + final_filename)
+                           "images/" + IMPC_Code + "/" + file_to_send)
 
             file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                               UploadStatus="Success",
