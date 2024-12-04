@@ -19,7 +19,7 @@ def get_failed_images():
     STMT = """
             SELECT SourceFileName, TaskKey, Message 
                 FROM komp.imagefileuploadstatus 
-            WHERE UploadStatus = 'Fail' AND DATEDIFF(NOW(), DateOfUpload) < 21;
+            WHERE UploadStatus = 'Fail' AND DATEDIFF(NOW(), DateOfUpload) < 210;
         """
     conn = mysql.connector.connect(
                     host=db_server, 

@@ -54,15 +54,15 @@ def update_images_status(imageDict: dict, imagefilekey):
     #db_password = "rsdba"
     #db_name = "komp"
     conn = db_init(server=db_server, username=db_username, password=db_password, database=db_name)
-    cursor1 = conn.cursor()
+    #cursor1 = conn.cursor()
 
     '''Remove deplciate records'''
     cleanStmt = """ DELETE i FROM komp.imagefileuploadstatus i, komp.imagefileuploadstatus j 
                     WHERE i._ImageFile_key > j._ImageFile_key AND i.SourceFileName = j.SourceFileName; 
                 """
 
-    cursor1.execute(cleanStmt)
-    conn.commit()
+    #cursor1.execute(cleanStmt)
+    #conn.commit()
 
     cursor2 = conn.cursor()
     sql = "UPDATE KOMP.imagefileuploadstatus SET {} WHERE _ImageFile_key = {};".format(
@@ -138,7 +138,8 @@ def download_from_omero(db_records: dict,
 
         imageFileKey = row["_ImageFile_key"]
         omeroId = row["SourceFileName"].split("/")[-1]
-        download_filename = omeroId + "_" + row["DestinationFileName"].split("/")[-1]
+        #download_filename = omeroId + "_" + row["DestinationFileName"].split("/")[-1]
+        download_filename = row["DestinationFileName"].split("/")[-1]
         logger.debug(f"Final file name is {download_filename}")
         print(download_filename)
 

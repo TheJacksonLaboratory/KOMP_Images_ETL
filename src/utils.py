@@ -28,8 +28,8 @@ def createLogHandler(job_name,log_file):
 
 
 """Omero/Climb username and password"""
-username = "chent"
-password = "Steve19981230"
+username = "michaelm"
+password = ""
 
 """SFTP server credentials"""
 hostname = "bhjlk02lp.jax.org"
@@ -41,6 +41,20 @@ db_server = "rslims.jax.org"
 db_username = "dba"
 db_password = "rsdba"
 db_name = "rslims"
+
+delete_stmt = """
+DELETE FROM komp.imagefileuploadstatus
+WHERE
+    _ImageFile_key NOT IN (SELECT 
+        *
+    FROM
+        (SELECT 
+            MIN(_ImageFile_key)
+        FROM
+            komp.imagefileuploadstatus
+        GROUP BY SourceFileName) AS S);
+        
+"""
 
 """SQL statements to get file location of an image"""
 omero_stmt = """SELECT * FROM 
@@ -64,7 +78,7 @@ pheno_stmt = """SELECT * FROM KOMP.imagefileuploadstatus
 		            AND 
 			    SourceFileName LIKE '%phenotype%'
 		            AND  
-			    DATEDIFF(NOW(), DateCreated) < 21;"""
+			    DATEDIFF(NOW(), DateCreated) < 60;"""
 
 download_to = "C:/Program Files/KOMP/ImageDownload/pictures"
 

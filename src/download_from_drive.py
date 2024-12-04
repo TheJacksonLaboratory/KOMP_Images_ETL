@@ -8,6 +8,9 @@ import os
 import utils
 import paramiko
 
+#  Globals
+conn = None
+cursor = None
 
 def is_micro_ct(db_row: dict) -> bool:
     return  "IMPC_EMA_001" in db_row["ImpcCode"] or "IMPC_EMO_001" in db_row["ImpcCode"]
@@ -19,23 +22,21 @@ def get_micro_ct_impcCode(db_row: dict) -> str:
 
     if "IMPC_EMO_001" in db_row["ImpcCode"]:
         return "IMPC_EMO_001"
+
+def db():
+    global conn
+    if conn is None:
+        conn = db_init()    
+    
+    return conn 
     
 
-def db_init(server: str,
-            username: str,
-            password: str,
-            database: str) -> mysql.connector:
-    """
-    :param server: Host of the database
-    :param username: Username to log in to db
-    :param password: Password to log in to db
-    :param database: Schema you want to connect to
-    :return: mysql.Connection object
-    """
+def db_init() -> mysql.connector:
+    
     try:
-        logger.info("Connecting to database . . .")
-        conn = mysql.connector.connect(host=server, user=username, password=password, database=database)
-        return conn
+        global conn
+        conn = mysql.connector.connect(host=utils.db_server, user=utils.db_username, password=utils.db_password, database=utils.db_name)
+        return conn 
 
     except mysql.connector.Error as err1:
         logger.error(err1)
@@ -45,6 +46,14 @@ def db_init(server: str,
 
     return None
 
+# Close the database connection
+def db_close():
+     # Close the database connection
+     global conn, cursor    
+     if conn is not None:
+        conn.close()
+        conn = None
+                 
 
 class image_upload_status(object):
 
@@ -57,47 +66,20 @@ class image_upload_status(object):
 def update_images_status(imageDict: dict, imagefilekey):
     if not imageDict:
         raise ValueError("Nothing to be inserted")
-
-    db_server = "rslims.jax.org"
-    db_user = "dba"
-    db_password = "rsdba"
-    db_name = "komp"
-    conn = db_init(server=db_server, username=db_user, password=db_password, database=db_name)
-    cursor1 = conn.cursor()
-
     
-    '''Remove deplciate records'''
-    cleanStmt = """ DELETE i FROM komp.imagefileuploadstatus i, komp.imagefileuploadstatus j 
-                    WHERE i._ImageFile_key < j._ImageFile_key AND i.SourceFileName = j.SourceFileName; 
-                """
-    
-    cursor1.execute(cleanStmt)
-    cursor2 = conn.cursor()
+    cursor = conn.cursor()
     sql = "UPDATE KOMP.imagefileuploadstatus SET {} WHERE _ImageFile_key = {};".format(', '.join("{}='{}'".format(k,v) for k, v in imageDict.items()), imagefilekey)
     logger.debug(sql)
-    print(sql)
-    cursor2.execute(sql)
-    conn.commit()
-    conn.close()
+    cursor.execute(sql)
+    db().commit()
+    cursor.close() 
 
 
-def generate_file_location(conn: mysql.connector.connection,
-                           sql: str,
+def generate_file_location(sql: str,
                            download_to: str) -> collections.defaultdict[Any, list]:
-    """
-
-    :param conn: Connection to database
-    :param sql: SQL query you want to execute
-    :param target: Path you want to temporarily store the pictures
-    :return: Dictionary after parsing the query result
-    """
-    if not conn:
-        logger.error("No coonection")
-        raise ConnectionError("Not connect to database")
-
+    
     '''Query database'''
-    # logger.info("Connecting to db")
-    cursor = conn.cursor(buffered=True, dictionary=True)
+    cursor = db().cursor(buffered=True, dictionary=True)
     cursor.execute(sql)
     db_records = cursor.fetchall()
 
@@ -108,7 +90,7 @@ def generate_file_location(conn: mysql.connector.connection,
         IMPC_Code = get_micro_ct_impcCode(db_row=record) if is_micro_ct(db_row=record) else record["DestinationFileName"].split("/")[4]
         source_file_name = record["SourceFileName"].split("\\")
         image_file_key = record["_ImageFile_key"]
-
+        destFileName = record["DestinationFileName"].split("/")[-1]
         #Case when no specific image name is provided, e.g \\\\jax\\jax\\phenotype\\SHIRPA\\KOMP\\images\\ in column "SourceFileName"
         if source_file_name[-1] == '':
             file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
@@ -122,7 +104,7 @@ def generate_file_location(conn: mysql.connector.connection,
         fileLocation = "//" + os.path.join("bht2stor.jax.org\\", *temp).replace("\\", "/") #If you are on windows
         logger.debug(f"Source file path is {fileLocation}")
 
-        fileLocationMap[IMPC_Code].append([int(record["_ImageFile_key"]), fileLocation, testcode])
+        fileLocationMap[IMPC_Code].append([int(record["_ImageFile_key"]), fileLocation, testcode, destFileName])
 
         download_to_dest = download_to + "/" + IMPC_Code
         logger.debug(f"Destination of downloaded file is {download_to_dest}")
@@ -133,18 +115,13 @@ def generate_file_location(conn: mysql.connector.connection,
         except FileExistsError as e:
             print(e)
 
-    # print(len(fileLocations))
+    cursor.close()  
     return fileLocationMap
 
 
 def download_from_drive(fileLocationDict: collections.defaultdict[list],
                         target: str) -> None:
-    """
-    :param fileLocationDict:Dictionary/hashmap that contains information of pictures file
-    :param source: Base path of the file
-    :param target: Path you want to temporarily store the pictures
-    :return: None
-    """
+    
 
     if not fileLocationDict or not target:
         raise ValueError()
@@ -155,31 +132,27 @@ def download_from_drive(fileLocationDict: collections.defaultdict[list],
         for loc in locations:
             imagefileKey = loc[0]
             download_from = loc[1]
-            testcode = loc[2]
+            #testcode = loc[2]  # Obsolete
+            destFileName = loc[3]
             download_to_dest = target + "/" + IMPC_Code
             
             fileName = loc[1].split("/")[-1]
-            logger.info(f"Starting downloading file {fileName} from {download_from} to {download_to_dest}")
+            logger.info(f"Starting downloading file {fileName} from {download_from} to {download_to_dest} as {destFileName}")
             try:
                 shutil.copy(download_from, download_to_dest)
                 logger.info(f"Done downloading file {fileName}")
 
-                """Send downloaded files to the sever"""
-                logger.info(f"Start to send file {fileName} to {hostname}")
+                #Send downloaded files to the sever
+                logger.info(f"Start to send file {fileName}")
                 send_to_server(file_to_send=fileName,
-                               testcode=testcode,
-                                hostname=hostname,
-                                username=server_user,
-                                password=server_password,
+                                dest_file_name=destFileName,
                                 IMPC_Code=IMPC_Code,
                                 imageFileKey=imagefileKey)
                 DFS(dir_to_remove=download_to_dest)
             
             except FileNotFoundError as e:
-                # missingFiles.append(download_images.split("/"[-1]))
                 logger.error(e)
 
-                """Create object"""
                 file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                                   UploadStatus="Fail",
                                                   Message="File not found on the disk")
@@ -191,24 +164,19 @@ def download_from_drive(fileLocationDict: collections.defaultdict[list],
 
 
 def send_to_server(file_to_send: str,
-                   testcode: str,
-                   hostname: str,
-                   username: str,
-                   password: str,
+                   dest_file_name: str,
                    IMPC_Code: str,
                    imageFileKey: int) -> None:
-    """
-
-    """
+    
     try:
+        # Got rid of testcode messiness
         ssh_client = paramiko.SSHClient()
         ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh_client.connect(hostname=hostname, username=username, password=password)
+        ssh_client.connect(hostname=utils.hostname, username=utils.server_username, password=utils.server_password)
         ftp_client = ssh_client.open_sftp()
-        # Got rid of testcode messiness
         try:
-            logger.info(ftp_client.stat('/images/' + IMPC_Code + "/" + file_to_send))
-            logger.info(f'File {file_to_send} exists in directory {IMPC_Code}')
+            logger.info(ftp_client.stat('/images/' + IMPC_Code + "/" + dest_file_name))
+            logger.info(f'File {dest_file_name} exists in directory {IMPC_Code}')
             file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                               UploadStatus="Success",
                                               Message="File already exits on server")
@@ -218,7 +186,7 @@ def send_to_server(file_to_send: str,
         except IOError:
             logger.info(f"Uploading {file_to_send}")
             ftp_client.put(download_to + "/" + IMPC_Code + "/" + file_to_send,
-                           "images/" + IMPC_Code + "/" + file_to_send)
+                           "images/" + IMPC_Code + "/" + dest_file_name)
 
             file_Status = image_upload_status(DateOfUpload=datetime.today().strftime('%Y-%m-%d'),
                                               UploadStatus="Success",
@@ -226,14 +194,17 @@ def send_to_server(file_to_send: str,
 
             update_images_status(file_Status.__dict__, imageFileKey)
 
-        # os.remove(os.path.join(download_to, loc[1].split("/")[-1]))
-        ftp_client.close()
         logger.info(f"Finish uploading {file_to_send}")
-
+        ftp_client.close()  
     except paramiko.SSHException:
         logger.error("Connection Error")
 
-
+def remove_duplicates():
+    cursor = db().cursor()
+    cursor.execute(utils.delete_stmt)
+    db().commit()
+    cursor.close()  
+    
 def DFS(dir_to_remove: str) -> None:
     if not dir_to_remove:
         logger.error("No input directory")
@@ -254,12 +225,20 @@ def DFS(dir_to_remove: str) -> None:
 
 
 def main():
-    conn = db_init(server=db_server, username=db_username, password=db_password, database=db_name)
-    stmt = utils.pheno_stmt
+    
+    try:
+        db_init()
+        stmt = utils.pheno_stmt
+        fileLocationDict = generate_file_location(sql=stmt, download_to=download_to)
+        download_from_drive(fileLocationDict=fileLocationDict, target=download_to)
+    except Exception as e:
+        logger.error(e)     
+    finally:
+        # remove_duplicates()  # Do we care about duplicates in komp.imagefileuploadstatus?
+        db_close()
 
-    fileLocationDict = generate_file_location(conn=conn, sql=stmt, download_to=download_to)
-    download_from_drive(fileLocationDict=fileLocationDict, target=download_to)
-
+    logger.info("Job has been completed")
+    
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
 
@@ -270,11 +249,6 @@ if __name__ == '__main__':
     logger = utils.createLogHandler(job_name ,logging_filename )
     logger.info('Logger has been created')
 
-    db_username = utils.db_username
-    db_password = utils.db_password
-    db_server = utils.db_server
-    db_name = utils.db_name
-
     #download_to = "C:/Program Files/KOMP/ImageDownload/pictures"
     download_to = utils.download_to
     try:
@@ -282,9 +256,5 @@ if __name__ == '__main__':
 
     except FileExistsError as e:
         logger.error(e)
-
-    hostname = utils.hostname
-    server_user = utils.server_username
-    server_password = utils.server_password
-
+        
     main()
